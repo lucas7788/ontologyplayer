@@ -1,0 +1,44 @@
+[ INFO ] [2018-11-12 14:46:17] com.github.ontio.ExplorerApplication [50] - Starting ExplorerApplication on sss with PID 10906 (/Users/sss/dev/localgit/javaProject/ontology-explorer2/ontology-explorer/back-end-projects/Explorer/target/classes started by sss in /Users/sss/dev/localgit/javaProject/ontology-explorer2/ontology-explorer/back-end-projects/Explorer)
+[ DEBUG] [2018-11-12 14:46:17] com.github.ontio.ExplorerApplication [53] - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[ INFO ] [2018-11-12 14:46:17] com.github.ontio.ExplorerApplication [663] - The following profiles are active: uat
+[ INFO ] [2018-11-12 14:46:17] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [590] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5158b42f: startup date [Mon Nov 12 14:46:17 CST 2018]; root of context hierarchy
+[ INFO ] [2018-11-12 14:46:18] org.springframework.data.repository.config.RepositoryConfigurationDelegate [163] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[ INFO ] [2018-11-12 14:46:18] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [328] - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$52564050] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[ INFO ] [2018-11-12 14:46:18] org.springframework.ws.soap.addressing.server.AnnotationActionEndpointMapping [236] - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+[ INFO ] [2018-11-12 14:46:18] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [328] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$adbe7b51] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[ INFO ] [2018-11-12 14:46:18] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [91] - Tomcat initialized with port(s): 8585 (http)
+[ INFO ] [2018-11-12 14:46:18] org.apache.coyote.http11.Http11NioProtocol [180] - Initializing ProtocolHandler ["http-nio-8585"]
+[ INFO ] [2018-11-12 14:46:18] org.apache.catalina.core.StandardService [180] - Starting service [Tomcat]
+[ INFO ] [2018-11-12 14:46:18] org.apache.catalina.core.StandardEngine [180] - Starting Servlet Engine: Apache Tomcat/8.5.31
+[ INFO ] [2018-11-12 14:46:18] org.apache.catalina.core.AprLifecycleListener [180] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/sss/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+[ INFO ] [2018-11-12 14:46:18] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] - Initializing Spring embedded WebApplicationContext
+[ INFO ] [2018-11-12 14:46:18] org.springframework.web.context.ContextLoader [285] - Root WebApplicationContext: initialization completed in 1314 ms
+[ INFO ] [2018-11-12 14:46:18] org.springframework.boot.web.servlet.ServletRegistrationBean [186] - Servlet dispatcherServlet mapped to [/]
+[ INFO ] [2018-11-12 14:46:18] org.springframework.boot.web.servlet.ServletRegistrationBean [186] - Servlet messageDispatcherServlet mapped to [/services/*]
+[ INFO ] [2018-11-12 14:46:18] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'characterEncodingFilter' to: [/*]
+[ INFO ] [2018-11-12 14:46:18] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[ INFO ] [2018-11-12 14:46:18] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[ INFO ] [2018-11-12 14:46:18] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'requestContextFilter' to: [/*]
+[ INFO ] [2018-11-12 14:46:18] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'simpleCORSFilter' to: [/*]
+[ INFO ] [2018-11-12 14:46:19] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2018-11-12 14:46:19] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [574] - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5158b42f: startup date [Mon Nov 12 14:46:17 CST 2018]; root of context hierarchy
+[ INFO ] [2018-11-12 14:46:19] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/commitpos/height/{height}],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.CommitPosController.querySideChainData(int)
+[ INFO ] [2018-11-12 14:46:19] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[ INFO ] [2018-11-12 14:46:19] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[ INFO ] [2018-11-12 14:46:19] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2018-11-12 14:46:19] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2018-11-12 14:46:20] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [433] - Registering beans for JMX exposure on startup
+[ INFO ] [2018-11-12 14:46:20] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [895] - Bean with name 'dataSource' has been autodetected for JMX exposure
+[ INFO ] [2018-11-12 14:46:20] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [668] - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+[ INFO ] [2018-11-12 14:46:20] org.apache.coyote.http11.Http11NioProtocol [180] - Starting ProtocolHandler ["http-nio-8585"]
+[ INFO ] [2018-11-12 14:46:20] org.apache.tomcat.util.net.NioSelectorPool [180] - Using a shared selector for servlet write/read
+[ INFO ] [2018-11-12 14:46:20] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [206] - Tomcat started on port(s): 8585 (http) with context path ''
+[ INFO ] [2018-11-12 14:46:20] com.github.ontio.ExplorerApplication [59] - Started ExplorerApplication in 3.043 seconds (JVM running for 3.623)
+[ INFO ] [2018-11-12 14:47:39] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[ INFO ] [2018-11-12 14:47:39] org.springframework.web.servlet.DispatcherServlet [494] - FrameworkServlet 'dispatcherServlet': initialization started
+[ INFO ] [2018-11-12 14:47:39] org.springframework.web.servlet.DispatcherServlet [509] - FrameworkServlet 'dispatcherServlet': initialization completed in 15 ms
+[ INFO ] [2018-11-12 14:47:39] com.github.ontio.controller.CommitPosController [37] - ########CommitPosController.querySideChainData begin...
+[ INFO ] [2018-11-12 14:47:39] com.github.ontio.controller.CommitPosController [38] - amount:1
+[ INFO ] [2018-11-12 14:48:17] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [993] - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5158b42f: startup date [Mon Nov 12 14:46:17 CST 2018]; root of context hierarchy
+[ INFO ] [2018-11-12 14:48:17] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [451] - Unregistering JMX-exposed beans on shutdown
+[ INFO ] [2018-11-12 14:48:17] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [183] - Unregistering JMX-exposed beans

@@ -1,0 +1,169 @@
+[ INFO ] [2018-11-11 15:07:12] com.github.ontio.ExplorerApplication [50] - Starting ExplorerApplication on sss.local with PID 1335 (/Users/sss/dev/localgit/javaProject/ontology-explorer2/ontology-explorer/back-end-projects/Explorer/target/classes started by sss in /Users/sss/dev/localgit/javaProject/ontology-explorer2/ontology-explorer/back-end-projects/Explorer)
+[ DEBUG] [2018-11-11 15:07:12] com.github.ontio.ExplorerApplication [53] - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[ INFO ] [2018-11-11 15:07:12] com.github.ontio.ExplorerApplication [663] - The following profiles are active: uat
+[ INFO ] [2018-11-11 15:07:12] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [590] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@12468a38: startup date [Sun Nov 11 15:07:12 CST 2018]; root of context hierarchy
+[ WARN ] [2018-11-11 15:07:13] org.mybatis.spring.mapper.ClassPathMapperScanner [239] - Skipping MapperFactoryBean with name 'BlockMapper' and 'com.github.ontio.dao.BlockMapper' mapperInterface. Bean already defined with the same name!
+[ WARN ] [2018-11-11 15:07:13] org.mybatis.spring.mapper.ClassPathMapperScanner [239] - Skipping MapperFactoryBean with name 'CurrentMapper' and 'com.github.ontio.dao.CurrentMapper' mapperInterface. Bean already defined with the same name!
+[ WARN ] [2018-11-11 15:07:13] org.mybatis.spring.mapper.ClassPathMapperScanner [239] - Skipping MapperFactoryBean with name 'OntIdMapper' and 'com.github.ontio.dao.OntIdMapper' mapperInterface. Bean already defined with the same name!
+[ WARN ] [2018-11-11 15:07:13] org.mybatis.spring.mapper.ClassPathMapperScanner [239] - Skipping MapperFactoryBean with name 'TransactionDetailMapper' and 'com.github.ontio.dao.TransactionDetailMapper' mapperInterface. Bean already defined with the same name!
+[ WARN ] [2018-11-11 15:07:13] org.mybatis.spring.mapper.ClassPathMapperScanner [166] - No MyBatis mapper was found in '[com.github.ontio.dao]' package. Please check your configuration.
+[ WARN ] [2018-11-11 15:07:13] org.mybatis.spring.mapper.ClassPathMapperScanner [239] - Skipping MapperFactoryBean with name 'BlockMapper' and 'com.github.ontio.dao.BlockMapper' mapperInterface. Bean already defined with the same name!
+[ WARN ] [2018-11-11 15:07:13] org.mybatis.spring.mapper.ClassPathMapperScanner [239] - Skipping MapperFactoryBean with name 'CurrentMapper' and 'com.github.ontio.dao.CurrentMapper' mapperInterface. Bean already defined with the same name!
+[ WARN ] [2018-11-11 15:07:13] org.mybatis.spring.mapper.ClassPathMapperScanner [239] - Skipping MapperFactoryBean with name 'OntIdMapper' and 'com.github.ontio.dao.OntIdMapper' mapperInterface. Bean already defined with the same name!
+[ WARN ] [2018-11-11 15:07:13] org.mybatis.spring.mapper.ClassPathMapperScanner [239] - Skipping MapperFactoryBean with name 'TransactionDetailMapper' and 'com.github.ontio.dao.TransactionDetailMapper' mapperInterface. Bean already defined with the same name!
+[ WARN ] [2018-11-11 15:07:13] org.mybatis.spring.mapper.ClassPathMapperScanner [166] - No MyBatis mapper was found in '[com.github.ontio.dao]' package. Please check your configuration.
+[ INFO ] [2018-11-11 15:07:13] org.springframework.data.repository.config.RepositoryConfigurationDelegate [163] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[ INFO ] [2018-11-11 15:07:13] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [328] - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$260b43b2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[ INFO ] [2018-11-11 15:07:13] org.springframework.ws.soap.addressing.server.AnnotationActionEndpointMapping [236] - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+[ INFO ] [2018-11-11 15:07:13] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [328] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$81737eb3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[ INFO ] [2018-11-11 15:07:14] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [91] - Tomcat initialized with port(s): 8585 (http)
+[ INFO ] [2018-11-11 15:07:14] org.apache.coyote.http11.Http11NioProtocol [180] - Initializing ProtocolHandler ["http-nio-8585"]
+[ INFO ] [2018-11-11 15:07:14] org.apache.catalina.core.StandardService [180] - Starting service [Tomcat]
+[ INFO ] [2018-11-11 15:07:14] org.apache.catalina.core.StandardEngine [180] - Starting Servlet Engine: Apache Tomcat/8.5.31
+[ INFO ] [2018-11-11 15:07:14] org.apache.catalina.core.AprLifecycleListener [180] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/sss/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+[ INFO ] [2018-11-11 15:07:14] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] - Initializing Spring embedded WebApplicationContext
+[ INFO ] [2018-11-11 15:07:14] org.springframework.web.context.ContextLoader [285] - Root WebApplicationContext: initialization completed in 1503 ms
+[ INFO ] [2018-11-11 15:07:14] org.springframework.boot.web.servlet.ServletRegistrationBean [186] - Servlet dispatcherServlet mapped to [/]
+[ INFO ] [2018-11-11 15:07:14] org.springframework.boot.web.servlet.ServletRegistrationBean [186] - Servlet messageDispatcherServlet mapped to [/services/*]
+[ INFO ] [2018-11-11 15:07:14] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'characterEncodingFilter' to: [/*]
+[ INFO ] [2018-11-11 15:07:14] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[ INFO ] [2018-11-11 15:07:14] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[ INFO ] [2018-11-11 15:07:14] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'requestContextFilter' to: [/*]
+[ INFO ] [2018-11-11 15:07:14] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'simpleCORSFilter' to: [/*]
+[ WARN ] [2018-11-11 15:07:14] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [558] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'currentController': Unsatisfied dependency expressed through field 'currentService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'CurrentService': Unsatisfied dependency expressed through field 'configParam'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'ConfigParam': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'oep8.pumpkin.codeHash' in value "${oep8.pumpkin.codeHash}"
+[ INFO ] [2018-11-11 15:07:14] org.apache.catalina.core.StandardService [180] - Stopping service [Tomcat]
+[ INFO ] [2018-11-11 15:07:14] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [101] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[ ERROR] [2018-11-11 15:07:14] org.springframework.boot.SpringApplication [842] - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'currentController': Unsatisfied dependency expressed through field 'currentService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'CurrentService': Unsatisfied dependency expressed through field 'configParam'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'ConfigParam': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'oep8.pumpkin.codeHash' in value "${oep8.pumpkin.codeHash}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:587)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:373)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1350)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:580)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:503)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:760)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:869)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243)
+	at com.github.ontio.ExplorerApplication.main(ExplorerApplication.java:10)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'CurrentService': Unsatisfied dependency expressed through field 'configParam'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'ConfigParam': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'oep8.pumpkin.codeHash' in value "${oep8.pumpkin.codeHash}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:587)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:373)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1350)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:580)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:503)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:584)
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'ConfigParam': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'oep8.pumpkin.codeHash' in value "${oep8.pumpkin.codeHash}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:379)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1350)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:580)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:503)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:584)
+	... 32 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'oep8.pumpkin.codeHash' in value "${oep8.pumpkin.codeHash}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:172)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:124)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:237)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:211)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:175)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:839)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1086)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:584)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:373)
+	... 43 common frames omitted
+[ INFO ] [2018-11-11 15:08:01] com.github.ontio.ExplorerApplication [50] - Starting ExplorerApplication on sss.local with PID 1351 (/Users/sss/dev/localgit/javaProject/ontology-explorer2/ontology-explorer/back-end-projects/Explorer/target/classes started by sss in /Users/sss/dev/localgit/javaProject/ontology-explorer2/ontology-explorer/back-end-projects/Explorer)
+[ DEBUG] [2018-11-11 15:08:01] com.github.ontio.ExplorerApplication [53] - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[ INFO ] [2018-11-11 15:08:01] com.github.ontio.ExplorerApplication [663] - The following profiles are active: uat
+[ INFO ] [2018-11-11 15:08:01] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [590] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@79e2c065: startup date [Sun Nov 11 15:08:01 CST 2018]; root of context hierarchy
+[ WARN ] [2018-11-11 15:08:02] org.mybatis.spring.mapper.ClassPathMapperScanner [239] - Skipping MapperFactoryBean with name 'BlockMapper' and 'com.github.ontio.dao.BlockMapper' mapperInterface. Bean already defined with the same name!
+[ WARN ] [2018-11-11 15:08:02] org.mybatis.spring.mapper.ClassPathMapperScanner [239] - Skipping MapperFactoryBean with name 'CurrentMapper' and 'com.github.ontio.dao.CurrentMapper' mapperInterface. Bean already defined with the same name!
+[ WARN ] [2018-11-11 15:08:02] org.mybatis.spring.mapper.ClassPathMapperScanner [239] - Skipping MapperFactoryBean with name 'OntIdMapper' and 'com.github.ontio.dao.OntIdMapper' mapperInterface. Bean already defined with the same name!
+[ WARN ] [2018-11-11 15:08:02] org.mybatis.spring.mapper.ClassPathMapperScanner [239] - Skipping MapperFactoryBean with name 'TransactionDetailMapper' and 'com.github.ontio.dao.TransactionDetailMapper' mapperInterface. Bean already defined with the same name!
+[ WARN ] [2018-11-11 15:08:02] org.mybatis.spring.mapper.ClassPathMapperScanner [166] - No MyBatis mapper was found in '[com.github.ontio.dao]' package. Please check your configuration.
+[ WARN ] [2018-11-11 15:08:02] org.mybatis.spring.mapper.ClassPathMapperScanner [239] - Skipping MapperFactoryBean with name 'BlockMapper' and 'com.github.ontio.dao.BlockMapper' mapperInterface. Bean already defined with the same name!
+[ WARN ] [2018-11-11 15:08:02] org.mybatis.spring.mapper.ClassPathMapperScanner [239] - Skipping MapperFactoryBean with name 'CurrentMapper' and 'com.github.ontio.dao.CurrentMapper' mapperInterface. Bean already defined with the same name!
+[ WARN ] [2018-11-11 15:08:02] org.mybatis.spring.mapper.ClassPathMapperScanner [239] - Skipping MapperFactoryBean with name 'OntIdMapper' and 'com.github.ontio.dao.OntIdMapper' mapperInterface. Bean already defined with the same name!
+[ WARN ] [2018-11-11 15:08:02] org.mybatis.spring.mapper.ClassPathMapperScanner [239] - Skipping MapperFactoryBean with name 'TransactionDetailMapper' and 'com.github.ontio.dao.TransactionDetailMapper' mapperInterface. Bean already defined with the same name!
+[ WARN ] [2018-11-11 15:08:02] org.mybatis.spring.mapper.ClassPathMapperScanner [166] - No MyBatis mapper was found in '[com.github.ontio.dao]' package. Please check your configuration.
+[ INFO ] [2018-11-11 15:08:02] org.springframework.data.repository.config.RepositoryConfigurationDelegate [163] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[ INFO ] [2018-11-11 15:08:02] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [328] - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$3200b511] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[ INFO ] [2018-11-11 15:08:02] org.springframework.ws.soap.addressing.server.AnnotationActionEndpointMapping [236] - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+[ INFO ] [2018-11-11 15:08:02] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [328] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8d68f012] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[ INFO ] [2018-11-11 15:08:03] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [91] - Tomcat initialized with port(s): 8585 (http)
+[ INFO ] [2018-11-11 15:08:03] org.apache.coyote.http11.Http11NioProtocol [180] - Initializing ProtocolHandler ["http-nio-8585"]
+[ INFO ] [2018-11-11 15:08:03] org.apache.catalina.core.StandardService [180] - Starting service [Tomcat]
+[ INFO ] [2018-11-11 15:08:03] org.apache.catalina.core.StandardEngine [180] - Starting Servlet Engine: Apache Tomcat/8.5.31
+[ INFO ] [2018-11-11 15:08:03] org.apache.catalina.core.AprLifecycleListener [180] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/sss/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+[ INFO ] [2018-11-11 15:08:03] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] - Initializing Spring embedded WebApplicationContext
+[ INFO ] [2018-11-11 15:08:03] org.springframework.web.context.ContextLoader [285] - Root WebApplicationContext: initialization completed in 1327 ms
+[ INFO ] [2018-11-11 15:08:03] org.springframework.boot.web.servlet.ServletRegistrationBean [186] - Servlet dispatcherServlet mapped to [/]
+[ INFO ] [2018-11-11 15:08:03] org.springframework.boot.web.servlet.ServletRegistrationBean [186] - Servlet messageDispatcherServlet mapped to [/services/*]
+[ INFO ] [2018-11-11 15:08:03] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'characterEncodingFilter' to: [/*]
+[ INFO ] [2018-11-11 15:08:03] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[ INFO ] [2018-11-11 15:08:03] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[ INFO ] [2018-11-11 15:08:03] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'requestContextFilter' to: [/*]
+[ INFO ] [2018-11-11 15:08:03] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'simpleCORSFilter' to: [/*]
+[ INFO ] [2018-11-11 15:08:03] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2018-11-11 15:08:03] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [574] - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@79e2c065: startup date [Sun Nov 11 15:08:01 CST 2018]; root of context hierarchy
+[ INFO ] [2018-11-11 15:08:04] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/explorer/blocklist/{amount}],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.BlockController.queryBlockList(int)
+[ INFO ] [2018-11-11 15:08:04] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/explorer/blocklist/{pagesize}/{pagenumber}],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.BlockController.queryBlockByPage(java.lang.Integer,java.lang.Integer)
+[ INFO ] [2018-11-11 15:08:04] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/explorer/block/{param}],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.BlockController.queryBlock(java.lang.String)
+[ INFO ] [2018-11-11 15:08:04] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/explorer/block/generatetime/{amount}],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.BlockController.queryBlockGenerateTime(int)
+[ INFO ] [2018-11-11 15:08:04] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/explorer/blockCountInTwoWeeks/{time}],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.BlockController.blockCountInTwoWeeks(int)
+[ INFO ] [2018-11-11 15:08:04] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/explorer/summary],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.CurrentController.querySummaryInfo()
+[ INFO ] [2018-11-11 15:08:04] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/explorer/detection],methods=[GET]}" onto public java.lang.String com.github.ontio.controller.CurrentController.detection()
+[ INFO ] [2018-11-11 15:08:04] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/explorer/ontidlist/{amount}],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.OntIdController.queryOntIdList(int)
+[ INFO ] [2018-11-11 15:08:04] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/explorer/ontidlist/{pagesize}/{pagenumber}],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.OntIdController.queryOntIdListByPage(int,int)
+[ INFO ] [2018-11-11 15:08:04] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/explorer/ontid/{ontid}/{pagesize}/{pagenumber}],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.OntIdController.queryOntIdDetail(java.lang.String,int,int)
+[ INFO ] [2018-11-11 15:08:04] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/explorer/transactionlist/{pagesize}/{pagenumber}],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.TransactionController.queryTxn(java.lang.Integer,java.lang.Integer)
+[ INFO ] [2018-11-11 15:08:04] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/explorer/transactionlist/{amount}],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.TransactionController.queryTransactionList(int)
+[ INFO ] [2018-11-11 15:08:04] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/explorer/transaction/{txnhash}],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.TransactionController.queryTxnByHash(java.lang.String)
+[ INFO ] [2018-11-11 15:08:04] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/explorer/address/{address}/{assetname}/{pagesize}/{pagenumber}],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.TransactionController.queryAddressInfo(java.lang.String,int,int,java.lang.String)
+[ INFO ] [2018-11-11 15:08:04] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/explorer/address/{address}/{pagesize}/{pagenumber}],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.TransactionController.queryAddressInfo(java.lang.String,int,int)
+[ INFO ] [2018-11-11 15:08:04] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/explorer/address/timeandpage/{address}/{assetname}/{pagesize}/{endtime}],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.TransactionController.queryAddressInfoByTimeAndPage(java.lang.String,int,java.lang.String,int)
+[ INFO ] [2018-11-11 15:08:04] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/explorer/address/time/{address}/{assetname}/{begintime}/{endtime}],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.TransactionController.queryAddressInfoByTime(java.lang.String,int,java.lang.String,int)
+[ INFO ] [2018-11-11 15:08:04] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/explorer/address/time/{address}/{assetname}/{begintime}],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.TransactionController.queryAddressInfoByTime2(java.lang.String,int,java.lang.String)
+[ INFO ] [2018-11-11 15:08:04] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/explorer/address/balance/{address}],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.TransactionController.queryAddressBalance(java.lang.String)
+[ INFO ] [2018-11-11 15:08:04] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[ INFO ] [2018-11-11 15:08:04] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[ INFO ] [2018-11-11 15:08:04] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2018-11-11 15:08:04] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2018-11-11 15:08:04] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [433] - Registering beans for JMX exposure on startup
+[ INFO ] [2018-11-11 15:08:04] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [895] - Bean with name 'dataSource' has been autodetected for JMX exposure
+[ INFO ] [2018-11-11 15:08:04] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [668] - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+[ INFO ] [2018-11-11 15:08:04] org.apache.coyote.http11.Http11NioProtocol [180] - Starting ProtocolHandler ["http-nio-8585"]
+[ INFO ] [2018-11-11 15:08:04] org.apache.tomcat.util.net.NioSelectorPool [180] - Using a shared selector for servlet write/read
+[ INFO ] [2018-11-11 15:08:04] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [206] - Tomcat started on port(s): 8585 (http) with context path ''
+[ INFO ] [2018-11-11 15:08:04] com.github.ontio.ExplorerApplication [59] - Started ExplorerApplication in 3.323 seconds (JVM running for 3.872)
+[ INFO ] [2018-11-11 15:09:02] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [993] - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@79e2c065: startup date [Sun Nov 11 15:08:01 CST 2018]; root of context hierarchy
+[ INFO ] [2018-11-11 15:09:02] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [451] - Unregistering JMX-exposed beans on shutdown
+[ INFO ] [2018-11-11 15:09:02] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [183] - Unregistering JMX-exposed beans

@@ -1,0 +1,820 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="602db56b-3927-4e7c-abec-364020e8c4ec" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-1916991532">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="4" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.3" value="2" />
+          <entry key="project.opened" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="2" />
+          <entry key="properties" value="2" />
+          <entry key="xml" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="2" />
+          <entry key="Properties" value="2" />
+          <entry key="XML" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="xml" value="9" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="XML" value="9" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="-232549073">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="60" />
+          <entry key="project.open.time.0" value="7" />
+          <entry key="project.open.time.1" value="9" />
+          <entry key="project.open.time.10" value="2" />
+          <entry key="project.open.time.11" value="2" />
+          <entry key="project.open.time.12" value="1" />
+          <entry key="project.open.time.13" value="2" />
+          <entry key="project.open.time.15" value="2" />
+          <entry key="project.open.time.3" value="3" />
+          <entry key="project.open.time.4" value="7" />
+          <entry key="project.open.time.5" value="5" />
+          <entry key="project.open.time.6" value="7" />
+          <entry key="project.open.time.7" value="11" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="61" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="class" value="4" />
+          <entry key="cmd" value="2" />
+          <entry key="iml" value="2" />
+          <entry key="java" value="286" />
+          <entry key="md" value="5" />
+          <entry key="mvnw" value="1" />
+          <entry key="properties" value="17" />
+          <entry key="sql" value="36" />
+          <entry key="xml" value="71" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CLASS" value="4" />
+          <entry key="IDEA_MODULE" value="2" />
+          <entry key="JAVA" value="286" />
+          <entry key="Markdown" value="5" />
+          <entry key="PLAIN_TEXT" value="3" />
+          <entry key="Properties" value="17" />
+          <entry key="SQL" value="36" />
+          <entry key="XML" value="71" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="dummy" value="4" />
+          <entry key="java" value="3742" />
+          <entry key="md" value="762" />
+          <entry key="properties" value="86" />
+          <entry key="sql" value="193" />
+          <entry key="xml" value="793" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="3742" />
+          <entry key="Markdown" value="762" />
+          <entry key="PLAIN_TEXT" value="4" />
+          <entry key="Properties" value="86" />
+          <entry key="SQL" value="211" />
+          <entry key="XML" value="775" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="790282534">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="14" />
+          <entry key="project.open.time.0" value="3" />
+          <entry key="project.open.time.1" value="2" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.3" value="2" />
+          <entry key="project.open.time.4" value="2" />
+          <entry key="project.open.time.5" value="2" />
+          <entry key="project.open.time.6" value="2" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.opened" value="15" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="class" value="3" />
+          <entry key="java" value="113" />
+          <entry key="md" value="31" />
+          <entry key="properties" value="6" />
+          <entry key="sql" value="34" />
+          <entry key="xml" value="18" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CLASS" value="3" />
+          <entry key="JAVA" value="113" />
+          <entry key="Markdown" value="31" />
+          <entry key="Properties" value="6" />
+          <entry key="SQL" value="34" />
+          <entry key="XML" value="18" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="dummy" value="35" />
+          <entry key="java" value="2194" />
+          <entry key="md" value="2188" />
+          <entry key="properties" value="16" />
+          <entry key="sql" value="182" />
+          <entry key="xml" value="548" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="2194" />
+          <entry key="Markdown" value="2188" />
+          <entry key="PLAIN_TEXT" value="35" />
+          <entry key="Properties" value="16" />
+          <entry key="SQL" value="182" />
+          <entry key="XML" value="548" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>selectHugeWinsTopByNum</find>
+      <find>deleteHugeWinMinBetInfoById</find>
+      <find>parameterType</find>
+      <find>com.github.ontio.dao.BetsInfoMapper.BaseResultMap</find>
+      <find>BaseResultMap</find>
+      <find>selectHugeWinTotalNum</find>
+      <find>NODE_INTERRUPTTIME_MAX</find>
+      <find>NODE_WAITFORBLOCKTIME_MAX</find>
+      <find>time</find>
+      <find>Base_Column_List</find>
+      <find>selectBuyRecordByTxHash</find>
+      <find>**********************************handleFunc</find>
+      <find>insertWinnerInfo</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/sql/tbl_banker_invest.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/ontio/model/BankerInvest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/ontio/model/BankerWithdraw.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/ontio/dao/BankerInfoMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/ontio/service/IBankerHandleService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/ontio/controller/BankerController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/ontio/service/impl/BankerHandleServiceImpl.java" />
+        <option value="$PROJECT_DIR$/sql/tbl_banker_withdraw.sql" />
+        <option value="$PROJECT_DIR$/sql/tbl_blk_height.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/ontio/TaskWareSyn.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/ontio/SimpleCORSFilter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/ontio/model/BetInfoWithId.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mybatis/mapper/BetsInfoMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/mybatis/mapper/BlkHeightMainMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/ontio/model/BankerInfo.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mybatis/mapper/BankerInfoMapper.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/ontio/service/IBetsHandleService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/ontio/model/BetInfo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/ontio/dao/BlkHeightMainMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/ontio/controller/BetsController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mybatis/mapper/BlkHeightMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/ontio/dao/WithdrawRecordInfoMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/ontio/utils/ConstantParam.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/ontio/TaskWareSync.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/ontio/utils/ConfigParam.java" />
+        <option value="$PROJECT_DIR$/sql/tbl_block_height.sql" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/sql/tbl_buy_record.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/ontio/model/BuyRecordInfo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/ontio/dao/WinnerInfoMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/ontio/model/WinnerInfo.java" />
+        <option value="$PROJECT_DIR$/sql/tbl_winner.sql" />
+        <option value="$PROJECT_DIR$/src/main/resources/mybatis/mapper/WinnerInfoMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/ontio/service/IBuyerHandleService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/ontio/service/impl/BuyerHandleServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/ontio/ExplorerApplication.java" />
+        <option value="$PROJECT_DIR$/config/application-uat.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/ontio/asyncService/BlkSyncService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/ontio/thread/BlockSyncThread.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/ontio/dao/BuyRecordInfoMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mybatis/mapper/BuyRecordMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/ontio/model/WithdrawRecordInfo.java" />
+        <option value="$PROJECT_DIR$/sql/tbl_withdraw_record.sql" />
+        <option value="$PROJECT_DIR$/src/main/resources/mybatis/mapper/WithdrawRecordMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/ontio/thread/TxnHandlerThread.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/ontio/controller/PlayerController.java" />
+        <option value="$PROJECT_DIR$/玩法规则说明.md" />
+        <option value="$PROJECT_DIR$/本体玩家系列一ong版股东规则.md" />
+        <option value="$PROJECT_DIR$/本体玩家系列2.md" />
+        <option value="$PROJECT_DIR$/本体玩家发展计划.md" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="24" />
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="840" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="ontologyplayer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ontologyplayer" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545805188506" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.ExplorerApplication">
+    <configuration name="ExplorerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.github.ontio.ExplorerApplication" />
+      <module name="ontologyplayer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.github.ontio.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExplorerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="ontologyplayer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.github.ontio.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.github.ontio.ExplorerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.ExplorerApplication" />
+      <item itemvalue="Application.ExplorerApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ExplorerApplication" />
+        <item itemvalue="Spring Boot.ExplorerApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="602db56b-3927-4e7c-abec-364020e8c4ec" name="Default Changelist" comment="" />
+      <created>1542272843666</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1542272843666</updated>
+      <workItem from="1542272844918" duration="44000" />
+      <workItem from="1542454918919" duration="8000" />
+      <workItem from="1542609921953" duration="1000" />
+      <workItem from="1542706212753" duration="1874000" />
+      <workItem from="1543482534408" duration="13106000" />
+      <workItem from="1543542204827" duration="6180000" />
+      <workItem from="1543640686325" duration="2000" />
+      <workItem from="1543828351201" duration="725000" />
+      <workItem from="1543829124217" duration="888000" />
+      <workItem from="1543830799410" duration="1797000" />
+      <workItem from="1543832632390" duration="305000" />
+      <workItem from="1543834994436" duration="762000" />
+      <workItem from="1543838259704" duration="680000" />
+      <workItem from="1543840675944" duration="480000" />
+      <workItem from="1543891077037" duration="457000" />
+      <workItem from="1543891877419" duration="836000" />
+      <workItem from="1543892741163" duration="923000" />
+      <workItem from="1543895560983" duration="972000" />
+      <workItem from="1543896897885" duration="147000" />
+      <workItem from="1543899196696" duration="176000" />
+      <workItem from="1543899397007" duration="364000" />
+      <workItem from="1543900383663" duration="1808000" />
+      <workItem from="1543902343841" duration="327000" />
+      <workItem from="1543999972862" duration="1271000" />
+      <workItem from="1544020546379" duration="1725000" />
+      <workItem from="1544062156105" duration="1473000" />
+      <workItem from="1544064000205" duration="42000" />
+      <workItem from="1544521641555" duration="1724000" />
+      <workItem from="1544523439293" duration="1215000" />
+      <workItem from="1544525255061" duration="1857000" />
+      <workItem from="1544527136441" duration="871000" />
+      <workItem from="1544578107078" duration="1121000" />
+      <workItem from="1544579895354" duration="211000" />
+      <workItem from="1544931364033" duration="1697000" />
+      <workItem from="1544933345397" duration="2045000" />
+      <workItem from="1544935540953" duration="1692000" />
+      <workItem from="1544937364404" duration="1739000" />
+      <workItem from="1544940456211" duration="826000" />
+      <workItem from="1544942570440" duration="1449000" />
+      <workItem from="1544944278890" duration="47000" />
+      <workItem from="1544944355155" duration="1776000" />
+      <workItem from="1544946172076" duration="1783000" />
+      <workItem from="1544948015803" duration="1806000" />
+      <workItem from="1544949958096" duration="1250000" />
+      <workItem from="1544956100310" duration="1848000" />
+      <workItem from="1544958061517" duration="1789000" />
+      <workItem from="1544959985430" duration="1374000" />
+      <workItem from="1544961845615" duration="1607000" />
+      <workItem from="1544963662242" duration="599000" />
+      <workItem from="1545014809646" duration="72000" />
+      <workItem from="1545016832833" duration="117000" />
+      <workItem from="1545022937304" duration="107000" />
+      <workItem from="1545023132061" duration="1043000" />
+      <workItem from="1545024316654" duration="1176000" />
+      <workItem from="1545033916024" duration="641000" />
+      <workItem from="1545037118459" duration="254000" />
+      <workItem from="1545115069984" duration="148000" />
+      <workItem from="1545115222785" duration="41000" />
+      <workItem from="1545122205429" duration="696000" />
+      <workItem from="1545136507510" duration="717000" />
+      <workItem from="1545287627360" duration="317000" />
+      <workItem from="1545289669559" duration="399000" />
+      <workItem from="1545444655797" duration="5000" />
+      <workItem from="1545444765160" duration="11584000" />
+      <workItem from="1545484036215" duration="2601000" />
+      <workItem from="1545532951992" duration="177000" />
+      <workItem from="1545556854074" duration="310000" />
+      <workItem from="1545558997482" duration="10615000" />
+      <workItem from="1545614778287" duration="3068000" />
+      <workItem from="1545622431414" duration="1715000" />
+      <workItem from="1545627470365" duration="2660000" />
+      <workItem from="1545634818335" duration="374000" />
+      <workItem from="1545649970149" duration="3341000" />
+      <workItem from="1545657949590" duration="951000" />
+      <workItem from="1545719899636" duration="389000" />
+      <workItem from="1545726067752" duration="1623000" />
+      <workItem from="1545790197014" duration="3157000" />
+      <workItem from="1545804764568" duration="424000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="116421000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="24" y="23" width="1440" height="840" extended-state="0" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1788269" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.328125" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.5013405" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.5" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32867134" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.45053476" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Java Enterprise" order="10" weight="0.328125" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.328877" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Maven Projects" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/github/ontio/asyncService/BlkSyncService.java</url>
+          <line>66</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/github/ontio/thread/BlockSyncThread.java</url>
+          <line>86</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/sql/tbl_blk_height.sql" />
+    <entry file="file://$PROJECT_DIR$/sql/tbl_banker_invest.sql" />
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/math/BigDecimal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="2622" column="15" selection-start-line="2622" selection-start-column="15" selection-end-line="2622" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.0.3.RELEASE/spring-boot-2.0.3.RELEASE.jar!/org/springframework/boot/SpringApplication.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1276">
+          <caret line="59" column="13" selection-start-line="59" selection-start-column="13" selection-end-line="59" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvnw.cmd">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ontologyplayer.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1558" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ontio/TaskWareSyn.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ontio/ApplicationContextProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ontio/model/BetInfoWithId.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mapper/BankerInfoMapper.xml" />
+    <entry file="file://$PROJECT_DIR$/sql/tbl_banker_withdraw.sql" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ontio/model/BankerInfo.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ontio/controller/BankerController.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ontio/dao/BankerInfoMapper.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ontio/service/impl/BankerHandleServiceImpl.java" />
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1666">
+          <caret line="98" selection-start-line="98" selection-end-line="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql/tbl_huge_wins.sql" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ontio/SimpleCORSFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="47" column="25" selection-start-line="47" selection-start-column="25" selection-end-line="47" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ontio/dao/BlkHeightMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mapper/BlkHeightMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ontio/utils/ConstantParam.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="45" column="37" selection-start-line="45" selection-start-column="37" selection-end-line="45" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ontio/TaskWareSync.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="32" lean-forward="true" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="524">
+            <caret line="160" lean-forward="true" selection-start-line="160" selection-end-line="160" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql/tbl_block_height.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ontio/model/WinnerInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="29" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ontio/service/IBuyerHandleService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="11" column="65" lean-forward="true" selection-start-line="11" selection-start-column="65" selection-end-line="11" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.0.7.RELEASE/spring-core-5.0.7.RELEASE.jar!/org/springframework/cglib/proxy/MethodProxy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="104" selection-start-line="104" selection-end-line="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.0.7.RELEASE/spring-aop-5.0.7.RELEASE.jar!/org/springframework/aop/framework/CglibAopProxy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="499" selection-start-line="499" selection-end-line="499" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/application-uat.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="35" column="30" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ontio/utils/ConfigParam.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="40" column="15" selection-start-line="40" selection-start-column="15" selection-end-line="40" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ontio/thread/BlockSyncThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="611">
+          <caret line="77" column="106" selection-start-line="77" selection-start-column="106" selection-end-line="77" selection-end-column="106" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ontio/asyncService/BlkSyncService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="50" column="54" selection-start-line="50" selection-start-column="54" selection-end-line="50" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ontio/dao/BuyRecordInfoMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="16" column="66" selection-start-line="16" selection-start-column="66" selection-end-line="16" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ontio/model/BuyRecordInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mapper/BuyRecordMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="31" column="27" lean-forward="true" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ontio/dao/WithdrawRecordInfoMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql/tbl_winner.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql/tbl_withdraw_record.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="9" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mapper/WithdrawRecordMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ontio/model/WithdrawRecordInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ontio/controller/PlayerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="88" column="43" selection-start-line="88" selection-start-column="43" selection-end-line="88" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ontio/service/impl/BuyerHandleServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="69" column="66" lean-forward="true" selection-start-line="69" selection-start-column="66" selection-end-line="69" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ontio/dao/WinnerInfoMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="7" column="24" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mapper/WinnerInfoMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="58" lean-forward="true" selection-start-line="21" selection-start-column="58" selection-end-line="21" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ontio/thread/TxnHandlerThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="75" column="51" lean-forward="true" selection-start-line="75" selection-start-column="51" selection-end-line="75" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql/tbl_buy_record.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="9" lean-forward="true" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ontio/ExplorerApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/本体玩家系列一ong版股东规则.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="195">
+            <caret line="13" column="11" lean-forward="true" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/本体玩家系列2玩法规则说明.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="315">
+            <caret line="21" column="11" lean-forward="true" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/本体玩家发展计划.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="255">
+            <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/本体玩家系列1玩法规则说明.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="408">
+            <caret line="34" column="11" selection-start-line="34" selection-start-column="11" selection-end-line="34" selection-end-column="11" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

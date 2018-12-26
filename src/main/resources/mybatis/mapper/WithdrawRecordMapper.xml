@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.github.ontio.dao.WithdrawRecordInfoMapper">
+    <resultMap id="BaseResultMap" type="com.github.ontio.model.WithdrawRecordInfo">
+        <result column="txhash" jdbcType="VARCHAR" property="txHash" />
+        <result column="address" jdbcType="VARCHAR" property="address" />
+        <result column="dividend" jdbcType="DECIMAL" property="dividend" />
+        <result column="invitedividend" jdbcType="DECIMAL" property="inviteDividend" />
+        <result column="round" jdbcType="INTEGER" property="round" />
+    </resultMap>
+    <sql id="Base_Column_List">
+     txhash, buyer, dividend, invitedividend, round
+    </sql>
+
+    <select id="selectMyWithdrawRecordByPage"  resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List" />
+        from tbl_withdraw_record
+        where address = #{param1,jdbcType=VARCHAR}
+        order by id DESC
+        limit #{param2}, #{param3}
+    </select>
+
+    <insert id="insertWithdrawRecordInfo" parameterType="com.github.ontio.model.WithdrawRecordInfo">
+    insert into tbl_withdraw_record (txhash, address,dividend, invitedividend, round)
+    values (#{txHash,jdbcType=VARCHAR},#{address,jdbcType=VARCHAR}, #{dividend,jdbcType=DECIMAL},#{invitedividend,jdbcType=DECIMAL}, #{round,jdbcType=INTEGER})
+    </insert>
+</mapper>

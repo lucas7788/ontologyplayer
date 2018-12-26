@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.github.ontio.dao.WinnerInfoMapper">
+    <resultMap id="BaseResultMap" type="com.github.ontio.model.WinnerInfo">
+        <result column="buyer" jdbcType="VARCHAR" property="lastBuyer" />
+        <result column="buyer" jdbcType="VARCHAR" property="holdKeyMost" />
+        <result column="price" jdbcType="INTEGER" property="price" />
+        <result column="round" jdbcType="INTEGER" property="round" />
+    </resultMap>
+    <sql id="Base_Column_List">
+      lastbuyer, holdkeymost, round
+    </sql>
+
+    <select id="selectWinnerInfoByPage" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List" />
+        from tbl_winner
+        order by id DESC
+        limit #{param1}, #{param2}
+    </select>
+    <insert id="insertWinnerInfo" parameterType="com.github.ontio.model.WinnerInfo">
+    insert into tbl_winner (lastbuyer, holdkeymost, round)
+    values (#{lastBuyer,jdbcType=INTEGER},#{holdKeyMost,jdbcType=VARCHAR}, #{round,jdbcType=INTEGER})
+    </insert>
+</mapper>

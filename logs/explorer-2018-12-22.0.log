@@ -1,0 +1,599 @@
+[ INFO ] [2018-12-22 16:37:50] com.github.ontio.ExplorerApplication [50] - Starting ExplorerApplication on sss.local with PID 2230 (/Users/sss/dev/localgit/javaProject/ontologyplayer/target/classes started by sss in /Users/sss/dev/localgit/javaProject/ontologyplayer)
+[ DEBUG] [2018-12-22 16:37:50] com.github.ontio.ExplorerApplication [53] - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[ INFO ] [2018-12-22 16:37:50] com.github.ontio.ExplorerApplication [663] - The following profiles are active: uat
+[ INFO ] [2018-12-22 16:37:50] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [590] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@79924b: startup date [Sat Dec 22 16:37:50 CST 2018]; root of context hierarchy
+[ INFO ] [2018-12-22 16:37:51] org.springframework.data.repository.config.RepositoryConfigurationDelegate [163] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[ INFO ] [2018-12-22 16:37:51] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [328] - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$3a85c717] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[ INFO ] [2018-12-22 16:37:52] org.springframework.ws.soap.addressing.server.AnnotationActionEndpointMapping [236] - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+[ INFO ] [2018-12-22 16:37:52] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [328] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$95ee0218] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[ INFO ] [2018-12-22 16:37:52] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [91] - Tomcat initialized with port(s): 8585 (http)
+[ INFO ] [2018-12-22 16:37:52] org.apache.coyote.http11.Http11NioProtocol [180] - Initializing ProtocolHandler ["http-nio-8585"]
+[ INFO ] [2018-12-22 16:37:52] org.apache.catalina.core.StandardService [180] - Starting service [Tomcat]
+[ INFO ] [2018-12-22 16:37:52] org.apache.catalina.core.StandardEngine [180] - Starting Servlet Engine: Apache Tomcat/8.5.31
+[ INFO ] [2018-12-22 16:37:52] org.apache.catalina.core.AprLifecycleListener [180] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/sss/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+[ INFO ] [2018-12-22 16:37:52] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] - Initializing Spring embedded WebApplicationContext
+[ INFO ] [2018-12-22 16:37:52] org.springframework.web.context.ContextLoader [285] - Root WebApplicationContext: initialization completed in 2013 ms
+[ ERROR] [2018-12-22 16:37:52] org.springframework.boot.web.embedded.tomcat.TomcatStarter [62] - Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'simpleCORSFilter': Unsatisfied dependency expressed through field 'configParam'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'ConfigParam': Unsatisfied dependency expressed through field 'BLOCK_INTERVAL'; nested exception is org.springframework.beans.TypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "$block.interval"
+[ INFO ] [2018-12-22 16:37:52] org.apache.catalina.core.StandardService [180] - Stopping service [Tomcat]
+[ WARN ] [2018-12-22 16:37:52] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [558] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+[ INFO ] [2018-12-22 16:37:52] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [101] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[ ERROR] [2018-12-22 16:37:52] org.springframework.boot.SpringApplication [842] - Application run failed
+org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:155)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:544)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243)
+	at com.github.ontio.ExplorerApplication.main(ExplorerApplication.java:16)
+Caused by: org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:126)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:86)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:413)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:174)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:179)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:152)
+	... 8 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'simpleCORSFilter': Unsatisfied dependency expressed through field 'configParam'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'ConfigParam': Unsatisfied dependency expressed through field 'BLOCK_INTERVAL'; nested exception is org.springframework.beans.TypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "$block.interval"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:587)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:373)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1350)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:580)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:503)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:226)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:182)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:177)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAdaptableBeans(ServletContextInitializerBeans.java:159)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:81)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getServletContextInitializerBeans(ServletWebServerApplicationContext.java:250)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.selfInitialize(ServletWebServerApplicationContext.java:237)
+	at org.springframework.boot.web.embedded.tomcat.TomcatStarter.onStartup(TomcatStarter.java:54)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5245)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1421)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1411)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'ConfigParam': Unsatisfied dependency expressed through field 'BLOCK_INTERVAL'; nested exception is org.springframework.beans.TypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "$block.interval"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:587)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:373)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1350)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:580)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:503)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:584)
+	... 25 common frames omitted
+Caused by: org.springframework.beans.TypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "$block.interval"
+	at org.springframework.beans.TypeConverterSupport.doConvert(TypeConverterSupport.java:80)
+	at org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:60)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1092)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:584)
+	... 38 common frames omitted
+Caused by: java.lang.NumberFormatException: For input string: "$block.interval"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:569)
+	at java.lang.Integer.valueOf(Integer.java:766)
+	at org.springframework.util.NumberUtils.parseNumber(NumberUtils.java:210)
+	at org.springframework.beans.propertyeditors.CustomNumberEditor.setAsText(CustomNumberEditor.java:115)
+	at org.springframework.beans.TypeConverterDelegate.doConvertTextValue(TypeConverterDelegate.java:466)
+	at org.springframework.beans.TypeConverterDelegate.doConvertValue(TypeConverterDelegate.java:439)
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:192)
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:117)
+	at org.springframework.beans.TypeConverterSupport.doConvert(TypeConverterSupport.java:70)
+	... 42 common frames omitted
+[ INFO ] [2018-12-22 16:39:11] com.github.ontio.ExplorerApplication [50] - Starting ExplorerApplication on sss.local with PID 2239 (/Users/sss/dev/localgit/javaProject/ontologyplayer/target/classes started by sss in /Users/sss/dev/localgit/javaProject/ontologyplayer)
+[ DEBUG] [2018-12-22 16:39:11] com.github.ontio.ExplorerApplication [53] - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[ INFO ] [2018-12-22 16:39:11] com.github.ontio.ExplorerApplication [663] - The following profiles are active: uat
+[ INFO ] [2018-12-22 16:39:11] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [590] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@79924b: startup date [Sat Dec 22 16:39:11 CST 2018]; root of context hierarchy
+[ INFO ] [2018-12-22 16:39:12] org.springframework.data.repository.config.RepositoryConfigurationDelegate [163] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[ INFO ] [2018-12-22 16:39:13] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [328] - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$f4476eba] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[ INFO ] [2018-12-22 16:39:13] org.springframework.ws.soap.addressing.server.AnnotationActionEndpointMapping [236] - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+[ INFO ] [2018-12-22 16:39:13] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [328] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4fafa9bb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[ INFO ] [2018-12-22 16:39:13] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [91] - Tomcat initialized with port(s): 8585 (http)
+[ INFO ] [2018-12-22 16:39:13] org.apache.coyote.http11.Http11NioProtocol [180] - Initializing ProtocolHandler ["http-nio-8585"]
+[ INFO ] [2018-12-22 16:39:13] org.apache.catalina.core.StandardService [180] - Starting service [Tomcat]
+[ INFO ] [2018-12-22 16:39:13] org.apache.catalina.core.StandardEngine [180] - Starting Servlet Engine: Apache Tomcat/8.5.31
+[ INFO ] [2018-12-22 16:39:13] org.apache.catalina.core.AprLifecycleListener [180] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/sss/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+[ INFO ] [2018-12-22 16:39:13] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] - Initializing Spring embedded WebApplicationContext
+[ INFO ] [2018-12-22 16:39:13] org.springframework.web.context.ContextLoader [285] - Root WebApplicationContext: initialization completed in 2069 ms
+[ INFO ] [2018-12-22 16:39:14] org.springframework.boot.web.servlet.ServletRegistrationBean [186] - Servlet dispatcherServlet mapped to [/]
+[ INFO ] [2018-12-22 16:39:14] org.springframework.boot.web.servlet.ServletRegistrationBean [186] - Servlet messageDispatcherServlet mapped to [/services/*]
+[ INFO ] [2018-12-22 16:39:14] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'characterEncodingFilter' to: [/*]
+[ INFO ] [2018-12-22 16:39:14] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[ INFO ] [2018-12-22 16:39:14] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[ INFO ] [2018-12-22 16:39:14] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'requestContextFilter' to: [/*]
+[ INFO ] [2018-12-22 16:39:14] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'simpleCORSFilter' to: [/*]
+[ INFO ] [2018-12-22 16:39:14] com.github.ontio.thread.BlockSyncThread [45] - ========BlockSyncThread.run=======
+[ ERROR] [2018-12-22 16:39:14] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ INFO ] [2018-12-22 16:39:14] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2018-12-22 16:39:14] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [574] - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@79924b: startup date [Sat Dec 22 16:39:11 CST 2018]; root of context hierarchy
+[ INFO ] [2018-12-22 16:39:14] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/buyers/getmyrecordbypage/{buyer}/{pagesize}/{pagenumber}],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.PlayerController.getMyBuyRecordByPage(java.lang.String,java.lang.Integer,java.lang.Integer)
+[ INFO ] [2018-12-22 16:39:14] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/buyers/getbuyrecordbypage/{pageSize}/{pageNumber}],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.PlayerController.getBuyRecordByPage(int,int)
+[ INFO ] [2018-12-22 16:39:14] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/buyers/getmywithdrawrecordbypage/{address}/{pageSize}/{pageNumber}],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.PlayerController.getMyBetsByPage(java.lang.String,int,int)
+[ INFO ] [2018-12-22 16:39:14] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[ INFO ] [2018-12-22 16:39:14] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[ INFO ] [2018-12-22 16:39:14] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2018-12-22 16:39:14] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2018-12-22 16:39:15] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [433] - Registering beans for JMX exposure on startup
+[ INFO ] [2018-12-22 16:39:15] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [895] - Bean with name 'dataSource' has been autodetected for JMX exposure
+[ INFO ] [2018-12-22 16:39:15] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [668] - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+[ INFO ] [2018-12-22 16:39:15] org.apache.coyote.http11.Http11NioProtocol [180] - Starting ProtocolHandler ["http-nio-8585"]
+[ INFO ] [2018-12-22 16:39:15] org.apache.tomcat.util.net.NioSelectorPool [180] - Using a shared selector for servlet write/read
+[ INFO ] [2018-12-22 16:39:15] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [206] - Tomcat started on port(s): 8585 (http) with context path ''
+[ INFO ] [2018-12-22 16:39:15] com.github.ontio.ExplorerApplication [59] - Started ExplorerApplication in 4.456 seconds (JVM running for 4.959)
+[ ERROR] [2018-12-22 16:39:17] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 16:39:20] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ WARN ] [2018-12-22 16:39:20] com.github.ontio.thread.BlockSyncThread [156] - ####switch node rpc to http://127.0.0.1:20336####
+[ ERROR] [2018-12-22 16:39:20] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 16:39:23] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ INFO ] [2018-12-22 16:39:25] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [993] - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@79924b: startup date [Sat Dec 22 16:39:11 CST 2018]; root of context hierarchy
+[ INFO ] [2018-12-22 16:39:25] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [451] - Unregistering JMX-exposed beans on shutdown
+[ INFO ] [2018-12-22 16:39:25] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [183] - Unregistering JMX-exposed beans
+[ INFO ] [2018-12-22 16:50:12] com.github.ontio.ExplorerApplication [50] - Starting ExplorerApplication on sss.local with PID 2364 (/Users/sss/dev/localgit/javaProject/ontologyplayer/target/classes started by sss in /Users/sss/dev/localgit/javaProject/ontologyplayer)
+[ DEBUG] [2018-12-22 16:50:12] com.github.ontio.ExplorerApplication [53] - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[ INFO ] [2018-12-22 16:50:12] com.github.ontio.ExplorerApplication [663] - The following profiles are active: uat
+[ INFO ] [2018-12-22 16:50:12] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [590] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7b9a4292: startup date [Sat Dec 22 16:50:12 CST 2018]; root of context hierarchy
+[ INFO ] [2018-12-22 16:50:13] org.springframework.data.repository.config.RepositoryConfigurationDelegate [163] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[ INFO ] [2018-12-22 16:50:13] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [328] - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$b74029cb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[ INFO ] [2018-12-22 16:50:13] org.springframework.ws.soap.addressing.server.AnnotationActionEndpointMapping [236] - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+[ INFO ] [2018-12-22 16:50:13] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [328] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$12a864cc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[ INFO ] [2018-12-22 16:50:14] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [91] - Tomcat initialized with port(s): 8585 (http)
+[ INFO ] [2018-12-22 16:50:14] org.apache.coyote.http11.Http11NioProtocol [180] - Initializing ProtocolHandler ["http-nio-8585"]
+[ INFO ] [2018-12-22 16:50:14] org.apache.catalina.core.StandardService [180] - Starting service [Tomcat]
+[ INFO ] [2018-12-22 16:50:14] org.apache.catalina.core.StandardEngine [180] - Starting Servlet Engine: Apache Tomcat/8.5.31
+[ INFO ] [2018-12-22 16:50:14] org.apache.catalina.core.AprLifecycleListener [180] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/sss/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+[ INFO ] [2018-12-22 16:50:14] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] - Initializing Spring embedded WebApplicationContext
+[ INFO ] [2018-12-22 16:50:14] org.springframework.web.context.ContextLoader [285] - Root WebApplicationContext: initialization completed in 2032 ms
+[ INFO ] [2018-12-22 16:50:14] org.springframework.boot.web.servlet.ServletRegistrationBean [186] - Servlet dispatcherServlet mapped to [/]
+[ INFO ] [2018-12-22 16:50:14] org.springframework.boot.web.servlet.ServletRegistrationBean [186] - Servlet messageDispatcherServlet mapped to [/services/*]
+[ INFO ] [2018-12-22 16:50:14] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'characterEncodingFilter' to: [/*]
+[ INFO ] [2018-12-22 16:50:14] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[ INFO ] [2018-12-22 16:50:14] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[ INFO ] [2018-12-22 16:50:14] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'requestContextFilter' to: [/*]
+[ INFO ] [2018-12-22 16:50:14] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'simpleCORSFilter' to: [/*]
+[ INFO ] [2018-12-22 16:50:14] com.github.ontio.thread.BlockSyncThread [45] - ========BlockSyncThread.run=======
+[ ERROR] [2018-12-22 16:50:15] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ INFO ] [2018-12-22 16:50:15] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2018-12-22 16:50:15] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [574] - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7b9a4292: startup date [Sat Dec 22 16:50:12 CST 2018]; root of context hierarchy
+[ INFO ] [2018-12-22 16:50:15] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/buyers/getmyrecordbypage/{buyer}/{pagesize}/{pagenumber}],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.PlayerController.getMyBuyRecordByPage(java.lang.String,java.lang.Integer,java.lang.Integer)
+[ INFO ] [2018-12-22 16:50:15] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/buyers/getbuyrecordbypage/{pageSize}/{pageNumber}],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.PlayerController.getBuyRecordByPage(int,int)
+[ INFO ] [2018-12-22 16:50:15] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/buyers/getmywithdrawrecordbypage/{address}/{pageSize}/{pageNumber}],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.PlayerController.getMyBetsByPage(java.lang.String,int,int)
+[ INFO ] [2018-12-22 16:50:15] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[ INFO ] [2018-12-22 16:50:15] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[ INFO ] [2018-12-22 16:50:15] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2018-12-22 16:50:15] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2018-12-22 16:50:16] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [433] - Registering beans for JMX exposure on startup
+[ INFO ] [2018-12-22 16:50:16] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [895] - Bean with name 'dataSource' has been autodetected for JMX exposure
+[ INFO ] [2018-12-22 16:50:16] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [668] - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+[ INFO ] [2018-12-22 16:50:16] org.apache.coyote.http11.Http11NioProtocol [180] - Starting ProtocolHandler ["http-nio-8585"]
+[ INFO ] [2018-12-22 16:50:16] org.apache.tomcat.util.net.NioSelectorPool [180] - Using a shared selector for servlet write/read
+[ INFO ] [2018-12-22 16:50:16] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [206] - Tomcat started on port(s): 8585 (http) with context path ''
+[ INFO ] [2018-12-22 16:50:16] com.github.ontio.ExplorerApplication [59] - Started ExplorerApplication in 4.66 seconds (JVM running for 5.173)
+[ ERROR] [2018-12-22 16:50:18] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 16:50:21] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ WARN ] [2018-12-22 16:50:21] com.github.ontio.thread.BlockSyncThread [156] - ####switch node rpc to http://127.0.0.1:20336####
+[ ERROR] [2018-12-22 16:50:21] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 16:50:24] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 16:50:27] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ WARN ] [2018-12-22 16:50:27] com.github.ontio.thread.BlockSyncThread [156] - ####switch node rpc to http://127.0.0.1:20336####
+[ ERROR] [2018-12-22 16:50:27] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 16:50:30] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 16:50:33] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ WARN ] [2018-12-22 16:50:33] com.github.ontio.thread.BlockSyncThread [156] - ####switch node rpc to http://127.0.0.1:20336####
+[ ERROR] [2018-12-22 16:50:33] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 16:50:36] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 16:50:39] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ WARN ] [2018-12-22 16:50:39] com.github.ontio.thread.BlockSyncThread [156] - ####switch node rpc to http://127.0.0.1:20336####
+[ ERROR] [2018-12-22 16:50:39] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 16:50:42] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 16:50:45] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ WARN ] [2018-12-22 16:50:45] com.github.ontio.thread.BlockSyncThread [156] - ####switch node rpc to http://127.0.0.1:20336####
+[ ERROR] [2018-12-22 16:50:45] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ INFO ] [2018-12-22 16:50:47] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[ INFO ] [2018-12-22 16:50:47] org.springframework.web.servlet.DispatcherServlet [494] - FrameworkServlet 'dispatcherServlet': initialization started
+[ INFO ] [2018-12-22 16:50:47] org.springframework.web.servlet.DispatcherServlet [509] - FrameworkServlet 'dispatcherServlet': initialization completed in 20 ms
+[ ERROR] [2018-12-22 16:50:48] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 16:50:51] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ WARN ] [2018-12-22 16:50:51] com.github.ontio.thread.BlockSyncThread [156] - ####switch node rpc to http://127.0.0.1:20336####
+[ ERROR] [2018-12-22 16:50:51] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 16:50:54] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 16:50:57] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ WARN ] [2018-12-22 16:50:57] com.github.ontio.thread.BlockSyncThread [156] - ####switch node rpc to http://127.0.0.1:20336####
+[ ERROR] [2018-12-22 16:50:57] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 16:51:00] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 16:51:03] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ WARN ] [2018-12-22 16:51:03] com.github.ontio.thread.BlockSyncThread [156] - ####switch node rpc to http://127.0.0.1:20336####
+[ ERROR] [2018-12-22 16:51:03] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 16:51:06] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 16:51:09] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ WARN ] [2018-12-22 16:51:09] com.github.ontio.thread.BlockSyncThread [156] - ####switch node rpc to http://127.0.0.1:20336####
+[ ERROR] [2018-12-22 16:51:09] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 16:51:12] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 16:51:15] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ WARN ] [2018-12-22 16:51:15] com.github.ontio.thread.BlockSyncThread [156] - ####switch node rpc to http://127.0.0.1:20336####
+[ ERROR] [2018-12-22 16:51:15] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 16:51:18] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 16:51:21] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ WARN ] [2018-12-22 16:51:21] com.github.ontio.thread.BlockSyncThread [156] - ####switch node rpc to http://127.0.0.1:20336####
+[ ERROR] [2018-12-22 16:51:21] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 16:51:24] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 16:51:27] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ WARN ] [2018-12-22 16:51:27] com.github.ontio.thread.BlockSyncThread [156] - ####switch node rpc to http://127.0.0.1:20336####
+[ ERROR] [2018-12-22 16:51:27] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 16:51:30] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 16:51:33] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ WARN ] [2018-12-22 16:51:33] com.github.ontio.thread.BlockSyncThread [156] - ####switch node rpc to http://127.0.0.1:20336####
+[ ERROR] [2018-12-22 16:51:33] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 16:51:36] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 16:51:39] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ WARN ] [2018-12-22 16:51:39] com.github.ontio.thread.BlockSyncThread [156] - ####switch node rpc to http://127.0.0.1:20336####
+[ ERROR] [2018-12-22 16:51:39] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ INFO ] [2018-12-22 16:51:39] com.github.ontio.controller.PlayerController [38] - ########PlayerController.getMyBuyRecordByPage begin...
+[ INFO ] [2018-12-22 16:51:39] com.zaxxer.hikari.HikariDataSource [110] - HikariPool-1 - Starting...
+[ INFO ] [2018-12-22 16:51:40] com.zaxxer.hikari.HikariDataSource [123] - HikariPool-1 - Start completed.
+[ DEBUG] [2018-12-22 16:51:40] dao.com.github.ontio.dao.BuyRecordInfoMapper.selectMyBuyRecordByPage [159] - ==>  Preparing: select blocktime, txhash, buyer, price,round from tbl_buy_record where buyer = ? order by id DESC limit ?, ? 
+[ DEBUG] [2018-12-22 16:51:40] dao.com.github.ontio.dao.BuyRecordInfoMapper.selectMyBuyRecordByPage [159] - ==> Parameters: sss(String), 0(Integer), 3(Integer)
+[ DEBUG] [2018-12-22 16:51:40] dao.com.github.ontio.dao.BuyRecordInfoMapper.selectMyBuyRecordByPage [159] - <==      Total: 2
+[ ERROR] [2018-12-22 16:51:42] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 16:51:45] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ WARN ] [2018-12-22 16:51:45] com.github.ontio.thread.BlockSyncThread [156] - ####switch node rpc to http://127.0.0.1:20336####
+[ ERROR] [2018-12-22 16:51:45] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 16:51:48] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 16:51:51] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ WARN ] [2018-12-22 16:51:51] com.github.ontio.thread.BlockSyncThread [156] - ####switch node rpc to http://127.0.0.1:20336####
+[ ERROR] [2018-12-22 16:51:51] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 16:51:54] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 16:51:57] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ WARN ] [2018-12-22 16:51:57] com.github.ontio.thread.BlockSyncThread [156] - ####switch node rpc to http://127.0.0.1:20336####
+[ ERROR] [2018-12-22 16:51:57] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 16:52:00] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 16:52:03] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ WARN ] [2018-12-22 16:52:03] com.github.ontio.thread.BlockSyncThread [156] - ####switch node rpc to http://127.0.0.1:20336####
+[ ERROR] [2018-12-22 16:52:03] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ INFO ] [2018-12-22 16:52:04] com.github.ontio.controller.PlayerController [54] - ########PlayerController.getBuyRecordByPage begin...
+[ DEBUG] [2018-12-22 16:52:04] dao.com.github.ontio.dao.BuyRecordInfoMapper.selectBuyRecordByPage [159] - ==>  Preparing: select blocktime, txhash, buyer, price,round from tbl_buy_record order by id DESC limit ?, ? 
+[ DEBUG] [2018-12-22 16:52:04] dao.com.github.ontio.dao.BuyRecordInfoMapper.selectBuyRecordByPage [159] - ==> Parameters: 0(Integer), 3(Integer)
+[ DEBUG] [2018-12-22 16:52:04] dao.com.github.ontio.dao.BuyRecordInfoMapper.selectBuyRecordByPage [159] - <==      Total: 2
+[ ERROR] [2018-12-22 16:52:06] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 16:52:09] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ WARN ] [2018-12-22 16:52:09] com.github.ontio.thread.BlockSyncThread [156] - ####switch node rpc to http://127.0.0.1:20336####
+[ ERROR] [2018-12-22 16:52:09] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 16:52:12] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 16:52:15] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ WARN ] [2018-12-22 16:52:15] com.github.ontio.thread.BlockSyncThread [156] - ####switch node rpc to http://127.0.0.1:20336####
+[ ERROR] [2018-12-22 16:52:15] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 16:52:18] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 16:52:21] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ WARN ] [2018-12-22 16:52:21] com.github.ontio.thread.BlockSyncThread [156] - ####switch node rpc to http://127.0.0.1:20336####
+[ ERROR] [2018-12-22 16:52:21] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 16:52:24] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 16:52:27] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ WARN ] [2018-12-22 16:52:27] com.github.ontio.thread.BlockSyncThread [156] - ####switch node rpc to http://127.0.0.1:20336####
+[ ERROR] [2018-12-22 16:52:27] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 16:52:30] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 16:52:33] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ WARN ] [2018-12-22 16:52:33] com.github.ontio.thread.BlockSyncThread [156] - ####switch node rpc to http://127.0.0.1:20336####
+[ ERROR] [2018-12-22 16:52:33] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 16:52:36] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 16:52:39] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ WARN ] [2018-12-22 16:52:39] com.github.ontio.thread.BlockSyncThread [156] - ####switch node rpc to http://127.0.0.1:20336####
+[ ERROR] [2018-12-22 16:52:39] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 16:52:42] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 16:52:45] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ WARN ] [2018-12-22 16:52:45] com.github.ontio.thread.BlockSyncThread [156] - ####switch node rpc to http://127.0.0.1:20336####
+[ ERROR] [2018-12-22 16:52:45] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 16:52:48] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 16:52:51] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ WARN ] [2018-12-22 16:52:51] com.github.ontio.thread.BlockSyncThread [156] - ####switch node rpc to http://127.0.0.1:20336####
+[ ERROR] [2018-12-22 16:52:51] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 16:52:54] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 16:52:57] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ WARN ] [2018-12-22 16:52:57] com.github.ontio.thread.BlockSyncThread [156] - ####switch node rpc to http://127.0.0.1:20336####
+[ ERROR] [2018-12-22 16:52:57] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 16:53:00] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 16:53:03] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ WARN ] [2018-12-22 16:53:03] com.github.ontio.thread.BlockSyncThread [156] - ####switch node rpc to http://127.0.0.1:20336####
+[ ERROR] [2018-12-22 16:53:03] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 16:53:06] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 16:53:09] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ WARN ] [2018-12-22 16:53:09] com.github.ontio.thread.BlockSyncThread [156] - ####switch node rpc to http://127.0.0.1:20336####
+[ ERROR] [2018-12-22 16:53:09] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 16:53:12] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 16:53:15] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ WARN ] [2018-12-22 16:53:15] com.github.ontio.thread.BlockSyncThread [156] - ####switch node rpc to http://127.0.0.1:20336####
+[ ERROR] [2018-12-22 16:53:15] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 16:53:18] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 16:53:21] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ WARN ] [2018-12-22 16:53:21] com.github.ontio.thread.BlockSyncThread [156] - ####switch node rpc to http://127.0.0.1:20336####
+[ ERROR] [2018-12-22 16:53:21] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 16:53:24] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 16:53:27] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ WARN ] [2018-12-22 16:53:27] com.github.ontio.thread.BlockSyncThread [156] - ####switch node rpc to http://127.0.0.1:20336####
+[ ERROR] [2018-12-22 16:53:27] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 16:53:30] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 16:53:33] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ WARN ] [2018-12-22 16:53:33] com.github.ontio.thread.BlockSyncThread [156] - ####switch node rpc to http://127.0.0.1:20336####
+[ ERROR] [2018-12-22 16:53:33] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 16:53:36] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 16:53:39] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ WARN ] [2018-12-22 16:53:39] com.github.ontio.thread.BlockSyncThread [156] - ####switch node rpc to http://127.0.0.1:20336####
+[ ERROR] [2018-12-22 16:53:39] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 16:53:42] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 16:53:45] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ WARN ] [2018-12-22 16:53:45] com.github.ontio.thread.BlockSyncThread [156] - ####switch node rpc to http://127.0.0.1:20336####
+[ ERROR] [2018-12-22 16:53:45] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 16:53:48] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 16:53:51] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ WARN ] [2018-12-22 16:53:51] com.github.ontio.thread.BlockSyncThread [156] - ####switch node rpc to http://127.0.0.1:20336####
+[ ERROR] [2018-12-22 16:53:51] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 16:53:54] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 16:53:57] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ WARN ] [2018-12-22 16:53:57] com.github.ontio.thread.BlockSyncThread [156] - ####switch node rpc to http://127.0.0.1:20336####
+[ ERROR] [2018-12-22 16:53:57] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 16:54:00] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ INFO ] [2018-12-22 16:54:02] com.github.ontio.controller.PlayerController [71] - ########PlayerController.getMyBetsByPage begin...
+[ DEBUG] [2018-12-22 16:54:02] dao.com.github.ontio.dao.BuyRecordInfoMapper.selectMyBuyRecordByPage [159] - ==>  Preparing: select blocktime, txhash, buyer, price,round from tbl_buy_record where buyer = ? order by id DESC limit ?, ? 
+[ DEBUG] [2018-12-22 16:54:02] dao.com.github.ontio.dao.BuyRecordInfoMapper.selectMyBuyRecordByPage [159] - ==> Parameters: sss(String), 0(Integer), 3(Integer)
+[ DEBUG] [2018-12-22 16:54:02] dao.com.github.ontio.dao.BuyRecordInfoMapper.selectMyBuyRecordByPage [159] - <==      Total: 2
+[ ERROR] [2018-12-22 16:54:03] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ WARN ] [2018-12-22 16:54:03] com.github.ontio.thread.BlockSyncThread [156] - ####switch node rpc to http://127.0.0.1:20336####
+[ ERROR] [2018-12-22 16:54:03] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 16:54:06] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 16:54:09] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ WARN ] [2018-12-22 16:54:09] com.github.ontio.thread.BlockSyncThread [156] - ####switch node rpc to http://127.0.0.1:20336####
+[ ERROR] [2018-12-22 16:54:09] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 16:54:12] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ INFO ] [2018-12-22 16:54:15] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [993] - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7b9a4292: startup date [Sat Dec 22 16:50:12 CST 2018]; root of context hierarchy
+[ INFO ] [2018-12-22 16:54:15] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [451] - Unregistering JMX-exposed beans on shutdown
+[ INFO ] [2018-12-22 16:54:15] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [183] - Unregistering JMX-exposed beans
+[ INFO ] [2018-12-22 16:54:15] com.zaxxer.hikari.HikariDataSource [381] - HikariPool-1 - Shutdown initiated...
+[ INFO ] [2018-12-22 16:54:15] com.zaxxer.hikari.HikariDataSource [383] - HikariPool-1 - Shutdown completed.
+[ INFO ] [2018-12-22 21:11:52] com.github.ontio.ExplorerApplication [50] - Starting ExplorerApplication on sss.local with PID 5670 (/Users/sss/dev/localgit/javaProject/ontologyplayer/target/classes started by sss in /Users/sss/dev/localgit/javaProject/ontologyplayer)
+[ DEBUG] [2018-12-22 21:11:52] com.github.ontio.ExplorerApplication [53] - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[ INFO ] [2018-12-22 21:11:52] com.github.ontio.ExplorerApplication [663] - The following profiles are active: uat
+[ INFO ] [2018-12-22 21:11:52] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [590] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5876a9af: startup date [Sat Dec 22 21:11:52 CST 2018]; root of context hierarchy
+[ INFO ] [2018-12-22 21:11:53] org.springframework.data.repository.config.RepositoryConfigurationDelegate [163] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[ INFO ] [2018-12-22 21:11:53] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [328] - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$23ae28ca] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[ INFO ] [2018-12-22 21:11:53] org.springframework.ws.soap.addressing.server.AnnotationActionEndpointMapping [236] - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+[ INFO ] [2018-12-22 21:11:53] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [328] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7f1663cb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[ INFO ] [2018-12-22 21:11:54] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [91] - Tomcat initialized with port(s): 8585 (http)
+[ INFO ] [2018-12-22 21:11:54] org.apache.coyote.http11.Http11NioProtocol [180] - Initializing ProtocolHandler ["http-nio-8585"]
+[ INFO ] [2018-12-22 21:11:54] org.apache.catalina.core.StandardService [180] - Starting service [Tomcat]
+[ INFO ] [2018-12-22 21:11:54] org.apache.catalina.core.StandardEngine [180] - Starting Servlet Engine: Apache Tomcat/8.5.31
+[ INFO ] [2018-12-22 21:11:54] org.apache.catalina.core.AprLifecycleListener [180] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/sss/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+[ INFO ] [2018-12-22 21:11:54] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] - Initializing Spring embedded WebApplicationContext
+[ INFO ] [2018-12-22 21:11:54] org.springframework.web.context.ContextLoader [285] - Root WebApplicationContext: initialization completed in 1911 ms
+[ INFO ] [2018-12-22 21:11:54] org.springframework.boot.web.servlet.ServletRegistrationBean [186] - Servlet dispatcherServlet mapped to [/]
+[ INFO ] [2018-12-22 21:11:54] org.springframework.boot.web.servlet.ServletRegistrationBean [186] - Servlet messageDispatcherServlet mapped to [/services/*]
+[ INFO ] [2018-12-22 21:11:54] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'characterEncodingFilter' to: [/*]
+[ INFO ] [2018-12-22 21:11:54] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[ INFO ] [2018-12-22 21:11:54] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[ INFO ] [2018-12-22 21:11:54] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'requestContextFilter' to: [/*]
+[ INFO ] [2018-12-22 21:11:54] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'simpleCORSFilter' to: [/*]
+[ INFO ] [2018-12-22 21:11:55] com.github.ontio.thread.BlockSyncThread [45] - ========BlockSyncThread.run=======
+[ ERROR] [2018-12-22 21:11:55] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ INFO ] [2018-12-22 21:11:55] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2018-12-22 21:11:55] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [574] - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5876a9af: startup date [Sat Dec 22 21:11:52 CST 2018]; root of context hierarchy
+[ INFO ] [2018-12-22 21:11:55] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/buyers/getmybuyrecordbypage/{buyer}/{pagesize}/{pagenumber}],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.PlayerController.getMyBuyRecordByPage(java.lang.String,java.lang.Integer,java.lang.Integer)
+[ INFO ] [2018-12-22 21:11:55] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/buyers/getbuyrecordbypage/{pageSize}/{pageNumber}],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.PlayerController.getBuyRecordByPage(int,int)
+[ INFO ] [2018-12-22 21:11:55] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/buyers/getmywithdrawrecordbypage/{address}/{pageSize}/{pageNumber}],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.PlayerController.getMyBetsByPage(java.lang.String,int,int)
+[ INFO ] [2018-12-22 21:11:55] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[ INFO ] [2018-12-22 21:11:55] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[ INFO ] [2018-12-22 21:11:55] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2018-12-22 21:11:55] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2018-12-22 21:11:56] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [433] - Registering beans for JMX exposure on startup
+[ INFO ] [2018-12-22 21:11:56] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [895] - Bean with name 'dataSource' has been autodetected for JMX exposure
+[ INFO ] [2018-12-22 21:11:56] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [668] - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+[ INFO ] [2018-12-22 21:11:56] org.apache.coyote.http11.Http11NioProtocol [180] - Starting ProtocolHandler ["http-nio-8585"]
+[ INFO ] [2018-12-22 21:11:56] org.apache.tomcat.util.net.NioSelectorPool [180] - Using a shared selector for servlet write/read
+[ INFO ] [2018-12-22 21:11:56] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [206] - Tomcat started on port(s): 8585 (http) with context path ''
+[ INFO ] [2018-12-22 21:11:56] com.github.ontio.ExplorerApplication [59] - Started ExplorerApplication in 5.041 seconds (JVM running for 5.634)
+[ ERROR] [2018-12-22 21:11:58] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 21:12:01] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ WARN ] [2018-12-22 21:12:01] com.github.ontio.thread.BlockSyncThread [156] - ####switch node rpc to http://127.0.0.1:20336####
+[ ERROR] [2018-12-22 21:12:01] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 21:12:04] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 21:12:07] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ WARN ] [2018-12-22 21:12:07] com.github.ontio.thread.BlockSyncThread [156] - ####switch node rpc to http://127.0.0.1:20336####
+[ ERROR] [2018-12-22 21:12:07] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 21:12:10] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 21:12:13] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ WARN ] [2018-12-22 21:12:13] com.github.ontio.thread.BlockSyncThread [156] - ####switch node rpc to http://127.0.0.1:20336####
+[ ERROR] [2018-12-22 21:12:13] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 21:12:16] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 21:12:19] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ WARN ] [2018-12-22 21:12:19] com.github.ontio.thread.BlockSyncThread [156] - ####switch node rpc to http://127.0.0.1:20336####
+[ ERROR] [2018-12-22 21:12:19] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 21:12:22] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 21:12:25] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ WARN ] [2018-12-22 21:12:25] com.github.ontio.thread.BlockSyncThread [156] - ####switch node rpc to http://127.0.0.1:20336####
+[ ERROR] [2018-12-22 21:12:25] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ INFO ] [2018-12-22 21:12:28] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[ INFO ] [2018-12-22 21:12:28] org.springframework.web.servlet.DispatcherServlet [494] - FrameworkServlet 'dispatcherServlet': initialization started
+[ INFO ] [2018-12-22 21:12:28] org.springframework.web.servlet.DispatcherServlet [509] - FrameworkServlet 'dispatcherServlet': initialization completed in 18 ms
+[ INFO ] [2018-12-22 21:12:28] com.github.ontio.controller.PlayerController [71] - ########PlayerController.getMyBetsByPage begin...
+[ INFO ] [2018-12-22 21:12:28] com.zaxxer.hikari.HikariDataSource [110] - HikariPool-1 - Starting...
+[ ERROR] [2018-12-22 21:12:28] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ INFO ] [2018-12-22 21:12:28] com.zaxxer.hikari.HikariDataSource [123] - HikariPool-1 - Start completed.
+[ DEBUG] [2018-12-22 21:12:28] dao.com.github.ontio.dao.BuyRecordInfoMapper.selectMyBuyRecordByPage [159] - ==>  Preparing: select blocktime, txhash, buyer, price,round from tbl_buy_record where buyer = ? order by id DESC limit ?, ? 
+[ DEBUG] [2018-12-22 21:12:28] dao.com.github.ontio.dao.BuyRecordInfoMapper.selectMyBuyRecordByPage [159] - ==> Parameters: sss(String), 0(Integer), 3(Integer)
+[ DEBUG] [2018-12-22 21:12:28] dao.com.github.ontio.dao.BuyRecordInfoMapper.selectMyBuyRecordByPage [159] - <==      Total: 2
+[ ERROR] [2018-12-22 21:12:31] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ WARN ] [2018-12-22 21:12:31] com.github.ontio.thread.BlockSyncThread [156] - ####switch node rpc to http://127.0.0.1:20336####
+[ ERROR] [2018-12-22 21:12:31] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 21:12:34] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 21:12:37] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ WARN ] [2018-12-22 21:12:37] com.github.ontio.thread.BlockSyncThread [156] - ####switch node rpc to http://127.0.0.1:20336####
+[ ERROR] [2018-12-22 21:12:37] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 21:12:40] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 21:12:43] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ WARN ] [2018-12-22 21:12:43] com.github.ontio.thread.BlockSyncThread [156] - ####switch node rpc to http://127.0.0.1:20336####
+[ ERROR] [2018-12-22 21:12:43] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 21:12:46] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 21:12:49] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ WARN ] [2018-12-22 21:12:49] com.github.ontio.thread.BlockSyncThread [156] - ####switch node rpc to http://127.0.0.1:20336####
+[ ERROR] [2018-12-22 21:12:49] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 21:12:52] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 21:12:55] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ WARN ] [2018-12-22 21:12:55] com.github.ontio.thread.BlockSyncThread [156] - ####switch node rpc to http://127.0.0.1:20336####
+[ ERROR] [2018-12-22 21:12:55] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 21:12:58] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 21:13:01] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ WARN ] [2018-12-22 21:13:01] com.github.ontio.thread.BlockSyncThread [156] - ####switch node rpc to http://127.0.0.1:20336####
+[ ERROR] [2018-12-22 21:13:01] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 21:13:04] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 21:13:07] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ WARN ] [2018-12-22 21:13:07] com.github.ontio.thread.BlockSyncThread [156] - ####switch node rpc to http://127.0.0.1:20336####
+[ ERROR] [2018-12-22 21:13:07] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 21:13:10] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 21:13:13] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ WARN ] [2018-12-22 21:13:13] com.github.ontio.thread.BlockSyncThread [156] - ####switch node rpc to http://127.0.0.1:20336####
+[ ERROR] [2018-12-22 21:13:13] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 21:13:16] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 21:13:19] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ WARN ] [2018-12-22 21:13:19] com.github.ontio.thread.BlockSyncThread [156] - ####switch node rpc to http://127.0.0.1:20336####
+[ ERROR] [2018-12-22 21:13:19] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 21:13:22] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 21:13:25] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ WARN ] [2018-12-22 21:13:25] com.github.ontio.thread.BlockSyncThread [156] - ####switch node rpc to http://127.0.0.1:20336####
+[ ERROR] [2018-12-22 21:13:25] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 21:13:28] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 21:13:31] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ WARN ] [2018-12-22 21:13:31] com.github.ontio.thread.BlockSyncThread [156] - ####switch node rpc to http://127.0.0.1:20336####
+[ ERROR] [2018-12-22 21:13:31] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 21:13:34] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 21:13:37] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ WARN ] [2018-12-22 21:13:37] com.github.ontio.thread.BlockSyncThread [156] - ####switch node rpc to http://127.0.0.1:20336####
+[ ERROR] [2018-12-22 21:13:37] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 21:13:40] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 21:13:43] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ WARN ] [2018-12-22 21:13:43] com.github.ontio.thread.BlockSyncThread [156] - ####switch node rpc to http://127.0.0.1:20336####
+[ ERROR] [2018-12-22 21:13:43] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 21:13:46] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ INFO ] [2018-12-22 21:13:49] com.github.ontio.controller.PlayerController [54] - ########PlayerController.getBuyRecordByPage begin...
+[ DEBUG] [2018-12-22 21:13:49] dao.com.github.ontio.dao.BuyRecordInfoMapper.selectBuyRecordByPage [159] - ==>  Preparing: select blocktime, txhash, buyer, price,round from tbl_buy_record order by id DESC limit ?, ? 
+[ DEBUG] [2018-12-22 21:13:49] dao.com.github.ontio.dao.BuyRecordInfoMapper.selectBuyRecordByPage [159] - ==> Parameters: 0(Integer), 3(Integer)
+[ DEBUG] [2018-12-22 21:13:49] dao.com.github.ontio.dao.BuyRecordInfoMapper.selectBuyRecordByPage [159] - <==      Total: 2
+[ ERROR] [2018-12-22 21:13:49] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ WARN ] [2018-12-22 21:13:49] com.github.ontio.thread.BlockSyncThread [156] - ####switch node rpc to http://127.0.0.1:20336####
+[ ERROR] [2018-12-22 21:13:49] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 21:13:52] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 21:13:55] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ WARN ] [2018-12-22 21:13:55] com.github.ontio.thread.BlockSyncThread [156] - ####switch node rpc to http://127.0.0.1:20336####
+[ ERROR] [2018-12-22 21:13:55] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 21:13:58] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 21:14:01] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ WARN ] [2018-12-22 21:14:01] com.github.ontio.thread.BlockSyncThread [156] - ####switch node rpc to http://127.0.0.1:20336####
+[ ERROR] [2018-12-22 21:14:01] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 21:14:04] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 21:14:07] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ WARN ] [2018-12-22 21:14:07] com.github.ontio.thread.BlockSyncThread [156] - ####switch node rpc to http://127.0.0.1:20336####
+[ ERROR] [2018-12-22 21:14:07] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 21:14:10] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 21:14:13] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ WARN ] [2018-12-22 21:14:13] com.github.ontio.thread.BlockSyncThread [156] - ####switch node rpc to http://127.0.0.1:20336####
+[ ERROR] [2018-12-22 21:14:13] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 21:14:16] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 21:14:19] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ WARN ] [2018-12-22 21:14:19] com.github.ontio.thread.BlockSyncThread [156] - ####switch node rpc to http://127.0.0.1:20336####
+[ ERROR] [2018-12-22 21:14:19] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 21:14:22] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 21:14:25] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ WARN ] [2018-12-22 21:14:25] com.github.ontio.thread.BlockSyncThread [156] - ####switch node rpc to http://127.0.0.1:20336####
+[ ERROR] [2018-12-22 21:14:25] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 21:14:28] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 21:14:31] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ WARN ] [2018-12-22 21:14:31] com.github.ontio.thread.BlockSyncThread [156] - ####switch node rpc to http://127.0.0.1:20336####
+[ ERROR] [2018-12-22 21:14:31] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 21:14:34] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 21:14:37] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ WARN ] [2018-12-22 21:14:37] com.github.ontio.thread.BlockSyncThread [156] - ####switch node rpc to http://127.0.0.1:20336####
+[ ERROR] [2018-12-22 21:14:37] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 21:14:40] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 21:14:43] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ WARN ] [2018-12-22 21:14:43] com.github.ontio.thread.BlockSyncThread [156] - ####switch node rpc to http://127.0.0.1:20336####
+[ ERROR] [2018-12-22 21:14:43] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 21:14:46] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 21:14:49] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ WARN ] [2018-12-22 21:14:49] com.github.ontio.thread.BlockSyncThread [156] - ####switch node rpc to http://127.0.0.1:20336####
+[ ERROR] [2018-12-22 21:14:49] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 21:14:52] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ INFO ] [2018-12-22 21:14:54] com.github.ontio.controller.PlayerController [71] - ########PlayerController.getMyBetsByPage begin...
+[ DEBUG] [2018-12-22 21:14:54] dao.com.github.ontio.dao.BuyRecordInfoMapper.selectMyBuyRecordByPage [159] - ==>  Preparing: select blocktime, txhash, buyer, price,round from tbl_buy_record where buyer = ? order by id DESC limit ?, ? 
+[ DEBUG] [2018-12-22 21:14:54] dao.com.github.ontio.dao.BuyRecordInfoMapper.selectMyBuyRecordByPage [159] - ==> Parameters: sss(String), 0(Integer), 3(Integer)
+[ DEBUG] [2018-12-22 21:14:54] dao.com.github.ontio.dao.BuyRecordInfoMapper.selectMyBuyRecordByPage [159] - <==      Total: 2
+[ ERROR] [2018-12-22 21:14:55] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ WARN ] [2018-12-22 21:14:55] com.github.ontio.thread.BlockSyncThread [156] - ####switch node rpc to http://127.0.0.1:20336####
+[ ERROR] [2018-12-22 21:14:55] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 21:14:58] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 21:15:01] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ WARN ] [2018-12-22 21:15:01] com.github.ontio.thread.BlockSyncThread [156] - ####switch node rpc to http://127.0.0.1:20336####
+[ ERROR] [2018-12-22 21:15:01] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 21:15:04] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 21:15:07] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ WARN ] [2018-12-22 21:15:07] com.github.ontio.thread.BlockSyncThread [156] - ####switch node rpc to http://127.0.0.1:20336####
+[ ERROR] [2018-12-22 21:15:07] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 21:15:10] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 21:15:13] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ WARN ] [2018-12-22 21:15:13] com.github.ontio.thread.BlockSyncThread [156] - ####switch node rpc to http://127.0.0.1:20336####
+[ ERROR] [2018-12-22 21:15:13] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 21:15:16] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 21:15:19] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ WARN ] [2018-12-22 21:15:19] com.github.ontio.thread.BlockSyncThread [156] - ####switch node rpc to http://127.0.0.1:20336####
+[ ERROR] [2018-12-22 21:15:19] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 21:15:22] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 21:15:25] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ WARN ] [2018-12-22 21:15:25] com.github.ontio.thread.BlockSyncThread [156] - ####switch node rpc to http://127.0.0.1:20336####
+[ ERROR] [2018-12-22 21:15:25] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 21:15:28] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 21:15:31] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ WARN ] [2018-12-22 21:15:31] com.github.ontio.thread.BlockSyncThread [156] - ####switch node rpc to http://127.0.0.1:20336####
+[ ERROR] [2018-12-22 21:15:31] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 21:15:34] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 21:15:37] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ WARN ] [2018-12-22 21:15:37] com.github.ontio.thread.BlockSyncThread [156] - ####switch node rpc to http://127.0.0.1:20336####
+[ ERROR] [2018-12-22 21:15:37] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 21:15:40] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 21:15:43] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ WARN ] [2018-12-22 21:15:43] com.github.ontio.thread.BlockSyncThread [156] - ####switch node rpc to http://127.0.0.1:20336####
+[ ERROR] [2018-12-22 21:15:43] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 21:15:46] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 21:15:49] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ WARN ] [2018-12-22 21:15:49] com.github.ontio.thread.BlockSyncThread [156] - ####switch node rpc to http://127.0.0.1:20336####
+[ ERROR] [2018-12-22 21:15:49] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 21:15:52] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 21:15:55] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ WARN ] [2018-12-22 21:15:55] com.github.ontio.thread.BlockSyncThread [156] - ####switch node rpc to http://127.0.0.1:20336####
+[ ERROR] [2018-12-22 21:15:55] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 21:15:58] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 21:16:01] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ WARN ] [2018-12-22 21:16:01] com.github.ontio.thread.BlockSyncThread [156] - ####switch node rpc to http://127.0.0.1:20336####
+[ ERROR] [2018-12-22 21:16:01] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 21:16:04] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ ERROR] [2018-12-22 21:16:07] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ WARN ] [2018-12-22 21:16:07] com.github.ontio.thread.BlockSyncThread [156] - ####switch node rpc to http://127.0.0.1:20336####
+[ ERROR] [2018-12-22 21:16:07] com.github.ontio.thread.BlockSyncThread [131] - getBlockHeight error, try again...restful:http://127.0.0.1:20336,error:
+[ INFO ] [2018-12-22 21:16:10] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [993] - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5876a9af: startup date [Sat Dec 22 21:11:52 CST 2018]; root of context hierarchy
+[ INFO ] [2018-12-22 21:16:10] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [451] - Unregistering JMX-exposed beans on shutdown
+[ INFO ] [2018-12-22 21:16:10] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [183] - Unregistering JMX-exposed beans
+[ INFO ] [2018-12-22 21:16:10] com.zaxxer.hikari.HikariDataSource [381] - HikariPool-1 - Shutdown initiated...
+[ INFO ] [2018-12-22 21:16:10] com.zaxxer.hikari.HikariDataSource [383] - HikariPool-1 - Shutdown completed.

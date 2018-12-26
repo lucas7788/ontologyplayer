@@ -1,0 +1,1123 @@
+[ INFO ] [2018-11-29 20:26:58] com.github.ontio.ExplorerApplication [50] - Starting ExplorerApplication on sss.local with PID 36836 (/Users/sss/dev/localgit/javaProject/wontologyserver/target/classes started by sss in /Users/sss/dev/localgit/javaProject/wontologyserver)
+[ DEBUG] [2018-11-29 20:26:58] com.github.ontio.ExplorerApplication [53] - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[ INFO ] [2018-11-29 20:26:58] com.github.ontio.ExplorerApplication [663] - The following profiles are active: uat
+[ INFO ] [2018-11-29 20:26:58] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [590] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@79e2c065: startup date [Thu Nov 29 20:26:58 CST 2018]; root of context hierarchy
+[ INFO ] [2018-11-29 20:26:58] org.springframework.data.repository.config.RepositoryConfigurationDelegate [163] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[ INFO ] [2018-11-29 20:26:59] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [328] - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$78f707ab] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[ INFO ] [2018-11-29 20:26:59] org.springframework.ws.soap.addressing.server.AnnotationActionEndpointMapping [236] - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+[ INFO ] [2018-11-29 20:26:59] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [328] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d45f42ac] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[ INFO ] [2018-11-29 20:26:59] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [91] - Tomcat initialized with port(s): 8585 (http)
+[ INFO ] [2018-11-29 20:26:59] org.apache.coyote.http11.Http11NioProtocol [180] - Initializing ProtocolHandler ["http-nio-8585"]
+[ INFO ] [2018-11-29 20:26:59] org.apache.catalina.core.StandardService [180] - Starting service [Tomcat]
+[ INFO ] [2018-11-29 20:26:59] org.apache.catalina.core.StandardEngine [180] - Starting Servlet Engine: Apache Tomcat/8.5.31
+[ INFO ] [2018-11-29 20:26:59] org.apache.catalina.core.AprLifecycleListener [180] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/sss/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+[ INFO ] [2018-11-29 20:26:59] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] - Initializing Spring embedded WebApplicationContext
+[ INFO ] [2018-11-29 20:26:59] org.springframework.web.context.ContextLoader [285] - Root WebApplicationContext: initialization completed in 1565 ms
+[ INFO ] [2018-11-29 20:26:59] org.springframework.boot.web.servlet.ServletRegistrationBean [186] - Servlet dispatcherServlet mapped to [/]
+[ INFO ] [2018-11-29 20:26:59] org.springframework.boot.web.servlet.ServletRegistrationBean [186] - Servlet messageDispatcherServlet mapped to [/services/*]
+[ INFO ] [2018-11-29 20:26:59] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'characterEncodingFilter' to: [/*]
+[ INFO ] [2018-11-29 20:26:59] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[ INFO ] [2018-11-29 20:26:59] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[ INFO ] [2018-11-29 20:26:59] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'requestContextFilter' to: [/*]
+[ INFO ] [2018-11-29 20:26:59] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'simpleCORSFilter' to: [/*]
+[ WARN ] [2018-11-29 20:27:00] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [558] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'betsController': Unsatisfied dependency expressed through field 'betsHandleService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'BetsHandleService': Unsatisfied dependency expressed through field 'betsInfoMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'BetsInfoMapper' defined in file [/Users/sss/dev/localgit/javaProject/wontologyserver/target/classes/com/github/ontio/dao/BetsInfoMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/sss/dev/localgit/javaProject/wontologyserver/target/classes/mybatis/mapper/AllBetsMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [/Users/sss/dev/localgit/javaProject/wontologyserver/target/classes/mybatis/mapper/AllBetsMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'java.util.Integer'.  Cause: java.lang.ClassNotFoundException: Cannot find class: java.util.Integer
+[ INFO ] [2018-11-29 20:27:00] org.apache.catalina.core.StandardService [180] - Stopping service [Tomcat]
+[ INFO ] [2018-11-29 20:27:00] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [101] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[ ERROR] [2018-11-29 20:27:00] org.springframework.boot.SpringApplication [842] - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'betsController': Unsatisfied dependency expressed through field 'betsHandleService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'BetsHandleService': Unsatisfied dependency expressed through field 'betsInfoMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'BetsInfoMapper' defined in file [/Users/sss/dev/localgit/javaProject/wontologyserver/target/classes/com/github/ontio/dao/BetsInfoMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/sss/dev/localgit/javaProject/wontologyserver/target/classes/mybatis/mapper/AllBetsMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [/Users/sss/dev/localgit/javaProject/wontologyserver/target/classes/mybatis/mapper/AllBetsMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'java.util.Integer'.  Cause: java.lang.ClassNotFoundException: Cannot find class: java.util.Integer
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:587)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:373)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1350)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:580)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:503)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:760)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:869)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243)
+	at com.github.ontio.ExplorerApplication.main(ExplorerApplication.java:10)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'BetsHandleService': Unsatisfied dependency expressed through field 'betsInfoMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'BetsInfoMapper' defined in file [/Users/sss/dev/localgit/javaProject/wontologyserver/target/classes/com/github/ontio/dao/BetsInfoMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/sss/dev/localgit/javaProject/wontologyserver/target/classes/mybatis/mapper/AllBetsMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [/Users/sss/dev/localgit/javaProject/wontologyserver/target/classes/mybatis/mapper/AllBetsMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'java.util.Integer'.  Cause: java.lang.ClassNotFoundException: Cannot find class: java.util.Integer
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:587)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:373)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1350)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:580)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:503)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:584)
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'BetsInfoMapper' defined in file [/Users/sss/dev/localgit/javaProject/wontologyserver/target/classes/com/github/ontio/dao/BetsInfoMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/sss/dev/localgit/javaProject/wontologyserver/target/classes/mybatis/mapper/AllBetsMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [/Users/sss/dev/localgit/javaProject/wontologyserver/target/classes/mybatis/mapper/AllBetsMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'java.util.Integer'.  Cause: java.lang.ClassNotFoundException: Cannot find class: java.util.Integer
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1445)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1332)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:580)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:503)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:584)
+	... 32 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/sss/dev/localgit/javaProject/wontologyserver/target/classes/mybatis/mapper/AllBetsMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [/Users/sss/dev/localgit/javaProject/wontologyserver/target/classes/mybatis/mapper/AllBetsMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'java.util.Integer'.  Cause: java.lang.ClassNotFoundException: Cannot find class: java.util.Integer
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:590)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1256)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1105)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:503)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1430)
+	... 43 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/sss/dev/localgit/javaProject/wontologyserver/target/classes/mybatis/mapper/AllBetsMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [/Users/sss/dev/localgit/javaProject/wontologyserver/target/classes/mybatis/mapper/AllBetsMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'java.util.Integer'.  Cause: java.lang.ClassNotFoundException: Cannot find class: java.util.Integer
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:582)
+	... 55 common frames omitted
+Caused by: org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/sss/dev/localgit/javaProject/wontologyserver/target/classes/mybatis/mapper/AllBetsMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [/Users/sss/dev/localgit/javaProject/wontologyserver/target/classes/mybatis/mapper/AllBetsMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'java.util.Integer'.  Cause: java.lang.ClassNotFoundException: Cannot find class: java.util.Integer
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:523)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:380)
+	at org.mybatis.spring.SqlSessionFactoryBean.getObject(SqlSessionFactoryBean.java:547)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration.sqlSessionFactory(MybatisAutoConfiguration.java:153)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$73393dc.CGLIB$sqlSessionFactory$1(<generated>)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$73393dc$$FastClassBySpringCGLIB$$84459282.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:361)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$73393dc.sqlSessionFactory(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 56 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [/Users/sss/dev/localgit/javaProject/wontologyserver/target/classes/mybatis/mapper/AllBetsMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'java.util.Integer'.  Cause: java.lang.ClassNotFoundException: Cannot find class: java.util.Integer
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:120)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:92)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:521)
+	... 69 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'java.util.Integer'.  Cause: java.lang.ClassNotFoundException: Cannot find class: java.util.Integer
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:118)
+	at org.apache.ibatis.builder.xml.XMLStatementBuilder.parseStatementNode(XMLStatementBuilder.java:74)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.buildStatementFromContext(XMLMapperBuilder.java:135)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.buildStatementFromContext(XMLMapperBuilder.java:128)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:118)
+	... 71 common frames omitted
+Caused by: org.apache.ibatis.type.TypeException: Could not resolve type alias 'java.util.Integer'.  Cause: java.lang.ClassNotFoundException: Cannot find class: java.util.Integer
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:120)
+	at org.apache.ibatis.builder.BaseBuilder.resolveAlias(BaseBuilder.java:149)
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:116)
+	... 75 common frames omitted
+Caused by: java.lang.ClassNotFoundException: Cannot find class: java.util.Integer
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:200)
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:89)
+	at org.apache.ibatis.io.Resources.classForName(Resources.java:261)
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:116)
+	... 77 common frames omitted
+[ INFO ] [2018-11-29 20:28:18] com.github.ontio.ExplorerApplication [50] - Starting ExplorerApplication on sss.local with PID 36857 (/Users/sss/dev/localgit/javaProject/wontologyserver/target/classes started by sss in /Users/sss/dev/localgit/javaProject/wontologyserver)
+[ DEBUG] [2018-11-29 20:28:18] com.github.ontio.ExplorerApplication [53] - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[ INFO ] [2018-11-29 20:28:18] com.github.ontio.ExplorerApplication [663] - The following profiles are active: uat
+[ INFO ] [2018-11-29 20:28:18] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [590] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@c8c12ac: startup date [Thu Nov 29 20:28:18 CST 2018]; root of context hierarchy
+[ INFO ] [2018-11-29 20:28:19] org.springframework.data.repository.config.RepositoryConfigurationDelegate [163] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[ INFO ] [2018-11-29 20:28:19] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [328] - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$5cac63a5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[ INFO ] [2018-11-29 20:28:19] org.springframework.ws.soap.addressing.server.AnnotationActionEndpointMapping [236] - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+[ INFO ] [2018-11-29 20:28:19] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [328] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b8149ea6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[ INFO ] [2018-11-29 20:28:19] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [91] - Tomcat initialized with port(s): 8585 (http)
+[ INFO ] [2018-11-29 20:28:19] org.apache.coyote.http11.Http11NioProtocol [180] - Initializing ProtocolHandler ["http-nio-8585"]
+[ INFO ] [2018-11-29 20:28:19] org.apache.catalina.core.StandardService [180] - Starting service [Tomcat]
+[ INFO ] [2018-11-29 20:28:19] org.apache.catalina.core.StandardEngine [180] - Starting Servlet Engine: Apache Tomcat/8.5.31
+[ INFO ] [2018-11-29 20:28:19] org.apache.catalina.core.AprLifecycleListener [180] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/sss/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+[ INFO ] [2018-11-29 20:28:19] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] - Initializing Spring embedded WebApplicationContext
+[ INFO ] [2018-11-29 20:28:19] org.springframework.web.context.ContextLoader [285] - Root WebApplicationContext: initialization completed in 1328 ms
+[ INFO ] [2018-11-29 20:28:20] org.springframework.boot.web.servlet.ServletRegistrationBean [186] - Servlet dispatcherServlet mapped to [/]
+[ INFO ] [2018-11-29 20:28:20] org.springframework.boot.web.servlet.ServletRegistrationBean [186] - Servlet messageDispatcherServlet mapped to [/services/*]
+[ INFO ] [2018-11-29 20:28:20] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'characterEncodingFilter' to: [/*]
+[ INFO ] [2018-11-29 20:28:20] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[ INFO ] [2018-11-29 20:28:20] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[ INFO ] [2018-11-29 20:28:20] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'requestContextFilter' to: [/*]
+[ INFO ] [2018-11-29 20:28:20] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'simpleCORSFilter' to: [/*]
+[ INFO ] [2018-11-29 20:28:20] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2018-11-29 20:28:20] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [574] - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@c8c12ac: startup date [Thu Nov 29 20:28:18 CST 2018]; root of context hierarchy
+[ INFO ] [2018-11-29 20:28:20] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/bets/getallbets/{pagesize}/{pagenumber}],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.BetsController.getAllBets(java.lang.Integer,java.lang.Integer)
+[ INFO ] [2018-11-29 20:28:20] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/bets/getmybets/{bettor}],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.BetsController.getMyBets(java.lang.String)
+[ INFO ] [2018-11-29 20:28:20] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/bets/savebetinfo],methods=[POST]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.BetsController.saveBetInfo(java.lang.String)
+[ INFO ] [2018-11-29 20:28:20] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/bets/gethugewins],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.BetsController.getHugeWins()
+[ INFO ] [2018-11-29 20:28:20] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/bets/savehugewin],methods=[POST]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.BetsController.saveHugeWin(java.lang.String)
+[ INFO ] [2018-11-29 20:28:20] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[ INFO ] [2018-11-29 20:28:20] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[ INFO ] [2018-11-29 20:28:20] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2018-11-29 20:28:20] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2018-11-29 20:28:21] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [433] - Registering beans for JMX exposure on startup
+[ INFO ] [2018-11-29 20:28:21] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [895] - Bean with name 'dataSource' has been autodetected for JMX exposure
+[ INFO ] [2018-11-29 20:28:21] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [668] - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+[ INFO ] [2018-11-29 20:28:21] org.apache.coyote.http11.Http11NioProtocol [180] - Starting ProtocolHandler ["http-nio-8585"]
+[ INFO ] [2018-11-29 20:28:21] org.apache.tomcat.util.net.NioSelectorPool [180] - Using a shared selector for servlet write/read
+[ INFO ] [2018-11-29 20:28:21] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [206] - Tomcat started on port(s): 8585 (http) with context path ''
+[ INFO ] [2018-11-29 20:28:21] com.github.ontio.ExplorerApplication [59] - Started ExplorerApplication in 3.293 seconds (JVM running for 3.806)
+[ INFO ] [2018-11-29 20:30:36] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[ INFO ] [2018-11-29 20:30:36] org.springframework.web.servlet.DispatcherServlet [494] - FrameworkServlet 'dispatcherServlet': initialization started
+[ INFO ] [2018-11-29 20:30:37] org.springframework.web.servlet.DispatcherServlet [509] - FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
+[ INFO ] [2018-11-29 20:30:37] com.github.ontio.controller.BetsController [39] - ########BetsController.getAllBets begin...
+[ INFO ] [2018-11-29 20:30:37] com.zaxxer.hikari.HikariDataSource [110] - HikariPool-1 - Starting...
+[ INFO ] [2018-11-29 20:30:37] com.zaxxer.hikari.HikariDataSource [123] - HikariPool-1 - Start completed.
+[ DEBUG] [2018-11-29 20:30:37] dao.com.github.ontio.dao.BuyRecordInfoMapper.selectBetInfoByPage [159] - ==>  Preparing: select blkHeight, TxHash, ContractAddress, funcName, sideChainId,address,amount from tbl_all_bets order by id DESC limit ?, ?
+[ DEBUG] [2018-11-29 20:30:37] dao.com.github.ontio.dao.BuyRecordInfoMapper.selectBetInfoByPage [159] - ==> Parameters: 0(Integer), 10(Integer)
+[ INFO ] [2018-11-29 20:30:37] org.springframework.beans.factory.xml.XmlBeanDefinitionReader [316] - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+[ INFO ] [2018-11-29 20:30:37] org.springframework.jdbc.support.SQLErrorCodesFactory [128] - SQLErrorCodes loaded: [DB2, Derby, H2, HDB, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase]
+[ ERROR] [2018-11-29 20:30:37] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] [182] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'explorer.tbl_all_bets' doesn't exist
+### The error may exist in file [/Users/sss/dev/localgit/javaProject/wontologyserver/target/classes/mybatis/mapper/AllBetsMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: select               blkHeight, TxHash, ContractAddress, funcName, sideChainId,address,amount               from tbl_all_bets         order by id DESC         limit ?, ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'explorer.tbl_all_bets' doesn't exist
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'explorer.tbl_all_bets' doesn't exist] with root cause
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'explorer.tbl_all_bets' doesn't exist
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:944)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3976)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3912)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2530)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2683)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2486)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1858)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1197)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy86.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:63)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:326)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy67.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:230)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:139)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:76)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy68.selectBetInfoByPage(Unknown Source)
+	at com.github.ontio.service.impl.BuyerHandleServiceImpl.getBetsByPage(BetsHandleServiceImpl.java:31)
+	at com.github.ontio.controller.BetsController.getAllBets(BetsController.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.github.ontio.SimpleCORSFilter.doFilter(SimpleCORSFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[ INFO ] [2018-11-29 20:32:47] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [993] - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@c8c12ac: startup date [Thu Nov 29 20:28:18 CST 2018]; root of context hierarchy
+[ INFO ] [2018-11-29 20:32:47] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [451] - Unregistering JMX-exposed beans on shutdown
+[ INFO ] [2018-11-29 20:32:47] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [183] - Unregistering JMX-exposed beans
+[ INFO ] [2018-11-29 20:32:47] com.zaxxer.hikari.HikariDataSource [381] - HikariPool-1 - Shutdown initiated...
+[ INFO ] [2018-11-29 20:32:47] com.zaxxer.hikari.HikariDataSource [383] - HikariPool-1 - Shutdown completed.
+[ INFO ] [2018-11-29 20:33:14] com.github.ontio.ExplorerApplication [50] - Starting ExplorerApplication on sss.local with PID 36967 (/Users/sss/dev/localgit/javaProject/wontologyserver/target/classes started by sss in /Users/sss/dev/localgit/javaProject/wontologyserver)
+[ DEBUG] [2018-11-29 20:33:14] com.github.ontio.ExplorerApplication [53] - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[ INFO ] [2018-11-29 20:33:14] com.github.ontio.ExplorerApplication [663] - The following profiles are active: uat
+[ INFO ] [2018-11-29 20:33:14] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [590] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@747ddf94: startup date [Thu Nov 29 20:33:14 CST 2018]; root of context hierarchy
+[ INFO ] [2018-11-29 20:33:14] org.springframework.data.repository.config.RepositoryConfigurationDelegate [163] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[ INFO ] [2018-11-29 20:33:15] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [328] - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$3da303b6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[ INFO ] [2018-11-29 20:33:15] org.springframework.ws.soap.addressing.server.AnnotationActionEndpointMapping [236] - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+[ INFO ] [2018-11-29 20:33:15] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [328] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$990b3eb7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[ INFO ] [2018-11-29 20:33:15] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [91] - Tomcat initialized with port(s): 8585 (http)
+[ INFO ] [2018-11-29 20:33:15] org.apache.coyote.http11.Http11NioProtocol [180] - Initializing ProtocolHandler ["http-nio-8585"]
+[ INFO ] [2018-11-29 20:33:15] org.apache.catalina.core.StandardService [180] - Starting service [Tomcat]
+[ INFO ] [2018-11-29 20:33:15] org.apache.catalina.core.StandardEngine [180] - Starting Servlet Engine: Apache Tomcat/8.5.31
+[ INFO ] [2018-11-29 20:33:15] org.apache.catalina.core.AprLifecycleListener [180] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/sss/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+[ INFO ] [2018-11-29 20:33:15] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] - Initializing Spring embedded WebApplicationContext
+[ INFO ] [2018-11-29 20:33:15] org.springframework.web.context.ContextLoader [285] - Root WebApplicationContext: initialization completed in 1250 ms
+[ INFO ] [2018-11-29 20:33:15] org.springframework.boot.web.servlet.ServletRegistrationBean [186] - Servlet dispatcherServlet mapped to [/]
+[ INFO ] [2018-11-29 20:33:15] org.springframework.boot.web.servlet.ServletRegistrationBean [186] - Servlet messageDispatcherServlet mapped to [/services/*]
+[ INFO ] [2018-11-29 20:33:15] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'characterEncodingFilter' to: [/*]
+[ INFO ] [2018-11-29 20:33:15] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[ INFO ] [2018-11-29 20:33:15] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[ INFO ] [2018-11-29 20:33:15] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'requestContextFilter' to: [/*]
+[ INFO ] [2018-11-29 20:33:15] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'simpleCORSFilter' to: [/*]
+[ INFO ] [2018-11-29 20:33:15] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2018-11-29 20:33:16] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [574] - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@747ddf94: startup date [Thu Nov 29 20:33:14 CST 2018]; root of context hierarchy
+[ INFO ] [2018-11-29 20:33:16] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/bets/getbetsbypage/{pagesize}/{pagenumber}],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.BetsController.getBetsByPage(java.lang.Integer,java.lang.Integer)
+[ INFO ] [2018-11-29 20:33:16] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/bets/getmybets/{bettor}],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.BetsController.getMyBets(java.lang.String)
+[ INFO ] [2018-11-29 20:33:16] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/bets/savebetinfo],methods=[POST]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.BetsController.saveBetInfo(java.lang.String)
+[ INFO ] [2018-11-29 20:33:16] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/bets/gethugewins],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.BetsController.getHugeWins()
+[ INFO ] [2018-11-29 20:33:16] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/bets/savehugewin],methods=[POST]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.BetsController.saveHugeWin(java.lang.String)
+[ INFO ] [2018-11-29 20:33:16] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[ INFO ] [2018-11-29 20:33:16] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[ INFO ] [2018-11-29 20:33:16] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2018-11-29 20:33:16] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2018-11-29 20:33:16] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [433] - Registering beans for JMX exposure on startup
+[ INFO ] [2018-11-29 20:33:16] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [895] - Bean with name 'dataSource' has been autodetected for JMX exposure
+[ INFO ] [2018-11-29 20:33:16] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [668] - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+[ INFO ] [2018-11-29 20:33:16] org.apache.coyote.http11.Http11NioProtocol [180] - Starting ProtocolHandler ["http-nio-8585"]
+[ INFO ] [2018-11-29 20:33:16] org.apache.tomcat.util.net.NioSelectorPool [180] - Using a shared selector for servlet write/read
+[ INFO ] [2018-11-29 20:33:16] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [206] - Tomcat started on port(s): 8585 (http) with context path ''
+[ INFO ] [2018-11-29 20:33:16] com.github.ontio.ExplorerApplication [59] - Started ExplorerApplication in 2.893 seconds (JVM running for 3.406)
+[ INFO ] [2018-11-29 20:33:19] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[ INFO ] [2018-11-29 20:33:19] org.springframework.web.servlet.DispatcherServlet [494] - FrameworkServlet 'dispatcherServlet': initialization started
+[ INFO ] [2018-11-29 20:33:19] org.springframework.web.servlet.DispatcherServlet [509] - FrameworkServlet 'dispatcherServlet': initialization completed in 14 ms
+[ INFO ] [2018-11-29 20:33:50] com.github.ontio.controller.BetsController [39] - ########BetsController.getBetsByPage begin...
+[ INFO ] [2018-11-29 20:33:50] com.zaxxer.hikari.HikariDataSource [110] - HikariPool-1 - Starting...
+[ INFO ] [2018-11-29 20:33:51] com.zaxxer.hikari.HikariDataSource [123] - HikariPool-1 - Start completed.
+[ DEBUG] [2018-11-29 20:33:51] dao.com.github.ontio.dao.BuyRecordInfoMapper.selectBetInfoByPage [159] - ==>  Preparing: select blkHeight, TxHash, ContractAddress, funcName, sideChainId,address,amount from tbl_all_bets order by id DESC limit ?, ?
+[ DEBUG] [2018-11-29 20:33:51] dao.com.github.ontio.dao.BuyRecordInfoMapper.selectBetInfoByPage [159] - ==> Parameters: 0(Integer), 10(Integer)
+[ INFO ] [2018-11-29 20:33:51] org.springframework.beans.factory.xml.XmlBeanDefinitionReader [316] - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+[ INFO ] [2018-11-29 20:33:51] org.springframework.jdbc.support.SQLErrorCodesFactory [128] - SQLErrorCodes loaded: [DB2, Derby, H2, HDB, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase]
+[ ERROR] [2018-11-29 20:33:51] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] [182] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'blkHeight' in 'field list'
+### The error may exist in file [/Users/sss/dev/localgit/javaProject/wontologyserver/target/classes/mybatis/mapper/AllBetsMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: select               blkHeight, TxHash, ContractAddress, funcName, sideChainId,address,amount               from tbl_all_bets         order by id DESC         limit ?, ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'blkHeight' in 'field list'
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'blkHeight' in 'field list'] with root cause
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'blkHeight' in 'field list'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:944)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3976)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3912)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2530)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2683)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2486)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1858)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1197)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy86.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:63)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:326)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy67.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:230)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:139)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:76)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy68.selectBetInfoByPage(Unknown Source)
+	at com.github.ontio.service.impl.BuyerHandleServiceImpl.getBetsByPage(BetsHandleServiceImpl.java:31)
+	at com.github.ontio.controller.BetsController.getBetsByPage(BetsController.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.github.ontio.SimpleCORSFilter.doFilter(SimpleCORSFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[ INFO ] [2018-11-29 20:35:02] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [993] - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@747ddf94: startup date [Thu Nov 29 20:33:14 CST 2018]; root of context hierarchy
+[ INFO ] [2018-11-29 20:35:02] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [451] - Unregistering JMX-exposed beans on shutdown
+[ INFO ] [2018-11-29 20:35:02] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [183] - Unregistering JMX-exposed beans
+[ INFO ] [2018-11-29 20:35:02] com.zaxxer.hikari.HikariDataSource [381] - HikariPool-1 - Shutdown initiated...
+[ INFO ] [2018-11-29 20:35:02] com.zaxxer.hikari.HikariDataSource [383] - HikariPool-1 - Shutdown completed.
+[ INFO ] [2018-11-29 20:35:08] com.github.ontio.ExplorerApplication [50] - Starting ExplorerApplication on sss.local with PID 37020 (/Users/sss/dev/localgit/javaProject/wontologyserver/target/classes started by sss in /Users/sss/dev/localgit/javaProject/wontologyserver)
+[ DEBUG] [2018-11-29 20:35:08] com.github.ontio.ExplorerApplication [53] - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[ INFO ] [2018-11-29 20:35:08] com.github.ontio.ExplorerApplication [663] - The following profiles are active: uat
+[ INFO ] [2018-11-29 20:35:08] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [590] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7f3b84b8: startup date [Thu Nov 29 20:35:08 CST 2018]; root of context hierarchy
+[ INFO ] [2018-11-29 20:35:08] org.springframework.data.repository.config.RepositoryConfigurationDelegate [163] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[ INFO ] [2018-11-29 20:35:09] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [328] - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$c8b186fa] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[ INFO ] [2018-11-29 20:35:09] org.springframework.ws.soap.addressing.server.AnnotationActionEndpointMapping [236] - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+[ INFO ] [2018-11-29 20:35:09] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [328] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2419c1fb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[ INFO ] [2018-11-29 20:35:09] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [91] - Tomcat initialized with port(s): 8585 (http)
+[ INFO ] [2018-11-29 20:35:09] org.apache.coyote.http11.Http11NioProtocol [180] - Initializing ProtocolHandler ["http-nio-8585"]
+[ INFO ] [2018-11-29 20:35:09] org.apache.catalina.core.StandardService [180] - Starting service [Tomcat]
+[ INFO ] [2018-11-29 20:35:09] org.apache.catalina.core.StandardEngine [180] - Starting Servlet Engine: Apache Tomcat/8.5.31
+[ INFO ] [2018-11-29 20:35:09] org.apache.catalina.core.AprLifecycleListener [180] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/sss/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+[ INFO ] [2018-11-29 20:35:09] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] - Initializing Spring embedded WebApplicationContext
+[ INFO ] [2018-11-29 20:35:09] org.springframework.web.context.ContextLoader [285] - Root WebApplicationContext: initialization completed in 1246 ms
+[ INFO ] [2018-11-29 20:35:09] org.springframework.boot.web.servlet.ServletRegistrationBean [186] - Servlet dispatcherServlet mapped to [/]
+[ INFO ] [2018-11-29 20:35:09] org.springframework.boot.web.servlet.ServletRegistrationBean [186] - Servlet messageDispatcherServlet mapped to [/services/*]
+[ INFO ] [2018-11-29 20:35:09] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'characterEncodingFilter' to: [/*]
+[ INFO ] [2018-11-29 20:35:09] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[ INFO ] [2018-11-29 20:35:09] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[ INFO ] [2018-11-29 20:35:09] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'requestContextFilter' to: [/*]
+[ INFO ] [2018-11-29 20:35:09] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'simpleCORSFilter' to: [/*]
+[ INFO ] [2018-11-29 20:35:09] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2018-11-29 20:35:10] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [574] - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7f3b84b8: startup date [Thu Nov 29 20:35:08 CST 2018]; root of context hierarchy
+[ INFO ] [2018-11-29 20:35:10] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/bets/getbetsbypage/{pagesize}/{pagenumber}],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.BetsController.getBetsByPage(java.lang.Integer,java.lang.Integer)
+[ INFO ] [2018-11-29 20:35:10] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/bets/getmybets/{bettor}],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.BetsController.getMyBets(java.lang.String)
+[ INFO ] [2018-11-29 20:35:10] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/bets/savebetinfo],methods=[POST]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.BetsController.saveBetInfo(java.lang.String)
+[ INFO ] [2018-11-29 20:35:10] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/bets/gethugewins],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.BetsController.getHugeWins()
+[ INFO ] [2018-11-29 20:35:10] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/bets/savehugewin],methods=[POST]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.BetsController.saveHugeWin(java.lang.String)
+[ INFO ] [2018-11-29 20:35:10] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[ INFO ] [2018-11-29 20:35:10] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[ INFO ] [2018-11-29 20:35:10] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2018-11-29 20:35:10] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2018-11-29 20:35:10] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [433] - Registering beans for JMX exposure on startup
+[ INFO ] [2018-11-29 20:35:10] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [895] - Bean with name 'dataSource' has been autodetected for JMX exposure
+[ INFO ] [2018-11-29 20:35:10] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [668] - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+[ INFO ] [2018-11-29 20:35:10] org.apache.coyote.http11.Http11NioProtocol [180] - Starting ProtocolHandler ["http-nio-8585"]
+[ INFO ] [2018-11-29 20:35:10] org.apache.tomcat.util.net.NioSelectorPool [180] - Using a shared selector for servlet write/read
+[ INFO ] [2018-11-29 20:35:10] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [206] - Tomcat started on port(s): 8585 (http) with context path ''
+[ INFO ] [2018-11-29 20:35:10] com.github.ontio.ExplorerApplication [59] - Started ExplorerApplication in 2.876 seconds (JVM running for 3.371)
+[ INFO ] [2018-11-29 20:35:13] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[ INFO ] [2018-11-29 20:35:13] org.springframework.web.servlet.DispatcherServlet [494] - FrameworkServlet 'dispatcherServlet': initialization started
+[ INFO ] [2018-11-29 20:35:13] org.springframework.web.servlet.DispatcherServlet [509] - FrameworkServlet 'dispatcherServlet': initialization completed in 15 ms
+[ INFO ] [2018-11-29 20:35:13] com.github.ontio.controller.BetsController [39] - ########BetsController.getBetsByPage begin...
+[ INFO ] [2018-11-29 20:35:13] com.zaxxer.hikari.HikariDataSource [110] - HikariPool-1 - Starting...
+[ INFO ] [2018-11-29 20:35:14] com.zaxxer.hikari.HikariDataSource [123] - HikariPool-1 - Start completed.
+[ DEBUG] [2018-11-29 20:35:14] dao.com.github.ontio.dao.BuyRecordInfoMapper.selectBetInfoByPage [159] - ==>  Preparing: select bettor, rollunder,bet,roll,payout from tbl_all_bets order by id DESC limit ?, ?
+[ DEBUG] [2018-11-29 20:35:14] dao.com.github.ontio.dao.BuyRecordInfoMapper.selectBetInfoByPage [159] - ==> Parameters: 0(Integer), 10(Integer)
+[ DEBUG] [2018-11-29 20:35:14] dao.com.github.ontio.dao.BuyRecordInfoMapper.selectBetInfoByPage [159] - <==      Total: 10
+[ INFO ] [2018-11-29 20:36:52] com.github.ontio.controller.BetsController [54] - ########BetsController.getMyBets begin...
+[ DEBUG] [2018-11-29 20:36:52] dao.com.github.ontio.dao.BuyRecordInfoMapper.selectBetInfoByBettor [159] - ==>  Preparing: select bettor, rollunder,bet,roll,payout from tbl_all_bets where bettor = ?
+[ DEBUG] [2018-11-29 20:36:52] dao.com.github.ontio.dao.BuyRecordInfoMapper.selectBetInfoByBettor [159] - ==> Parameters: sss(String)
+[ DEBUG] [2018-11-29 20:36:52] dao.com.github.ontio.dao.BuyRecordInfoMapper.selectBetInfoByBettor [159] - <==      Total: 18
+[ INFO ] [2018-11-29 20:37:38] com.github.ontio.controller.BetsController [86] - ########BetsController.getHugeWins begin...
+[ INFO ] [2018-11-29 20:43:05] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [993] - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7f3b84b8: startup date [Thu Nov 29 20:35:08 CST 2018]; root of context hierarchy
+[ INFO ] [2018-11-29 20:43:05] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [451] - Unregistering JMX-exposed beans on shutdown
+[ INFO ] [2018-11-29 20:43:05] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [183] - Unregistering JMX-exposed beans
+[ INFO ] [2018-11-29 20:43:05] com.zaxxer.hikari.HikariDataSource [381] - HikariPool-1 - Shutdown initiated...
+[ INFO ] [2018-11-29 20:43:05] com.zaxxer.hikari.HikariDataSource [383] - HikariPool-1 - Shutdown completed.
+[ INFO ] [2018-11-29 20:43:14] com.github.ontio.ExplorerApplication [50] - Starting ExplorerApplication on sss.local with PID 37227 (/Users/sss/dev/localgit/javaProject/wontologyserver/target/classes started by sss in /Users/sss/dev/localgit/javaProject/wontologyserver)
+[ DEBUG] [2018-11-29 20:43:14] com.github.ontio.ExplorerApplication [53] - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[ INFO ] [2018-11-29 20:43:14] com.github.ontio.ExplorerApplication [663] - The following profiles are active: uat
+[ INFO ] [2018-11-29 20:43:14] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [590] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4550bb58: startup date [Thu Nov 29 20:43:14 CST 2018]; root of context hierarchy
+[ INFO ] [2018-11-29 20:43:14] org.springframework.data.repository.config.RepositoryConfigurationDelegate [163] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[ INFO ] [2018-11-29 20:43:15] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [328] - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$87e571d1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[ INFO ] [2018-11-29 20:43:15] org.springframework.ws.soap.addressing.server.AnnotationActionEndpointMapping [236] - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+[ INFO ] [2018-11-29 20:43:15] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [328] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e34dacd2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[ INFO ] [2018-11-29 20:43:15] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [91] - Tomcat initialized with port(s): 8585 (http)
+[ INFO ] [2018-11-29 20:43:15] org.apache.coyote.http11.Http11NioProtocol [180] - Initializing ProtocolHandler ["http-nio-8585"]
+[ INFO ] [2018-11-29 20:43:15] org.apache.catalina.core.StandardService [180] - Starting service [Tomcat]
+[ INFO ] [2018-11-29 20:43:15] org.apache.catalina.core.StandardEngine [180] - Starting Servlet Engine: Apache Tomcat/8.5.31
+[ INFO ] [2018-11-29 20:43:15] org.apache.catalina.core.AprLifecycleListener [180] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/sss/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+[ INFO ] [2018-11-29 20:43:15] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] - Initializing Spring embedded WebApplicationContext
+[ INFO ] [2018-11-29 20:43:15] org.springframework.web.context.ContextLoader [285] - Root WebApplicationContext: initialization completed in 1414 ms
+[ INFO ] [2018-11-29 20:43:15] org.springframework.boot.web.servlet.ServletRegistrationBean [186] - Servlet dispatcherServlet mapped to [/]
+[ INFO ] [2018-11-29 20:43:15] org.springframework.boot.web.servlet.ServletRegistrationBean [186] - Servlet messageDispatcherServlet mapped to [/services/*]
+[ INFO ] [2018-11-29 20:43:15] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'characterEncodingFilter' to: [/*]
+[ INFO ] [2018-11-29 20:43:15] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[ INFO ] [2018-11-29 20:43:15] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[ INFO ] [2018-11-29 20:43:15] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'requestContextFilter' to: [/*]
+[ INFO ] [2018-11-29 20:43:15] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'simpleCORSFilter' to: [/*]
+[ INFO ] [2018-11-29 20:43:16] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2018-11-29 20:43:16] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [574] - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4550bb58: startup date [Thu Nov 29 20:43:14 CST 2018]; root of context hierarchy
+[ INFO ] [2018-11-29 20:43:16] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/bets/getbetsbypage/{pagesize}/{pagenumber}],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.BetsController.getBetsByPage(java.lang.Integer,java.lang.Integer)
+[ INFO ] [2018-11-29 20:43:16] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/bets/getmybets/{bettor}],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.BetsController.getMyBets(java.lang.String)
+[ INFO ] [2018-11-29 20:43:16] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/bets/savebetinfo],methods=[POST]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.BetsController.saveBetInfo(java.lang.String)
+[ INFO ] [2018-11-29 20:43:16] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/bets/gethugewinstopbynum/{num}],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.BetsController.getHugeWins(java.lang.Integer)
+[ INFO ] [2018-11-29 20:43:16] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/bets/savehugewin],methods=[POST]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.BetsController.saveHugeWin(java.lang.String)
+[ INFO ] [2018-11-29 20:43:16] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[ INFO ] [2018-11-29 20:43:16] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[ INFO ] [2018-11-29 20:43:16] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2018-11-29 20:43:16] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2018-11-29 20:43:16] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [433] - Registering beans for JMX exposure on startup
+[ INFO ] [2018-11-29 20:43:16] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [895] - Bean with name 'dataSource' has been autodetected for JMX exposure
+[ INFO ] [2018-11-29 20:43:16] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [668] - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+[ INFO ] [2018-11-29 20:43:16] org.apache.coyote.http11.Http11NioProtocol [180] - Starting ProtocolHandler ["http-nio-8585"]
+[ INFO ] [2018-11-29 20:43:16] org.apache.tomcat.util.net.NioSelectorPool [180] - Using a shared selector for servlet write/read
+[ INFO ] [2018-11-29 20:43:16] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [206] - Tomcat started on port(s): 8585 (http) with context path ''
+[ INFO ] [2018-11-29 20:43:16] com.github.ontio.ExplorerApplication [59] - Started ExplorerApplication in 3.062 seconds (JVM running for 3.593)
+[ INFO ] [2018-11-29 20:43:37] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[ INFO ] [2018-11-29 20:43:37] org.springframework.web.servlet.DispatcherServlet [494] - FrameworkServlet 'dispatcherServlet': initialization started
+[ INFO ] [2018-11-29 20:43:37] org.springframework.web.servlet.DispatcherServlet [509] - FrameworkServlet 'dispatcherServlet': initialization completed in 13 ms
+[ INFO ] [2018-11-29 20:43:57] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [993] - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4550bb58: startup date [Thu Nov 29 20:43:14 CST 2018]; root of context hierarchy
+[ INFO ] [2018-11-29 20:43:57] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [451] - Unregistering JMX-exposed beans on shutdown
+[ INFO ] [2018-11-29 20:43:57] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [183] - Unregistering JMX-exposed beans
+[ INFO ] [2018-11-29 20:44:04] com.github.ontio.ExplorerApplication [50] - Starting ExplorerApplication on sss.local with PID 37255 (/Users/sss/dev/localgit/javaProject/wontologyserver/target/classes started by sss in /Users/sss/dev/localgit/javaProject/wontologyserver)
+[ DEBUG] [2018-11-29 20:44:04] com.github.ontio.ExplorerApplication [53] - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[ INFO ] [2018-11-29 20:44:04] com.github.ontio.ExplorerApplication [663] - The following profiles are active: uat
+[ INFO ] [2018-11-29 20:44:04] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [590] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1b7cc17c: startup date [Thu Nov 29 20:44:04 CST 2018]; root of context hierarchy
+[ INFO ] [2018-11-29 20:44:05] org.springframework.data.repository.config.RepositoryConfigurationDelegate [163] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[ INFO ] [2018-11-29 20:44:05] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [328] - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$316bd2bb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[ INFO ] [2018-11-29 20:44:05] org.springframework.ws.soap.addressing.server.AnnotationActionEndpointMapping [236] - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+[ INFO ] [2018-11-29 20:44:05] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [328] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8cd40dbc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[ INFO ] [2018-11-29 20:44:05] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [91] - Tomcat initialized with port(s): 8585 (http)
+[ INFO ] [2018-11-29 20:44:05] org.apache.coyote.http11.Http11NioProtocol [180] - Initializing ProtocolHandler ["http-nio-8585"]
+[ INFO ] [2018-11-29 20:44:05] org.apache.catalina.core.StandardService [180] - Starting service [Tomcat]
+[ INFO ] [2018-11-29 20:44:05] org.apache.catalina.core.StandardEngine [180] - Starting Servlet Engine: Apache Tomcat/8.5.31
+[ INFO ] [2018-11-29 20:44:05] org.apache.catalina.core.AprLifecycleListener [180] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/sss/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+[ INFO ] [2018-11-29 20:44:05] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] - Initializing Spring embedded WebApplicationContext
+[ INFO ] [2018-11-29 20:44:05] org.springframework.web.context.ContextLoader [285] - Root WebApplicationContext: initialization completed in 1358 ms
+[ INFO ] [2018-11-29 20:44:05] org.springframework.boot.web.servlet.ServletRegistrationBean [186] - Servlet dispatcherServlet mapped to [/]
+[ INFO ] [2018-11-29 20:44:05] org.springframework.boot.web.servlet.ServletRegistrationBean [186] - Servlet messageDispatcherServlet mapped to [/services/*]
+[ INFO ] [2018-11-29 20:44:05] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'characterEncodingFilter' to: [/*]
+[ INFO ] [2018-11-29 20:44:05] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[ INFO ] [2018-11-29 20:44:05] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[ INFO ] [2018-11-29 20:44:05] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'requestContextFilter' to: [/*]
+[ INFO ] [2018-11-29 20:44:05] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'simpleCORSFilter' to: [/*]
+[ INFO ] [2018-11-29 20:44:06] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2018-11-29 20:44:06] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [574] - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1b7cc17c: startup date [Thu Nov 29 20:44:04 CST 2018]; root of context hierarchy
+[ INFO ] [2018-11-29 20:44:06] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/bets/getbetsbypage/{pagesize}/{pagenumber}],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.BetsController.getBetsByPage(java.lang.Integer,java.lang.Integer)
+[ INFO ] [2018-11-29 20:44:06] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/bets/getmybets/{bettor}],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.BetsController.getMyBets(java.lang.String)
+[ INFO ] [2018-11-29 20:44:06] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/bets/savebetinfo],methods=[POST]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.BetsController.saveBetInfo(java.lang.String)
+[ INFO ] [2018-11-29 20:44:06] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/bets/gethugewinstopbynum/{num}],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.BetsController.getHugeWins(java.lang.Integer)
+[ INFO ] [2018-11-29 20:44:06] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/bets/savehugewin],methods=[POST]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.BetsController.saveHugeWin(java.lang.String)
+[ INFO ] [2018-11-29 20:44:06] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[ INFO ] [2018-11-29 20:44:06] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[ INFO ] [2018-11-29 20:44:06] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2018-11-29 20:44:06] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2018-11-29 20:44:07] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [433] - Registering beans for JMX exposure on startup
+[ INFO ] [2018-11-29 20:44:07] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [895] - Bean with name 'dataSource' has been autodetected for JMX exposure
+[ INFO ] [2018-11-29 20:44:07] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [668] - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+[ INFO ] [2018-11-29 20:44:07] org.apache.coyote.http11.Http11NioProtocol [180] - Starting ProtocolHandler ["http-nio-8585"]
+[ INFO ] [2018-11-29 20:44:07] org.apache.tomcat.util.net.NioSelectorPool [180] - Using a shared selector for servlet write/read
+[ INFO ] [2018-11-29 20:44:07] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [206] - Tomcat started on port(s): 8585 (http) with context path ''
+[ INFO ] [2018-11-29 20:44:07] com.github.ontio.ExplorerApplication [59] - Started ExplorerApplication in 3.09 seconds (JVM running for 3.607)
+[ INFO ] [2018-11-29 20:44:13] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[ INFO ] [2018-11-29 20:44:13] org.springframework.web.servlet.DispatcherServlet [494] - FrameworkServlet 'dispatcherServlet': initialization started
+[ INFO ] [2018-11-29 20:44:13] org.springframework.web.servlet.DispatcherServlet [509] - FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
+[ INFO ] [2018-11-29 20:44:13] com.github.ontio.controller.BetsController [86] - ########BetsController.getHugeWins begin...
+[ INFO ] [2018-11-29 20:44:13] com.zaxxer.hikari.HikariDataSource [110] - HikariPool-1 - Starting...
+[ INFO ] [2018-11-29 20:44:13] com.zaxxer.hikari.HikariDataSource [123] - HikariPool-1 - Start completed.
+[ DEBUG] [2018-11-29 20:44:13] dao.com.github.ontio.dao.BuyRecordInfoMapper.selectHugeWinsTopByNum [159] - ==>  Preparing: select top ? bettor, rollunder,bet,roll,payout from tbl_huge_wins order by payout DESC
+[ DEBUG] [2018-11-29 20:44:13] dao.com.github.ontio.dao.BuyRecordInfoMapper.selectHugeWinsTopByNum [159] - ==> Parameters: 10(Integer)
+[ INFO ] [2018-11-29 20:44:13] org.springframework.beans.factory.xml.XmlBeanDefinitionReader [316] - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+[ INFO ] [2018-11-29 20:44:13] org.springframework.jdbc.support.SQLErrorCodesFactory [128] - SQLErrorCodes loaded: [DB2, Derby, H2, HDB, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase]
+[ ERROR] [2018-11-29 20:44:13] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] [182] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '10
+         
+    bettor, rollunder,bet,roll,payout
+     
+        from tbl_huge_w' at line 1
+### The error may exist in file [/Users/sss/dev/localgit/javaProject/wontologyserver/target/classes/mybatis/mapper/AllBetsMapper.xml]
+### The error may involve com.github.ontio.dao.BuyRecordInfoMapper.selectHugeWinsTopByNum-Inline
+### The error occurred while setting parameters
+### SQL: select top ?               bettor, rollunder,bet,roll,payout               from tbl_huge_wins         order by payout DESC
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '10
+         
+    bettor, rollunder,bet,roll,payout
+     
+        from tbl_huge_w' at line 1
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '10
+         
+    bettor, rollunder,bet,roll,payout
+     
+        from tbl_huge_w' at line 1] with root cause
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '10
+         
+    bettor, rollunder,bet,roll,payout
+     
+        from tbl_huge_w' at line 1
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:944)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3976)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3912)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2530)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2683)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2486)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1858)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1197)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy86.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:63)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:326)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy67.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:230)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:139)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:76)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy68.selectHugeWinsTopByNum(Unknown Source)
+	at com.github.ontio.service.impl.BuyerHandleServiceImpl.getHugeWinsTopByNum(BetsHandleServiceImpl.java:58)
+	at com.github.ontio.controller.BetsController.getHugeWins(BetsController.java:88)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.github.ontio.SimpleCORSFilter.doFilter(SimpleCORSFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[ INFO ] [2018-11-29 20:48:08] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [993] - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1b7cc17c: startup date [Thu Nov 29 20:44:04 CST 2018]; root of context hierarchy
+[ INFO ] [2018-11-29 20:48:08] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [451] - Unregistering JMX-exposed beans on shutdown
+[ INFO ] [2018-11-29 20:48:08] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [183] - Unregistering JMX-exposed beans
+[ INFO ] [2018-11-29 20:48:08] com.zaxxer.hikari.HikariDataSource [381] - HikariPool-1 - Shutdown initiated...
+[ INFO ] [2018-11-29 20:48:08] com.zaxxer.hikari.HikariDataSource [383] - HikariPool-1 - Shutdown completed.
+[ INFO ] [2018-11-29 20:48:14] com.github.ontio.ExplorerApplication [50] - Starting ExplorerApplication on sss.local with PID 37331 (/Users/sss/dev/localgit/javaProject/wontologyserver/target/classes started by sss in /Users/sss/dev/localgit/javaProject/wontologyserver)
+[ DEBUG] [2018-11-29 20:48:14] com.github.ontio.ExplorerApplication [53] - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[ INFO ] [2018-11-29 20:48:14] com.github.ontio.ExplorerApplication [663] - The following profiles are active: uat
+[ INFO ] [2018-11-29 20:48:14] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [590] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@35e2d654: startup date [Thu Nov 29 20:48:14 CST 2018]; root of context hierarchy
+[ INFO ] [2018-11-29 20:48:15] org.springframework.data.repository.config.RepositoryConfigurationDelegate [163] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[ INFO ] [2018-11-29 20:48:15] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [328] - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$584d5c50] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[ INFO ] [2018-11-29 20:48:15] org.springframework.ws.soap.addressing.server.AnnotationActionEndpointMapping [236] - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+[ INFO ] [2018-11-29 20:48:15] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [328] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b3b59751] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[ INFO ] [2018-11-29 20:48:16] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [91] - Tomcat initialized with port(s): 8585 (http)
+[ INFO ] [2018-11-29 20:48:16] org.apache.coyote.http11.Http11NioProtocol [180] - Initializing ProtocolHandler ["http-nio-8585"]
+[ INFO ] [2018-11-29 20:48:16] org.apache.catalina.core.StandardService [180] - Starting service [Tomcat]
+[ INFO ] [2018-11-29 20:48:16] org.apache.catalina.core.StandardEngine [180] - Starting Servlet Engine: Apache Tomcat/8.5.31
+[ INFO ] [2018-11-29 20:48:16] org.apache.catalina.core.AprLifecycleListener [180] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/sss/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+[ INFO ] [2018-11-29 20:48:16] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] - Initializing Spring embedded WebApplicationContext
+[ INFO ] [2018-11-29 20:48:16] org.springframework.web.context.ContextLoader [285] - Root WebApplicationContext: initialization completed in 1344 ms
+[ INFO ] [2018-11-29 20:48:16] org.springframework.boot.web.servlet.ServletRegistrationBean [186] - Servlet dispatcherServlet mapped to [/]
+[ INFO ] [2018-11-29 20:48:16] org.springframework.boot.web.servlet.ServletRegistrationBean [186] - Servlet messageDispatcherServlet mapped to [/services/*]
+[ INFO ] [2018-11-29 20:48:16] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'characterEncodingFilter' to: [/*]
+[ INFO ] [2018-11-29 20:48:16] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[ INFO ] [2018-11-29 20:48:16] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[ INFO ] [2018-11-29 20:48:16] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'requestContextFilter' to: [/*]
+[ INFO ] [2018-11-29 20:48:16] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'simpleCORSFilter' to: [/*]
+[ INFO ] [2018-11-29 20:48:16] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2018-11-29 20:48:16] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [574] - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@35e2d654: startup date [Thu Nov 29 20:48:14 CST 2018]; root of context hierarchy
+[ INFO ] [2018-11-29 20:48:16] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/bets/getbetsbypage/{pagesize}/{pagenumber}],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.BetsController.getBetsByPage(java.lang.Integer,java.lang.Integer)
+[ INFO ] [2018-11-29 20:48:16] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/bets/getmybets/{bettor}],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.BetsController.getMyBets(java.lang.String)
+[ INFO ] [2018-11-29 20:48:16] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/bets/savebetinfo],methods=[POST]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.BetsController.saveBetInfo(java.lang.String)
+[ INFO ] [2018-11-29 20:48:16] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/bets/gethugewinstopbynum/{num}],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.BetsController.getHugeWins(java.lang.Integer)
+[ INFO ] [2018-11-29 20:48:16] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/bets/savehugewin],methods=[POST]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.BetsController.saveHugeWin(java.lang.String)
+[ INFO ] [2018-11-29 20:48:16] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[ INFO ] [2018-11-29 20:48:16] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[ INFO ] [2018-11-29 20:48:17] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2018-11-29 20:48:17] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2018-11-29 20:48:17] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [433] - Registering beans for JMX exposure on startup
+[ INFO ] [2018-11-29 20:48:17] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [895] - Bean with name 'dataSource' has been autodetected for JMX exposure
+[ INFO ] [2018-11-29 20:48:17] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [668] - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+[ INFO ] [2018-11-29 20:48:17] org.apache.coyote.http11.Http11NioProtocol [180] - Starting ProtocolHandler ["http-nio-8585"]
+[ INFO ] [2018-11-29 20:48:17] org.apache.tomcat.util.net.NioSelectorPool [180] - Using a shared selector for servlet write/read
+[ INFO ] [2018-11-29 20:48:17] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [206] - Tomcat started on port(s): 8585 (http) with context path ''
+[ INFO ] [2018-11-29 20:48:17] com.github.ontio.ExplorerApplication [59] - Started ExplorerApplication in 3.098 seconds (JVM running for 3.61)
+[ INFO ] [2018-11-29 20:48:24] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[ INFO ] [2018-11-29 20:48:24] org.springframework.web.servlet.DispatcherServlet [494] - FrameworkServlet 'dispatcherServlet': initialization started
+[ INFO ] [2018-11-29 20:48:24] org.springframework.web.servlet.DispatcherServlet [509] - FrameworkServlet 'dispatcherServlet': initialization completed in 13 ms
+[ INFO ] [2018-11-29 20:48:24] com.github.ontio.controller.BetsController [86] - ########BetsController.getHugeWins begin...
+[ INFO ] [2018-11-29 20:48:24] com.zaxxer.hikari.HikariDataSource [110] - HikariPool-1 - Starting...
+[ INFO ] [2018-11-29 20:48:24] com.zaxxer.hikari.HikariDataSource [123] - HikariPool-1 - Start completed.
+[ DEBUG] [2018-11-29 20:48:24] dao.com.github.ontio.dao.BuyRecordInfoMapper.selectHugeWinsTopByNum [159] - ==>  Preparing: select bettor, rollunder,bet,roll,payout from tbl_huge_wins order by payout DESC limit 1,?
+[ DEBUG] [2018-11-29 20:48:24] dao.com.github.ontio.dao.BuyRecordInfoMapper.selectHugeWinsTopByNum [159] - ==> Parameters: 10(Integer)
+[ DEBUG] [2018-11-29 20:48:24] dao.com.github.ontio.dao.BuyRecordInfoMapper.selectHugeWinsTopByNum [159] - <==      Total: 4
+[ INFO ] [2018-11-29 20:51:05] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [993] - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@35e2d654: startup date [Thu Nov 29 20:48:14 CST 2018]; root of context hierarchy
+[ INFO ] [2018-11-29 20:51:05] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [451] - Unregistering JMX-exposed beans on shutdown
+[ INFO ] [2018-11-29 20:51:05] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [183] - Unregistering JMX-exposed beans
+[ INFO ] [2018-11-29 20:51:05] com.zaxxer.hikari.HikariDataSource [381] - HikariPool-1 - Shutdown initiated...
+[ INFO ] [2018-11-29 20:51:05] com.zaxxer.hikari.HikariDataSource [383] - HikariPool-1 - Shutdown completed.
+[ INFO ] [2018-11-29 20:51:13] com.github.ontio.ExplorerApplication [50] - Starting ExplorerApplication on sss.local with PID 37401 (/Users/sss/dev/localgit/javaProject/wontologyserver/target/classes started by sss in /Users/sss/dev/localgit/javaProject/wontologyserver)
+[ DEBUG] [2018-11-29 20:51:13] com.github.ontio.ExplorerApplication [53] - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[ INFO ] [2018-11-29 20:51:13] com.github.ontio.ExplorerApplication [663] - The following profiles are active: uat
+[ INFO ] [2018-11-29 20:51:13] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [590] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@36902638: startup date [Thu Nov 29 20:51:13 CST 2018]; root of context hierarchy
+[ INFO ] [2018-11-29 20:51:13] org.springframework.data.repository.config.RepositoryConfigurationDelegate [163] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[ INFO ] [2018-11-29 20:51:14] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [328] - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$5f0c6b7f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[ INFO ] [2018-11-29 20:51:14] org.springframework.ws.soap.addressing.server.AnnotationActionEndpointMapping [236] - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+[ INFO ] [2018-11-29 20:51:14] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [328] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ba74a680] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[ INFO ] [2018-11-29 20:51:14] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [91] - Tomcat initialized with port(s): 8585 (http)
+[ INFO ] [2018-11-29 20:51:14] org.apache.coyote.http11.Http11NioProtocol [180] - Initializing ProtocolHandler ["http-nio-8585"]
+[ INFO ] [2018-11-29 20:51:14] org.apache.catalina.core.StandardService [180] - Starting service [Tomcat]
+[ INFO ] [2018-11-29 20:51:14] org.apache.catalina.core.StandardEngine [180] - Starting Servlet Engine: Apache Tomcat/8.5.31
+[ INFO ] [2018-11-29 20:51:14] org.apache.catalina.core.AprLifecycleListener [180] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/sss/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+[ INFO ] [2018-11-29 20:51:14] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] - Initializing Spring embedded WebApplicationContext
+[ INFO ] [2018-11-29 20:51:14] org.springframework.web.context.ContextLoader [285] - Root WebApplicationContext: initialization completed in 1250 ms
+[ INFO ] [2018-11-29 20:51:14] org.springframework.boot.web.servlet.ServletRegistrationBean [186] - Servlet dispatcherServlet mapped to [/]
+[ INFO ] [2018-11-29 20:51:14] org.springframework.boot.web.servlet.ServletRegistrationBean [186] - Servlet messageDispatcherServlet mapped to [/services/*]
+[ INFO ] [2018-11-29 20:51:14] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'characterEncodingFilter' to: [/*]
+[ INFO ] [2018-11-29 20:51:14] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[ INFO ] [2018-11-29 20:51:14] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[ INFO ] [2018-11-29 20:51:14] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'requestContextFilter' to: [/*]
+[ INFO ] [2018-11-29 20:51:14] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'simpleCORSFilter' to: [/*]
+[ INFO ] [2018-11-29 20:51:15] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2018-11-29 20:51:15] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [574] - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@36902638: startup date [Thu Nov 29 20:51:13 CST 2018]; root of context hierarchy
+[ INFO ] [2018-11-29 20:51:15] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/bets/getbetsbypage/{pagesize}/{pagenumber}],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.BetsController.getBetsByPage(java.lang.Integer,java.lang.Integer)
+[ INFO ] [2018-11-29 20:51:15] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/bets/getmybets/{bettor}],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.BetsController.getMyBets(java.lang.String)
+[ INFO ] [2018-11-29 20:51:15] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/bets/savebetinfo],methods=[POST]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.BetsController.saveBetInfo(java.lang.String)
+[ INFO ] [2018-11-29 20:51:15] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/bets/gethugewinstopbynum/{num}],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.BetsController.getHugeWins(java.lang.Integer)
+[ INFO ] [2018-11-29 20:51:15] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/bets/savehugewin],methods=[POST]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.BetsController.saveHugeWin(java.lang.String)
+[ INFO ] [2018-11-29 20:51:15] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[ INFO ] [2018-11-29 20:51:15] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[ INFO ] [2018-11-29 20:51:15] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2018-11-29 20:51:15] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2018-11-29 20:51:15] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [433] - Registering beans for JMX exposure on startup
+[ INFO ] [2018-11-29 20:51:15] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [895] - Bean with name 'dataSource' has been autodetected for JMX exposure
+[ INFO ] [2018-11-29 20:51:15] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [668] - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+[ INFO ] [2018-11-29 20:51:15] org.apache.coyote.http11.Http11NioProtocol [180] - Starting ProtocolHandler ["http-nio-8585"]
+[ INFO ] [2018-11-29 20:51:15] org.apache.tomcat.util.net.NioSelectorPool [180] - Using a shared selector for servlet write/read
+[ INFO ] [2018-11-29 20:51:15] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [206] - Tomcat started on port(s): 8585 (http) with context path ''
+[ INFO ] [2018-11-29 20:51:15] com.github.ontio.ExplorerApplication [59] - Started ExplorerApplication in 2.871 seconds (JVM running for 3.375)
+[ INFO ] [2018-11-29 20:51:25] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[ INFO ] [2018-11-29 20:51:25] org.springframework.web.servlet.DispatcherServlet [494] - FrameworkServlet 'dispatcherServlet': initialization started
+[ INFO ] [2018-11-29 20:51:25] org.springframework.web.servlet.DispatcherServlet [509] - FrameworkServlet 'dispatcherServlet': initialization completed in 14 ms
+[ INFO ] [2018-11-29 20:51:25] com.github.ontio.controller.BetsController [86] - ########BetsController.getHugeWins begin...
+[ INFO ] [2018-11-29 20:51:25] com.zaxxer.hikari.HikariDataSource [110] - HikariPool-1 - Starting...
+[ INFO ] [2018-11-29 20:51:25] com.zaxxer.hikari.HikariDataSource [123] - HikariPool-1 - Start completed.
+[ DEBUG] [2018-11-29 20:51:25] dao.com.github.ontio.dao.BuyRecordInfoMapper.selectHugeWinsTopByNum [159] - ==>  Preparing: select bettor, rollunder,bet,roll,payout from tbl_huge_wins order by payout DESC limit 1,?
+[ DEBUG] [2018-11-29 20:51:25] dao.com.github.ontio.dao.BuyRecordInfoMapper.selectHugeWinsTopByNum [159] - ==> Parameters: 10(Integer)
+[ DEBUG] [2018-11-29 20:51:25] dao.com.github.ontio.dao.BuyRecordInfoMapper.selectHugeWinsTopByNum [159] - <==      Total: 4
+[ INFO ] [2018-11-29 20:55:45] com.github.ontio.controller.BetsController [69] - ########BetsController.saveBetInfo begin...
+[ DEBUG] [2018-11-29 20:55:45] dao.com.github.ontio.dao.BuyRecordInfoMapper.insertBetInfo [159] - ==>  Preparing: insert into tbl_all_bets (bettor,rollUnder, bet, roll, payout) values (?, ?, ?, ?, ?)
+[ DEBUG] [2018-11-29 20:55:45] dao.com.github.ontio.dao.BuyRecordInfoMapper.insertBetInfo [159] - ==> Parameters: ssss(String), 10(Integer), 10.0004(BigDecimal), 90(Integer), 2000.888(BigDecimal)
+[ DEBUG] [2018-11-29 20:55:45] dao.com.github.ontio.dao.BuyRecordInfoMapper.insertBetInfo [159] - <==    Updates: 1
+[ INFO ] [2018-11-29 20:56:03] com.github.ontio.controller.BetsController [69] - ########BetsController.saveBetInfo begin...
+[ DEBUG] [2018-11-29 20:56:03] dao.com.github.ontio.dao.BuyRecordInfoMapper.insertBetInfo [159] - ==>  Preparing: insert into tbl_all_bets (bettor,rollUnder, bet, roll, payout) values (?, ?, ?, ?, ?)
+[ DEBUG] [2018-11-29 20:56:03] dao.com.github.ontio.dao.BuyRecordInfoMapper.insertBetInfo [159] - ==> Parameters: ssss(String), 10(Integer), 10.0004(BigDecimal), 90(Integer), 2000.888(BigDecimal)
+[ DEBUG] [2018-11-29 20:56:03] dao.com.github.ontio.dao.BuyRecordInfoMapper.insertBetInfo [159] - <==    Updates: 1
+[ INFO ] [2018-11-29 20:57:05] com.github.ontio.controller.BetsController [101] - ########BetsController.saveHugeWin begin...
+[ DEBUG] [2018-11-29 20:57:05] dao.com.github.ontio.dao.BuyRecordInfoMapper.selectHugeWinTotalNum [159] - ==>  Preparing: select id from tbl_huge_wins
+[ DEBUG] [2018-11-29 20:57:05] dao.com.github.ontio.dao.BuyRecordInfoMapper.selectHugeWinTotalNum [159] - ==> Parameters:
+[ DEBUG] [2018-11-29 20:57:05] dao.com.github.ontio.dao.BuyRecordInfoMapper.selectHugeWinTotalNum [159] - <==      Total: 5
+[ ERROR] [2018-11-29 20:57:05] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] [182] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.TooManyResultsException: Expected one result (or null) to be returned by selectOne(), but found: 5] with root cause
+org.apache.ibatis.exceptions.TooManyResultsException: Expected one result (or null) to be returned by selectOne(), but found: 5
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:81)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy67.selectOne(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:166)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:83)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy68.selectHugeWinTotalNum(Unknown Source)
+	at com.github.ontio.service.impl.BuyerHandleServiceImpl.insertHugeWin(BetsHandleServiceImpl.java:67)
+	at com.github.ontio.controller.BetsController.saveHugeWin(BetsController.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:877)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.github.ontio.SimpleCORSFilter.doFilter(SimpleCORSFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[ INFO ] [2018-11-29 21:00:29] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [993] - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@36902638: startup date [Thu Nov 29 20:51:13 CST 2018]; root of context hierarchy
+[ INFO ] [2018-11-29 21:00:29] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [451] - Unregistering JMX-exposed beans on shutdown
+[ INFO ] [2018-11-29 21:00:29] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [183] - Unregistering JMX-exposed beans
+[ INFO ] [2018-11-29 21:00:29] com.zaxxer.hikari.HikariDataSource [381] - HikariPool-1 - Shutdown initiated...
+[ INFO ] [2018-11-29 21:00:29] com.zaxxer.hikari.HikariDataSource [383] - HikariPool-1 - Shutdown completed.
+[ INFO ] [2018-11-29 21:00:40] com.github.ontio.ExplorerApplication [50] - Starting ExplorerApplication on sss.local with PID 37644 (/Users/sss/dev/localgit/javaProject/wontologyserver/target/classes started by sss in /Users/sss/dev/localgit/javaProject/wontologyserver)
+[ DEBUG] [2018-11-29 21:00:40] com.github.ontio.ExplorerApplication [53] - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[ INFO ] [2018-11-29 21:00:40] com.github.ontio.ExplorerApplication [663] - The following profiles are active: uat
+[ INFO ] [2018-11-29 21:00:40] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [590] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2b662a77: startup date [Thu Nov 29 21:00:40 CST 2018]; root of context hierarchy
+[ INFO ] [2018-11-29 21:00:40] org.springframework.data.repository.config.RepositoryConfigurationDelegate [163] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[ INFO ] [2018-11-29 21:00:41] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [328] - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$2b38a000] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[ INFO ] [2018-11-29 21:00:41] org.springframework.ws.soap.addressing.server.AnnotationActionEndpointMapping [236] - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+[ INFO ] [2018-11-29 21:00:41] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [328] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$86a0db01] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[ INFO ] [2018-11-29 21:00:41] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [91] - Tomcat initialized with port(s): 8585 (http)
+[ INFO ] [2018-11-29 21:00:41] org.apache.coyote.http11.Http11NioProtocol [180] - Initializing ProtocolHandler ["http-nio-8585"]
+[ INFO ] [2018-11-29 21:00:41] org.apache.catalina.core.StandardService [180] - Starting service [Tomcat]
+[ INFO ] [2018-11-29 21:00:41] org.apache.catalina.core.StandardEngine [180] - Starting Servlet Engine: Apache Tomcat/8.5.31
+[ INFO ] [2018-11-29 21:00:41] org.apache.catalina.core.AprLifecycleListener [180] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/sss/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+[ INFO ] [2018-11-29 21:00:41] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] - Initializing Spring embedded WebApplicationContext
+[ INFO ] [2018-11-29 21:00:41] org.springframework.web.context.ContextLoader [285] - Root WebApplicationContext: initialization completed in 1403 ms
+[ INFO ] [2018-11-29 21:00:41] org.springframework.boot.web.servlet.ServletRegistrationBean [186] - Servlet dispatcherServlet mapped to [/]
+[ INFO ] [2018-11-29 21:00:41] org.springframework.boot.web.servlet.ServletRegistrationBean [186] - Servlet messageDispatcherServlet mapped to [/services/*]
+[ INFO ] [2018-11-29 21:00:41] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'characterEncodingFilter' to: [/*]
+[ INFO ] [2018-11-29 21:00:41] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[ INFO ] [2018-11-29 21:00:41] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[ INFO ] [2018-11-29 21:00:41] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'requestContextFilter' to: [/*]
+[ INFO ] [2018-11-29 21:00:41] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'simpleCORSFilter' to: [/*]
+[ INFO ] [2018-11-29 21:00:41] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2018-11-29 21:00:42] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [574] - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2b662a77: startup date [Thu Nov 29 21:00:40 CST 2018]; root of context hierarchy
+[ INFO ] [2018-11-29 21:00:42] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/bets/getbetsbypage/{pagesize}/{pagenumber}],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.BetsController.getBetsByPage(java.lang.Integer,java.lang.Integer)
+[ INFO ] [2018-11-29 21:00:42] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/bets/getmybets/{bettor}],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.BetsController.getMyBets(java.lang.String)
+[ INFO ] [2018-11-29 21:00:42] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/bets/savebetinfo],methods=[POST]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.BetsController.saveBetInfo(java.lang.String)
+[ INFO ] [2018-11-29 21:00:42] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/bets/gethugewinstopbynum/{num}],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.BetsController.getHugeWins(java.lang.Integer)
+[ INFO ] [2018-11-29 21:00:42] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/bets/savehugewin],methods=[POST]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.BetsController.saveHugeWin(java.lang.String)
+[ INFO ] [2018-11-29 21:00:42] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[ INFO ] [2018-11-29 21:00:42] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[ INFO ] [2018-11-29 21:00:42] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2018-11-29 21:00:42] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2018-11-29 21:00:42] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [433] - Registering beans for JMX exposure on startup
+[ INFO ] [2018-11-29 21:00:42] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [895] - Bean with name 'dataSource' has been autodetected for JMX exposure
+[ INFO ] [2018-11-29 21:00:42] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [668] - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+[ INFO ] [2018-11-29 21:00:42] org.apache.coyote.http11.Http11NioProtocol [180] - Starting ProtocolHandler ["http-nio-8585"]
+[ INFO ] [2018-11-29 21:00:42] org.apache.tomcat.util.net.NioSelectorPool [180] - Using a shared selector for servlet write/read
+[ INFO ] [2018-11-29 21:00:42] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [206] - Tomcat started on port(s): 8585 (http) with context path ''
+[ INFO ] [2018-11-29 21:00:42] com.github.ontio.ExplorerApplication [59] - Started ExplorerApplication in 3.183 seconds (JVM running for 3.699)
+[ INFO ] [2018-11-29 21:01:00] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[ INFO ] [2018-11-29 21:01:00] org.springframework.web.servlet.DispatcherServlet [494] - FrameworkServlet 'dispatcherServlet': initialization started
+[ INFO ] [2018-11-29 21:01:00] org.springframework.web.servlet.DispatcherServlet [509] - FrameworkServlet 'dispatcherServlet': initialization completed in 15 ms
+[ INFO ] [2018-11-29 21:01:00] com.github.ontio.controller.BetsController [101] - ########BetsController.saveHugeWin begin...
+[ INFO ] [2018-11-29 21:01:00] com.zaxxer.hikari.HikariDataSource [110] - HikariPool-1 - Starting...
+[ INFO ] [2018-11-29 21:01:01] com.zaxxer.hikari.HikariDataSource [123] - HikariPool-1 - Start completed.
+[ DEBUG] [2018-11-29 21:01:01] dao.com.github.ontio.dao.BuyRecordInfoMapper.selectHugeWinTotalNum [159] - ==>  Preparing: select count(*) as value from tbl_huge_wins
+[ DEBUG] [2018-11-29 21:01:01] dao.com.github.ontio.dao.BuyRecordInfoMapper.selectHugeWinTotalNum [159] - ==> Parameters:
+[ DEBUG] [2018-11-29 21:01:01] dao.com.github.ontio.dao.BuyRecordInfoMapper.selectHugeWinTotalNum [159] - <==      Total: 1
+[ DEBUG] [2018-11-29 21:01:01] dao.com.github.ontio.dao.BuyRecordInfoMapper.insertBetInfo [159] - ==>  Preparing: insert into tbl_all_bets (bettor,rollUnder, bet, roll, payout) values (?, ?, ?, ?, ?)
+[ DEBUG] [2018-11-29 21:01:01] dao.com.github.ontio.dao.BuyRecordInfoMapper.insertBetInfo [159] - ==> Parameters: ssss(String), 10(Integer), 10.0004(BigDecimal), 90(Integer), 2000.888(BigDecimal)
+[ DEBUG] [2018-11-29 21:01:01] dao.com.github.ontio.dao.BuyRecordInfoMapper.insertBetInfo [159] - <==    Updates: 1
+[ INFO ] [2018-11-29 21:01:43] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [993] - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2b662a77: startup date [Thu Nov 29 21:00:40 CST 2018]; root of context hierarchy
+[ INFO ] [2018-11-29 21:01:43] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [451] - Unregistering JMX-exposed beans on shutdown
+[ INFO ] [2018-11-29 21:01:43] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [183] - Unregistering JMX-exposed beans
+[ INFO ] [2018-11-29 21:01:43] com.zaxxer.hikari.HikariDataSource [381] - HikariPool-1 - Shutdown initiated...
+[ INFO ] [2018-11-29 21:01:43] com.zaxxer.hikari.HikariDataSource [383] - HikariPool-1 - Shutdown completed.
+[ INFO ] [2018-11-29 21:01:50] com.github.ontio.ExplorerApplication [50] - Starting ExplorerApplication on sss.local with PID 37667 (/Users/sss/dev/localgit/javaProject/wontologyserver/target/classes started by sss in /Users/sss/dev/localgit/javaProject/wontologyserver)
+[ DEBUG] [2018-11-29 21:01:50] com.github.ontio.ExplorerApplication [53] - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[ INFO ] [2018-11-29 21:01:50] com.github.ontio.ExplorerApplication [663] - The following profiles are active: uat
+[ INFO ] [2018-11-29 21:01:50] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [590] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@68702e03: startup date [Thu Nov 29 21:01:50 CST 2018]; root of context hierarchy
+[ INFO ] [2018-11-29 21:01:51] org.springframework.data.repository.config.RepositoryConfigurationDelegate [163] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[ INFO ] [2018-11-29 21:01:52] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [328] - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$9d940b8e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[ INFO ] [2018-11-29 21:01:52] org.springframework.ws.soap.addressing.server.AnnotationActionEndpointMapping [236] - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+[ INFO ] [2018-11-29 21:01:52] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [328] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f8fc468f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[ INFO ] [2018-11-29 21:01:52] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [91] - Tomcat initialized with port(s): 8585 (http)
+[ INFO ] [2018-11-29 21:01:52] org.apache.coyote.http11.Http11NioProtocol [180] - Initializing ProtocolHandler ["http-nio-8585"]
+[ INFO ] [2018-11-29 21:01:52] org.apache.catalina.core.StandardService [180] - Starting service [Tomcat]
+[ INFO ] [2018-11-29 21:01:52] org.apache.catalina.core.StandardEngine [180] - Starting Servlet Engine: Apache Tomcat/8.5.31
+[ INFO ] [2018-11-29 21:01:52] org.apache.catalina.core.AprLifecycleListener [180] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/sss/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+[ INFO ] [2018-11-29 21:01:52] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] - Initializing Spring embedded WebApplicationContext
+[ INFO ] [2018-11-29 21:01:52] org.springframework.web.context.ContextLoader [285] - Root WebApplicationContext: initialization completed in 1601 ms
+[ INFO ] [2018-11-29 21:01:52] org.springframework.boot.web.servlet.ServletRegistrationBean [186] - Servlet dispatcherServlet mapped to [/]
+[ INFO ] [2018-11-29 21:01:52] org.springframework.boot.web.servlet.ServletRegistrationBean [186] - Servlet messageDispatcherServlet mapped to [/services/*]
+[ INFO ] [2018-11-29 21:01:52] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'characterEncodingFilter' to: [/*]
+[ INFO ] [2018-11-29 21:01:52] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[ INFO ] [2018-11-29 21:01:52] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[ INFO ] [2018-11-29 21:01:52] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'requestContextFilter' to: [/*]
+[ INFO ] [2018-11-29 21:01:52] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'simpleCORSFilter' to: [/*]
+[ INFO ] [2018-11-29 21:01:53] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2018-11-29 21:01:53] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [574] - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@68702e03: startup date [Thu Nov 29 21:01:50 CST 2018]; root of context hierarchy
+[ INFO ] [2018-11-29 21:01:53] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/bets/getbetsbypage/{pagesize}/{pagenumber}],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.BetsController.getBetsByPage(java.lang.Integer,java.lang.Integer)
+[ INFO ] [2018-11-29 21:01:53] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/bets/getmybets/{bettor}],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.BetsController.getMyBets(java.lang.String)
+[ INFO ] [2018-11-29 21:01:53] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/bets/savebetinfo],methods=[POST]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.BetsController.saveBetInfo(java.lang.String)
+[ INFO ] [2018-11-29 21:01:53] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/bets/gethugewinstopbynum/{num}],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.BetsController.getHugeWins(java.lang.Integer)
+[ INFO ] [2018-11-29 21:01:53] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/bets/savehugewin],methods=[POST]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.BetsController.saveHugeWin(java.lang.String)
+[ INFO ] [2018-11-29 21:01:53] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[ INFO ] [2018-11-29 21:01:53] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[ INFO ] [2018-11-29 21:01:53] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2018-11-29 21:01:53] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2018-11-29 21:01:54] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [433] - Registering beans for JMX exposure on startup
+[ INFO ] [2018-11-29 21:01:54] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [895] - Bean with name 'dataSource' has been autodetected for JMX exposure
+[ INFO ] [2018-11-29 21:01:54] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [668] - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+[ INFO ] [2018-11-29 21:01:54] org.apache.coyote.http11.Http11NioProtocol [180] - Starting ProtocolHandler ["http-nio-8585"]
+[ INFO ] [2018-11-29 21:01:54] org.apache.tomcat.util.net.NioSelectorPool [180] - Using a shared selector for servlet write/read
+[ INFO ] [2018-11-29 21:01:54] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [206] - Tomcat started on port(s): 8585 (http) with context path ''
+[ INFO ] [2018-11-29 21:01:54] com.github.ontio.ExplorerApplication [59] - Started ExplorerApplication in 4.056 seconds (JVM running for 5.264)
+[ INFO ] [2018-11-29 21:01:56] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[ INFO ] [2018-11-29 21:01:56] org.springframework.web.servlet.DispatcherServlet [494] - FrameworkServlet 'dispatcherServlet': initialization started
+[ INFO ] [2018-11-29 21:01:56] org.springframework.web.servlet.DispatcherServlet [509] - FrameworkServlet 'dispatcherServlet': initialization completed in 18 ms
+[ INFO ] [2018-11-29 21:01:57] com.github.ontio.controller.BetsController [101] - ########BetsController.saveHugeWin begin...
+[ INFO ] [2018-11-29 21:02:09] com.zaxxer.hikari.HikariDataSource [110] - HikariPool-1 - Starting...
+[ INFO ] [2018-11-29 21:02:10] com.zaxxer.hikari.HikariDataSource [123] - HikariPool-1 - Start completed.
+[ DEBUG] [2018-11-29 21:02:10] dao.com.github.ontio.dao.BuyRecordInfoMapper.selectHugeWinTotalNum [159] - ==>  Preparing: select count(*) as value from tbl_huge_wins
+[ DEBUG] [2018-11-29 21:02:10] dao.com.github.ontio.dao.BuyRecordInfoMapper.selectHugeWinTotalNum [159] - ==> Parameters:
+[ DEBUG] [2018-11-29 21:02:10] dao.com.github.ontio.dao.BuyRecordInfoMapper.selectHugeWinTotalNum [159] - <==      Total: 1
+[ DEBUG] [2018-11-29 21:02:18] dao.com.github.ontio.dao.BuyRecordInfoMapper.insertBetInfo [159] - ==>  Preparing: insert into tbl_all_bets (bettor,rollUnder, bet, roll, payout) values (?, ?, ?, ?, ?)
+[ DEBUG] [2018-11-29 21:02:18] dao.com.github.ontio.dao.BuyRecordInfoMapper.insertBetInfo [159] - ==> Parameters: ssss(String), 10(Integer), 10.0004(BigDecimal), 90(Integer), 2000.888(BigDecimal)
+[ DEBUG] [2018-11-29 21:02:18] dao.com.github.ontio.dao.BuyRecordInfoMapper.insertBetInfo [159] - <==    Updates: 1
+[ INFO ] [2018-11-29 21:02:18] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [993] - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@68702e03: startup date [Thu Nov 29 21:01:50 CST 2018]; root of context hierarchy
+[ INFO ] [2018-11-29 21:02:18] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [451] - Unregistering JMX-exposed beans on shutdown
+[ INFO ] [2018-11-29 21:02:18] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [183] - Unregistering JMX-exposed beans
+[ INFO ] [2018-11-29 21:02:18] com.zaxxer.hikari.HikariDataSource [381] - HikariPool-1 - Shutdown initiated...
+[ INFO ] [2018-11-29 21:02:18] com.zaxxer.hikari.HikariDataSource [383] - HikariPool-1 - Shutdown completed.
+[ INFO ] [2018-11-29 21:02:40] com.github.ontio.ExplorerApplication [50] - Starting ExplorerApplication on sss.local with PID 37682 (/Users/sss/dev/localgit/javaProject/wontologyserver/target/classes started by sss in /Users/sss/dev/localgit/javaProject/wontologyserver)
+[ DEBUG] [2018-11-29 21:02:40] com.github.ontio.ExplorerApplication [53] - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[ INFO ] [2018-11-29 21:02:40] com.github.ontio.ExplorerApplication [663] - The following profiles are active: uat
+[ INFO ] [2018-11-29 21:02:40] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [590] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@49ec71f8: startup date [Thu Nov 29 21:02:40 CST 2018]; root of context hierarchy
+[ INFO ] [2018-11-29 21:02:41] org.springframework.data.repository.config.RepositoryConfigurationDelegate [163] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[ INFO ] [2018-11-29 21:02:41] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [328] - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$bb3eb04a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[ INFO ] [2018-11-29 21:02:41] org.springframework.ws.soap.addressing.server.AnnotationActionEndpointMapping [236] - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+[ INFO ] [2018-11-29 21:02:41] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [328] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$16a6eb4b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[ INFO ] [2018-11-29 21:02:42] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [91] - Tomcat initialized with port(s): 8585 (http)
+[ INFO ] [2018-11-29 21:02:42] org.apache.coyote.http11.Http11NioProtocol [180] - Initializing ProtocolHandler ["http-nio-8585"]
+[ INFO ] [2018-11-29 21:02:42] org.apache.catalina.core.StandardService [180] - Starting service [Tomcat]
+[ INFO ] [2018-11-29 21:02:42] org.apache.catalina.core.StandardEngine [180] - Starting Servlet Engine: Apache Tomcat/8.5.31
+[ INFO ] [2018-11-29 21:02:42] org.apache.catalina.core.AprLifecycleListener [180] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/sss/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+[ INFO ] [2018-11-29 21:02:42] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] - Initializing Spring embedded WebApplicationContext
+[ INFO ] [2018-11-29 21:02:42] org.springframework.web.context.ContextLoader [285] - Root WebApplicationContext: initialization completed in 1366 ms
+[ INFO ] [2018-11-29 21:02:42] org.springframework.boot.web.servlet.ServletRegistrationBean [186] - Servlet dispatcherServlet mapped to [/]
+[ INFO ] [2018-11-29 21:02:42] org.springframework.boot.web.servlet.ServletRegistrationBean [186] - Servlet messageDispatcherServlet mapped to [/services/*]
+[ INFO ] [2018-11-29 21:02:42] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'characterEncodingFilter' to: [/*]
+[ INFO ] [2018-11-29 21:02:42] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[ INFO ] [2018-11-29 21:02:42] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[ INFO ] [2018-11-29 21:02:42] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'requestContextFilter' to: [/*]
+[ INFO ] [2018-11-29 21:02:42] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'simpleCORSFilter' to: [/*]
+[ INFO ] [2018-11-29 21:02:42] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2018-11-29 21:02:42] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [574] - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@49ec71f8: startup date [Thu Nov 29 21:02:40 CST 2018]; root of context hierarchy
+[ INFO ] [2018-11-29 21:02:42] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/bets/getbetsbypage/{pagesize}/{pagenumber}],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.BetsController.getBetsByPage(java.lang.Integer,java.lang.Integer)
+[ INFO ] [2018-11-29 21:02:42] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/bets/getmybets/{bettor}],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.BetsController.getMyBets(java.lang.String)
+[ INFO ] [2018-11-29 21:02:42] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/bets/savebetinfo],methods=[POST]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.BetsController.saveBetInfo(java.lang.String)
+[ INFO ] [2018-11-29 21:02:42] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/bets/gethugewinstopbynum/{num}],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.BetsController.getHugeWins(java.lang.Integer)
+[ INFO ] [2018-11-29 21:02:42] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/bets/savehugewin],methods=[POST]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.BetsController.saveHugeWin(java.lang.String)
+[ INFO ] [2018-11-29 21:02:42] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[ INFO ] [2018-11-29 21:02:42] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[ INFO ] [2018-11-29 21:02:42] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2018-11-29 21:02:42] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2018-11-29 21:02:43] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [433] - Registering beans for JMX exposure on startup
+[ INFO ] [2018-11-29 21:02:43] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [895] - Bean with name 'dataSource' has been autodetected for JMX exposure
+[ INFO ] [2018-11-29 21:02:43] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [668] - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+[ INFO ] [2018-11-29 21:02:43] org.apache.coyote.http11.Http11NioProtocol [180] - Starting ProtocolHandler ["http-nio-8585"]
+[ INFO ] [2018-11-29 21:02:43] org.apache.tomcat.util.net.NioSelectorPool [180] - Using a shared selector for servlet write/read
+[ INFO ] [2018-11-29 21:02:43] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [206] - Tomcat started on port(s): 8585 (http) with context path ''
+[ INFO ] [2018-11-29 21:02:43] com.github.ontio.ExplorerApplication [59] - Started ExplorerApplication in 3.102 seconds (JVM running for 3.616)
+[ INFO ] [2018-11-29 21:02:49] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[ INFO ] [2018-11-29 21:02:49] org.springframework.web.servlet.DispatcherServlet [494] - FrameworkServlet 'dispatcherServlet': initialization started
+[ INFO ] [2018-11-29 21:02:49] org.springframework.web.servlet.DispatcherServlet [509] - FrameworkServlet 'dispatcherServlet': initialization completed in 14 ms
+[ INFO ] [2018-11-29 21:02:49] com.github.ontio.controller.BetsController [101] - ########BetsController.saveHugeWin begin...
+[ INFO ] [2018-11-29 21:02:49] com.zaxxer.hikari.HikariDataSource [110] - HikariPool-1 - Starting...
+[ INFO ] [2018-11-29 21:02:49] com.zaxxer.hikari.HikariDataSource [123] - HikariPool-1 - Start completed.
+[ DEBUG] [2018-11-29 21:02:49] dao.com.github.ontio.dao.BuyRecordInfoMapper.selectHugeWinTotalNum [159] - ==>  Preparing: select count(*) as value from tbl_huge_wins
+[ DEBUG] [2018-11-29 21:02:49] dao.com.github.ontio.dao.BuyRecordInfoMapper.selectHugeWinTotalNum [159] - ==> Parameters:
+[ DEBUG] [2018-11-29 21:02:49] dao.com.github.ontio.dao.BuyRecordInfoMapper.selectHugeWinTotalNum [159] - <==      Total: 1
+[ DEBUG] [2018-11-29 21:02:49] dao.com.github.ontio.dao.BuyRecordInfoMapper.insertHugeWin [159] - ==>  Preparing: insert into tbl_huge_wins (bettor,rollUnder, bet, roll, payout) values (?, ?, ?, ?, ?)
+[ DEBUG] [2018-11-29 21:02:49] dao.com.github.ontio.dao.BuyRecordInfoMapper.insertHugeWin [159] - ==> Parameters: ssss(String), 10(Integer), 10.0004(BigDecimal), 90(Integer), 2000.888(BigDecimal)
+[ DEBUG] [2018-11-29 21:02:49] dao.com.github.ontio.dao.BuyRecordInfoMapper.insertHugeWin [159] - <==    Updates: 1
+[ INFO ] [2018-11-29 21:03:01] com.github.ontio.controller.BetsController [101] - ########BetsController.saveHugeWin begin...
+[ DEBUG] [2018-11-29 21:03:01] dao.com.github.ontio.dao.BuyRecordInfoMapper.selectHugeWinTotalNum [159] - ==>  Preparing: select count(*) as value from tbl_huge_wins
+[ DEBUG] [2018-11-29 21:03:01] dao.com.github.ontio.dao.BuyRecordInfoMapper.selectHugeWinTotalNum [159] - ==> Parameters:
+[ DEBUG] [2018-11-29 21:03:01] dao.com.github.ontio.dao.BuyRecordInfoMapper.selectHugeWinTotalNum [159] - <==      Total: 1
+[ DEBUG] [2018-11-29 21:03:01] dao.com.github.ontio.dao.BuyRecordInfoMapper.insertHugeWin [159] - ==>  Preparing: insert into tbl_huge_wins (bettor,rollUnder, bet, roll, payout) values (?, ?, ?, ?, ?)
+[ DEBUG] [2018-11-29 21:03:01] dao.com.github.ontio.dao.BuyRecordInfoMapper.insertHugeWin [159] - ==> Parameters: ssss(String), 10(Integer), 10.0004(BigDecimal), 90(Integer), 99.888(BigDecimal)
+[ DEBUG] [2018-11-29 21:03:01] dao.com.github.ontio.dao.BuyRecordInfoMapper.insertHugeWin [159] - <==    Updates: 1
+[ INFO ] [2018-11-29 21:03:09] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [993] - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@49ec71f8: startup date [Thu Nov 29 21:02:40 CST 2018]; root of context hierarchy
+[ INFO ] [2018-11-29 21:03:09] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [451] - Unregistering JMX-exposed beans on shutdown
+[ INFO ] [2018-11-29 21:03:09] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [183] - Unregistering JMX-exposed beans
+[ INFO ] [2018-11-29 21:03:09] com.zaxxer.hikari.HikariDataSource [381] - HikariPool-1 - Shutdown initiated...
+[ INFO ] [2018-11-29 21:03:09] com.zaxxer.hikari.HikariDataSource [383] - HikariPool-1 - Shutdown completed.

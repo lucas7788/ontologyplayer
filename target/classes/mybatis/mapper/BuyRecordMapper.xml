@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.github.ontio.dao.BuyRecordInfoMapper">
+    <resultMap id="BaseResultMap" type="com.github.ontio.model.BuyRecordInfo">
+        <result column="txtime" jdbcType="INTEGER" property="txTime" />
+        <result column="txhash" jdbcType="VARCHAR" property="txHash" />
+        <result column="buyer" jdbcType="VARCHAR" property="buyer" />
+        <result column="price" jdbcType="INTEGER" property="price" />
+        <result column="round" jdbcType="INTEGER" property="round" />
+    </resultMap>
+    <sql id="Base_Column_List">
+     txtime, txhash, buyer, price,round
+    </sql>
+
+    <select id="selectBuyRecordByPage" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List" />
+        from tbl_buy_record
+        order by id DESC
+        limit #{param1}, #{param2}
+    </select>
+
+    <select id="selectBuyRecordByTxHash"  resultType="Integer">
+        select
+        count(*)
+        from tbl_buy_record
+        where txhash = #{txHash,jdbcType=VARCHAR}
+    </select>
+    <select id="selectMyBuyRecordByPage"  resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List" />
+        from tbl_buy_record
+        where buyer = #{param1,jdbcType=VARCHAR}
+        order by id DESC
+        limit #{param2}, #{param3}
+    </select>
+
+    <insert id="insertBuyRecordInfo" parameterType="com.github.ontio.model.BuyRecordInfo">
+    insert into tbl_buy_record (txtime, txhash, buyer,price, round)
+    values (#{txTime,jdbcType=INTEGER},#{txHash,jdbcType=VARCHAR},#{buyer,jdbcType=VARCHAR}, #{price,jdbcType=INTEGER}, #{round,jdbcType=INTEGER})
+    </insert>
+</mapper>

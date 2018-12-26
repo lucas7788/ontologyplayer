@@ -1,0 +1,770 @@
+[ INFO ] [2018-11-14 09:31:45] com.github.ontio.ExplorerApplication [50] - Starting ExplorerApplication on sss with PID 1663 (/Users/sss/dev/localgit/javaProject/sidechainserver/target/classes started by sss in /Users/sss/dev/localgit/javaProject/sidechainserver)
+[ DEBUG] [2018-11-14 09:31:45] com.github.ontio.ExplorerApplication [53] - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[ INFO ] [2018-11-14 09:31:45] com.github.ontio.ExplorerApplication [663] - The following profiles are active: uat
+[ INFO ] [2018-11-14 09:31:46] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [590] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6572421: startup date [Wed Nov 14 09:31:46 CST 2018]; root of context hierarchy
+[ WARN ] [2018-11-14 09:31:46] org.mybatis.spring.mapper.ClassPathMapperScanner [239] - Skipping MapperFactoryBean with name 'BlkHeightMainMapper' and 'com.github.ontio.dao.BlkHeightMainMapper' mapperInterface. Bean already defined with the same name!
+[ WARN ] [2018-11-14 09:31:46] org.mybatis.spring.mapper.ClassPathMapperScanner [239] - Skipping MapperFactoryBean with name 'BlkHeightSideMapper' and 'com.github.ontio.dao.BlkHeightSideMapper' mapperInterface. Bean already defined with the same name!
+[ WARN ] [2018-11-14 09:31:46] org.mybatis.spring.mapper.ClassPathMapperScanner [239] - Skipping MapperFactoryBean with name 'NotifyMapper' and 'com.github.ontio.dao.NotifyMapper' mapperInterface. Bean already defined with the same name!
+[ WARN ] [2018-11-14 09:31:46] org.mybatis.spring.mapper.ClassPathMapperScanner [239] - Skipping MapperFactoryBean with name 'SendTxDetailMapper' and 'com.github.ontio.dao.SendTxDetailMapper' mapperInterface. Bean already defined with the same name!
+[ WARN ] [2018-11-14 09:31:46] org.mybatis.spring.mapper.ClassPathMapperScanner [239] - Skipping MapperFactoryBean with name 'SendTxMsgInfoMapper' and 'com.github.ontio.dao.SendTxMsgInfoMapper' mapperInterface. Bean already defined with the same name!
+[ WARN ] [2018-11-14 09:31:46] org.mybatis.spring.mapper.ClassPathMapperScanner [166] - No MyBatis mapper was found in '[com.github.ontio.dao]' package. Please check your configuration.
+[ WARN ] [2018-11-14 09:31:46] org.mybatis.spring.mapper.ClassPathMapperScanner [239] - Skipping MapperFactoryBean with name 'BlkHeightMainMapper' and 'com.github.ontio.dao.BlkHeightMainMapper' mapperInterface. Bean already defined with the same name!
+[ WARN ] [2018-11-14 09:31:46] org.mybatis.spring.mapper.ClassPathMapperScanner [239] - Skipping MapperFactoryBean with name 'BlkHeightSideMapper' and 'com.github.ontio.dao.BlkHeightSideMapper' mapperInterface. Bean already defined with the same name!
+[ WARN ] [2018-11-14 09:31:46] org.mybatis.spring.mapper.ClassPathMapperScanner [239] - Skipping MapperFactoryBean with name 'NotifyMapper' and 'com.github.ontio.dao.NotifyMapper' mapperInterface. Bean already defined with the same name!
+[ WARN ] [2018-11-14 09:31:46] org.mybatis.spring.mapper.ClassPathMapperScanner [239] - Skipping MapperFactoryBean with name 'SendTxDetailMapper' and 'com.github.ontio.dao.SendTxDetailMapper' mapperInterface. Bean already defined with the same name!
+[ WARN ] [2018-11-14 09:31:46] org.mybatis.spring.mapper.ClassPathMapperScanner [239] - Skipping MapperFactoryBean with name 'SendTxMsgInfoMapper' and 'com.github.ontio.dao.SendTxMsgInfoMapper' mapperInterface. Bean already defined with the same name!
+[ WARN ] [2018-11-14 09:31:46] org.mybatis.spring.mapper.ClassPathMapperScanner [166] - No MyBatis mapper was found in '[com.github.ontio.dao]' package. Please check your configuration.
+[ WARN ] [2018-11-14 09:31:46] org.mybatis.spring.mapper.ClassPathMapperScanner [239] - Skipping MapperFactoryBean with name 'BlkHeightMainMapper' and 'com.github.ontio.dao.BlkHeightMainMapper' mapperInterface. Bean already defined with the same name!
+[ WARN ] [2018-11-14 09:31:46] org.mybatis.spring.mapper.ClassPathMapperScanner [239] - Skipping MapperFactoryBean with name 'BlkHeightSideMapper' and 'com.github.ontio.dao.BlkHeightSideMapper' mapperInterface. Bean already defined with the same name!
+[ WARN ] [2018-11-14 09:31:46] org.mybatis.spring.mapper.ClassPathMapperScanner [239] - Skipping MapperFactoryBean with name 'NotifyMapper' and 'com.github.ontio.dao.NotifyMapper' mapperInterface. Bean already defined with the same name!
+[ WARN ] [2018-11-14 09:31:46] org.mybatis.spring.mapper.ClassPathMapperScanner [239] - Skipping MapperFactoryBean with name 'SendTxDetailMapper' and 'com.github.ontio.dao.SendTxDetailMapper' mapperInterface. Bean already defined with the same name!
+[ WARN ] [2018-11-14 09:31:46] org.mybatis.spring.mapper.ClassPathMapperScanner [239] - Skipping MapperFactoryBean with name 'SendTxMsgInfoMapper' and 'com.github.ontio.dao.SendTxMsgInfoMapper' mapperInterface. Bean already defined with the same name!
+[ WARN ] [2018-11-14 09:31:46] org.mybatis.spring.mapper.ClassPathMapperScanner [166] - No MyBatis mapper was found in '[com.github.ontio.dao]' package. Please check your configuration.
+[ INFO ] [2018-11-14 09:31:46] org.springframework.data.repository.config.RepositoryConfigurationDelegate [163] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[ INFO ] [2018-11-14 09:31:47] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [328] - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$9d732ccc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[ INFO ] [2018-11-14 09:31:47] org.springframework.ws.soap.addressing.server.AnnotationActionEndpointMapping [236] - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+[ INFO ] [2018-11-14 09:31:47] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [328] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f8db67cd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[ INFO ] [2018-11-14 09:31:47] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [91] - Tomcat initialized with port(s): 8585 (http)
+[ INFO ] [2018-11-14 09:31:47] org.apache.coyote.http11.Http11NioProtocol [180] - Initializing ProtocolHandler ["http-nio-8585"]
+[ INFO ] [2018-11-14 09:31:47] org.apache.catalina.core.StandardService [180] - Starting service [Tomcat]
+[ INFO ] [2018-11-14 09:31:47] org.apache.catalina.core.StandardEngine [180] - Starting Servlet Engine: Apache Tomcat/8.5.31
+[ INFO ] [2018-11-14 09:31:47] org.apache.catalina.core.AprLifecycleListener [180] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/sss/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+[ INFO ] [2018-11-14 09:31:47] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] - Initializing Spring embedded WebApplicationContext
+[ INFO ] [2018-11-14 09:31:47] org.springframework.web.context.ContextLoader [285] - Root WebApplicationContext: initialization completed in 1720 ms
+[ INFO ] [2018-11-14 09:31:47] org.springframework.boot.web.servlet.ServletRegistrationBean [186] - Servlet dispatcherServlet mapped to [/]
+[ INFO ] [2018-11-14 09:31:47] org.springframework.boot.web.servlet.ServletRegistrationBean [186] - Servlet messageDispatcherServlet mapped to [/services/*]
+[ INFO ] [2018-11-14 09:31:47] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'characterEncodingFilter' to: [/*]
+[ INFO ] [2018-11-14 09:31:47] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[ INFO ] [2018-11-14 09:31:47] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[ INFO ] [2018-11-14 09:31:47] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'requestContextFilter' to: [/*]
+[ INFO ] [2018-11-14 09:31:47] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'simpleCORSFilter' to: [/*]
+[ INFO ] [2018-11-14 09:31:48] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2018-11-14 09:31:48] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [574] - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6572421: startup date [Wed Nov 14 09:31:46 CST 2018]; root of context hierarchy
+[ INFO ] [2018-11-14 09:31:48] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/commitdpos/getsidechaindata],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.CommitPosController.querySideChainData()
+[ INFO ] [2018-11-14 09:31:48] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/mainchain/getnotifybyheight/{height}],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.MainChainController.getMainBlkHeight(int)
+[ INFO ] [2018-11-14 09:31:48] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/mainchain/getblkheight],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.MainChainController.getMainBlkHeight()
+[ INFO ] [2018-11-14 09:31:48] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/mainchain/getnotifybytxhash/{txhash}],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.MainChainController.getNotifyByTxhash(java.lang.String)
+[ INFO ] [2018-11-14 09:31:48] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/mainchain/getnotifybypage/{pagesize}/{pagenumber}],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.MainChainController.getMainNotify(java.lang.Integer,java.lang.Integer)
+[ INFO ] [2018-11-14 09:31:48] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/sendtx/getsendtxbyhash/{txhash}],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.SendTxController.getSendTxByTxhash(java.lang.String)
+[ INFO ] [2018-11-14 09:31:48] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/sendtx/getsendtx/{pagesize}/{pagenumber}],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.SendTxController.getSendTx(java.lang.Integer,java.lang.Integer)
+[ INFO ] [2018-11-14 09:31:48] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/sendtx/getsendtxdetailbyhash/{txhash}],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.SendTxController.getsendTxDetailByTxhash(java.lang.String)
+[ INFO ] [2018-11-14 09:31:48] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/sendtx/getsendtxdetail/{pagesize}/{pagenumber}],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.SendTxController.getMainNotifyAll(java.lang.Integer,java.lang.Integer)
+[ INFO ] [2018-11-14 09:31:48] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/sidechain/getnotifybyheight/{height}],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.SideChainController.getMainBlkHeight(int)
+[ INFO ] [2018-11-14 09:31:48] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/sidechain/getblkheight],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.SideChainController.getMainBlkHeight()
+[ INFO ] [2018-11-14 09:31:48] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/sidechain/getnotifybytxhash/{txhash}],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.SideChainController.getNotifyByTxhash(java.lang.String)
+[ INFO ] [2018-11-14 09:31:48] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/sidechain/getnotifybypage/{pagesize}/{pagenumber}],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.SideChainController.getMainNotifyByPage(java.lang.Integer,java.lang.Integer)
+[ INFO ] [2018-11-14 09:31:48] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[ INFO ] [2018-11-14 09:31:48] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[ INFO ] [2018-11-14 09:31:48] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2018-11-14 09:31:48] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2018-11-14 09:31:49] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [433] - Registering beans for JMX exposure on startup
+[ INFO ] [2018-11-14 09:31:49] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [895] - Bean with name 'dataSource' has been autodetected for JMX exposure
+[ INFO ] [2018-11-14 09:31:49] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [668] - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+[ INFO ] [2018-11-14 09:31:49] org.apache.coyote.http11.Http11NioProtocol [180] - Starting ProtocolHandler ["http-nio-8585"]
+[ INFO ] [2018-11-14 09:31:49] org.apache.tomcat.util.net.NioSelectorPool [180] - Using a shared selector for servlet write/read
+[ INFO ] [2018-11-14 09:31:49] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [206] - Tomcat started on port(s): 8585 (http) with context path ''
+[ INFO ] [2018-11-14 09:31:49] com.github.ontio.ExplorerApplication [59] - Started ExplorerApplication in 3.927 seconds (JVM running for 4.797)
+[ INFO ] [2018-11-14 09:32:21] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[ INFO ] [2018-11-14 09:32:21] org.springframework.web.servlet.DispatcherServlet [494] - FrameworkServlet 'dispatcherServlet': initialization started
+[ INFO ] [2018-11-14 09:32:21] org.springframework.web.servlet.DispatcherServlet [509] - FrameworkServlet 'dispatcherServlet': initialization completed in 15 ms
+[ INFO ] [2018-11-14 09:32:28] com.github.ontio.controller.CommitPosController [36] - ########MainChainController.getMainBlkHeight begin...
+[ INFO ] [2018-11-14 09:32:28] com.zaxxer.hikari.HikariDataSource [110] - HikariPool-1 - Starting...
+[ ERROR] [2018-11-14 09:32:29] com.zaxxer.hikari.pool.HikariPool [567] - HikariPool-1 - Exception during pool initialization.
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:990)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:342)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2188)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2221)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2016)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:776)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:117)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:123)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:365)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:194)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:460)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:534)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:151)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:115)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:78)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:82)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:68)
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:338)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:84)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:326)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:77)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy69.selectOne(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:166)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:83)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy70.selectDBHeight(Unknown Source)
+	at com.github.ontio.service.impl.MainChainServiceImpl.getMainCurrBlkHeight(MainChainServiceImpl.java:32)
+	at com.github.ontio.controller.MainChainController.getMainBlkHeight(MainChainController.java:38)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.github.ontio.SimpleCORSFilter.doFilter(SimpleCORSFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:301)
+	... 104 common frames omitted
+[ ERROR] [2018-11-14 09:32:29] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] [182] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+### The error may exist in file [/Users/sss/dev/localgit/javaProject/sidechainserver/target/classes/mybatis/mapper/BlkHeightMainMapper.xml]
+### The error may involve com.github.ontio.dao.BlkHeightMainMapper.selectDBHeight
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.] with root cause
+java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:301)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2188)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2221)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2016)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:776)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:117)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:123)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:365)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:194)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:460)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:534)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:151)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:115)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:78)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:82)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:68)
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:338)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:84)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:326)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:77)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy69.selectOne(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:166)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:83)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy70.selectDBHeight(Unknown Source)
+	at com.github.ontio.service.impl.MainChainServiceImpl.getMainCurrBlkHeight(MainChainServiceImpl.java:32)
+	at com.github.ontio.controller.MainChainController.getMainBlkHeight(MainChainController.java:38)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.github.ontio.SimpleCORSFilter.doFilter(SimpleCORSFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[ INFO ] [2018-11-14 09:33:34] com.github.ontio.controller.CommitPosController [36] - ########MainChainController.getMainBlkHeight begin...
+[ INFO ] [2018-11-14 09:33:34] com.zaxxer.hikari.HikariDataSource [110] - HikariPool-1 - Starting...
+[ INFO ] [2018-11-14 09:33:34] com.zaxxer.hikari.HikariDataSource [123] - HikariPool-1 - Start completed.
+[ DEBUG] [2018-11-14 09:33:34] dao.com.github.ontio.dao.BlkHeightMainMapper.selectDBHeight [159] - ==>  Preparing: select blkHeight from tbl_mainchain_blkheight 
+[ DEBUG] [2018-11-14 09:33:34] dao.com.github.ontio.dao.BlkHeightMainMapper.selectDBHeight [159] - ==> Parameters: 
+[ DEBUG] [2018-11-14 09:33:34] dao.com.github.ontio.dao.BlkHeightMainMapper.selectDBHeight [159] - <==      Total: 1
+[ INFO ] [2018-11-14 09:34:50] com.github.ontio.controller.CommitPosController [81] - ########MainChainController.getMainNotify begin...
+[ DEBUG] [2018-11-14 09:34:50] dao.com.github.ontio.dao.NotifyMapper.selectMainNotifyByPage [159] - ==>  Preparing: select blkHeight, TxHash, ContractAddress, funcName, sideChainId,address,amount from tbl_mainchain_notify order by id DESC limit ?, ? 
+[ DEBUG] [2018-11-14 09:34:50] dao.com.github.ontio.dao.NotifyMapper.selectMainNotifyByPage [159] - ==> Parameters: 4(Integer), 1(Integer)
+[ DEBUG] [2018-11-14 09:34:50] dao.com.github.ontio.dao.NotifyMapper.selectMainNotifyByPage [159] - <==      Total: 1
+[ INFO ] [2018-11-14 09:35:39] com.github.ontio.controller.CommitPosController [81] - ########MainChainController.getMainNotify begin...
+[ DEBUG] [2018-11-14 09:35:39] dao.com.github.ontio.dao.NotifyMapper.selectMainNotifyByPage [159] - ==>  Preparing: select blkHeight, TxHash, ContractAddress, funcName, sideChainId,address,amount from tbl_mainchain_notify order by id DESC limit ?, ? 
+[ DEBUG] [2018-11-14 09:35:39] dao.com.github.ontio.dao.NotifyMapper.selectMainNotifyByPage [159] - ==> Parameters: 0(Integer), 5(Integer)
+[ DEBUG] [2018-11-14 09:35:39] dao.com.github.ontio.dao.NotifyMapper.selectMainNotifyByPage [159] - <==      Total: 5
+[ INFO ] [2018-11-14 09:37:31] com.github.ontio.controller.CommitPosController [36] - ########MainChainController.getMainBlkHeight begin...
+[ DEBUG] [2018-11-14 09:37:31] dao.com.github.ontio.dao.BlkHeightMainMapper.selectDBHeight [159] - ==>  Preparing: select blkHeight from tbl_mainchain_blkheight 
+[ DEBUG] [2018-11-14 09:37:31] dao.com.github.ontio.dao.BlkHeightMainMapper.selectDBHeight [159] - ==> Parameters: 
+[ DEBUG] [2018-11-14 09:37:31] dao.com.github.ontio.dao.BlkHeightMainMapper.selectDBHeight [159] - <==      Total: 1
+[ INFO ] [2018-11-14 09:38:09] com.github.ontio.controller.CommitPosController [81] - ########MainChainController.getMainNotify begin...
+[ DEBUG] [2018-11-14 09:38:09] dao.com.github.ontio.dao.NotifyMapper.selectMainNotifyByPage [159] - ==>  Preparing: select blkHeight, TxHash, ContractAddress, funcName, sideChainId,address,amount from tbl_mainchain_notify order by id DESC limit ?, ? 
+[ DEBUG] [2018-11-14 09:38:09] dao.com.github.ontio.dao.NotifyMapper.selectMainNotifyByPage [159] - ==> Parameters: 0(Integer), 5(Integer)
+[ DEBUG] [2018-11-14 09:38:09] dao.com.github.ontio.dao.NotifyMapper.selectMainNotifyByPage [159] - <==      Total: 5
+[ INFO ] [2018-11-14 09:38:32] com.github.ontio.controller.CommitPosController [51] - ########MainChainController.getMainBlkHeight begin...
+[ DEBUG] [2018-11-14 09:38:32] dao.com.github.ontio.dao.NotifyMapper.selectMainNotifyByHeight [159] - ==>  Preparing: select blkHeight, TxHash, ContractAddress, funcName, sideChainId,address,amount from tbl_mainchain_notify where blkHeight = ? 
+[ DEBUG] [2018-11-14 09:38:32] dao.com.github.ontio.dao.NotifyMapper.selectMainNotifyByHeight [159] - ==> Parameters: 9836(Integer)
+[ DEBUG] [2018-11-14 09:38:32] dao.com.github.ontio.dao.NotifyMapper.selectMainNotifyByHeight [159] - <==      Total: 3
+[ INFO ] [2018-11-14 09:40:04] com.github.ontio.controller.CommitPosController [65] - ########MainChainController.getNotifyByTxhash begin...
+[ DEBUG] [2018-11-14 09:40:04] dao.com.github.ontio.dao.NotifyMapper.selectMainNotifyByTxhash [159] - ==>  Preparing: select blkHeight, TxHash, ContractAddress, funcName, sideChainId,address,amount from tbl_mainchain_notify where TxHash = ? 
+[ DEBUG] [2018-11-14 09:40:04] dao.com.github.ontio.dao.NotifyMapper.selectMainNotifyByTxhash [159] - ==> Parameters: a92b2c574c30d38f8e3b5c62cd1ccdaa84b9346e5a15bc21fdf34e1daf9226ac(String)
+[ DEBUG] [2018-11-14 09:40:04] dao.com.github.ontio.dao.NotifyMapper.selectMainNotifyByTxhash [159] - <==      Total: 3
+[ INFO ] [2018-11-14 09:42:05] com.github.ontio.controller.CommitPosController [36] - ########MainChainController.getMainBlkHeight begin...
+[ DEBUG] [2018-11-14 09:42:05] dao.com.github.ontio.dao.BlkHeightMainMapper.selectDBHeight [159] - ==>  Preparing: select blkHeight from tbl_mainchain_blkheight 
+[ DEBUG] [2018-11-14 09:42:05] dao.com.github.ontio.dao.BlkHeightMainMapper.selectDBHeight [159] - ==> Parameters: 
+[ DEBUG] [2018-11-14 09:42:05] dao.com.github.ontio.dao.BlkHeightMainMapper.selectDBHeight [159] - <==      Total: 1
+[ INFO ] [2018-11-14 09:42:11] com.github.ontio.controller.CommitPosController [36] - ########SideChainController.getMainBlkHeight begin...
+[ DEBUG] [2018-11-14 09:42:11] dao.com.github.ontio.dao.BlkHeightSideMapper.selectDBHeight [159] - ==>  Preparing: select blkheight from tbl_sidechain_blkheight 
+[ DEBUG] [2018-11-14 09:42:11] dao.com.github.ontio.dao.BlkHeightSideMapper.selectDBHeight [159] - ==> Parameters: 
+[ DEBUG] [2018-11-14 09:42:11] dao.com.github.ontio.dao.BlkHeightSideMapper.selectDBHeight [159] - <==      Total: 1
+[ INFO ] [2018-11-14 09:43:27] com.github.ontio.controller.CommitPosController [81] - ########MainChainController.getMainNotify begin...
+[ DEBUG] [2018-11-14 09:43:27] dao.com.github.ontio.dao.NotifyMapper.selectMainNotifyByPage [159] - ==>  Preparing: select blkHeight, TxHash, ContractAddress, funcName, sideChainId,address,amount from tbl_mainchain_notify order by id DESC limit ?, ? 
+[ DEBUG] [2018-11-14 09:43:27] dao.com.github.ontio.dao.NotifyMapper.selectMainNotifyByPage [159] - ==> Parameters: 0(Integer), 5(Integer)
+[ DEBUG] [2018-11-14 09:43:27] dao.com.github.ontio.dao.NotifyMapper.selectMainNotifyByPage [159] - <==      Total: 5
+[ INFO ] [2018-11-14 09:43:34] com.github.ontio.controller.CommitPosController [81] - ########SideChainController.getMainNotifyByPage begin...
+[ DEBUG] [2018-11-14 09:43:34] dao.com.github.ontio.dao.NotifyMapper.selectSideNotifyByPage [159] - ==>  Preparing: select blkHeight, TxHash, ContractAddress, funcName, sideChainId,address,amount from tbl_sidechain_notify order by id DESC limit ?, ? 
+[ DEBUG] [2018-11-14 09:43:34] dao.com.github.ontio.dao.NotifyMapper.selectSideNotifyByPage [159] - ==> Parameters: 0(Integer), 5(Integer)
+[ DEBUG] [2018-11-14 09:43:34] dao.com.github.ontio.dao.NotifyMapper.selectSideNotifyByPage [159] - <==      Total: 0
+[ INFO ] [2018-11-14 09:48:43] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [993] - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6572421: startup date [Wed Nov 14 09:31:46 CST 2018]; root of context hierarchy
+[ INFO ] [2018-11-14 09:48:43] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [451] - Unregistering JMX-exposed beans on shutdown
+[ INFO ] [2018-11-14 09:48:43] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [183] - Unregistering JMX-exposed beans
+[ INFO ] [2018-11-14 09:48:43] com.zaxxer.hikari.HikariDataSource [381] - HikariPool-1 - Shutdown initiated...
+[ INFO ] [2018-11-14 09:48:43] com.zaxxer.hikari.HikariDataSource [383] - HikariPool-1 - Shutdown completed.
+[ INFO ] [2018-11-14 10:37:19] com.github.ontio.ExplorerApplication [50] - Starting ExplorerApplication on sss with PID 3125 (/Users/sss/dev/localgit/javaProject/sidechainserver/target/classes started by sss in /Users/sss/dev/localgit/javaProject/sidechainserver)
+[ DEBUG] [2018-11-14 10:37:19] com.github.ontio.ExplorerApplication [53] - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[ INFO ] [2018-11-14 10:37:19] com.github.ontio.ExplorerApplication [663] - The following profiles are active: uat
+[ INFO ] [2018-11-14 10:37:19] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [590] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3a93b025: startup date [Wed Nov 14 10:37:19 CST 2018]; root of context hierarchy
+[ WARN ] [2018-11-14 10:37:20] org.mybatis.spring.mapper.ClassPathMapperScanner [239] - Skipping MapperFactoryBean with name 'BlkHeightMainMapper' and 'com.github.ontio.dao.BlkHeightMainMapper' mapperInterface. Bean already defined with the same name!
+[ WARN ] [2018-11-14 10:37:20] org.mybatis.spring.mapper.ClassPathMapperScanner [239] - Skipping MapperFactoryBean with name 'BlkHeightSideMapper' and 'com.github.ontio.dao.BlkHeightSideMapper' mapperInterface. Bean already defined with the same name!
+[ WARN ] [2018-11-14 10:37:20] org.mybatis.spring.mapper.ClassPathMapperScanner [239] - Skipping MapperFactoryBean with name 'NotifyMapper' and 'com.github.ontio.dao.NotifyMapper' mapperInterface. Bean already defined with the same name!
+[ WARN ] [2018-11-14 10:37:20] org.mybatis.spring.mapper.ClassPathMapperScanner [239] - Skipping MapperFactoryBean with name 'SendTxDetailMapper' and 'com.github.ontio.dao.SendTxDetailMapper' mapperInterface. Bean already defined with the same name!
+[ WARN ] [2018-11-14 10:37:20] org.mybatis.spring.mapper.ClassPathMapperScanner [239] - Skipping MapperFactoryBean with name 'SendTxMsgInfoMapper' and 'com.github.ontio.dao.SendTxMsgInfoMapper' mapperInterface. Bean already defined with the same name!
+[ WARN ] [2018-11-14 10:37:20] org.mybatis.spring.mapper.ClassPathMapperScanner [166] - No MyBatis mapper was found in '[com.github.ontio.dao]' package. Please check your configuration.
+[ WARN ] [2018-11-14 10:37:20] org.mybatis.spring.mapper.ClassPathMapperScanner [239] - Skipping MapperFactoryBean with name 'BlkHeightMainMapper' and 'com.github.ontio.dao.BlkHeightMainMapper' mapperInterface. Bean already defined with the same name!
+[ WARN ] [2018-11-14 10:37:20] org.mybatis.spring.mapper.ClassPathMapperScanner [239] - Skipping MapperFactoryBean with name 'BlkHeightSideMapper' and 'com.github.ontio.dao.BlkHeightSideMapper' mapperInterface. Bean already defined with the same name!
+[ WARN ] [2018-11-14 10:37:20] org.mybatis.spring.mapper.ClassPathMapperScanner [239] - Skipping MapperFactoryBean with name 'NotifyMapper' and 'com.github.ontio.dao.NotifyMapper' mapperInterface. Bean already defined with the same name!
+[ WARN ] [2018-11-14 10:37:20] org.mybatis.spring.mapper.ClassPathMapperScanner [239] - Skipping MapperFactoryBean with name 'SendTxDetailMapper' and 'com.github.ontio.dao.SendTxDetailMapper' mapperInterface. Bean already defined with the same name!
+[ WARN ] [2018-11-14 10:37:20] org.mybatis.spring.mapper.ClassPathMapperScanner [239] - Skipping MapperFactoryBean with name 'SendTxMsgInfoMapper' and 'com.github.ontio.dao.SendTxMsgInfoMapper' mapperInterface. Bean already defined with the same name!
+[ WARN ] [2018-11-14 10:37:20] org.mybatis.spring.mapper.ClassPathMapperScanner [166] - No MyBatis mapper was found in '[com.github.ontio.dao]' package. Please check your configuration.
+[ WARN ] [2018-11-14 10:37:20] org.mybatis.spring.mapper.ClassPathMapperScanner [239] - Skipping MapperFactoryBean with name 'BlkHeightMainMapper' and 'com.github.ontio.dao.BlkHeightMainMapper' mapperInterface. Bean already defined with the same name!
+[ WARN ] [2018-11-14 10:37:20] org.mybatis.spring.mapper.ClassPathMapperScanner [239] - Skipping MapperFactoryBean with name 'BlkHeightSideMapper' and 'com.github.ontio.dao.BlkHeightSideMapper' mapperInterface. Bean already defined with the same name!
+[ WARN ] [2018-11-14 10:37:20] org.mybatis.spring.mapper.ClassPathMapperScanner [239] - Skipping MapperFactoryBean with name 'NotifyMapper' and 'com.github.ontio.dao.NotifyMapper' mapperInterface. Bean already defined with the same name!
+[ WARN ] [2018-11-14 10:37:20] org.mybatis.spring.mapper.ClassPathMapperScanner [239] - Skipping MapperFactoryBean with name 'SendTxDetailMapper' and 'com.github.ontio.dao.SendTxDetailMapper' mapperInterface. Bean already defined with the same name!
+[ WARN ] [2018-11-14 10:37:20] org.mybatis.spring.mapper.ClassPathMapperScanner [239] - Skipping MapperFactoryBean with name 'SendTxMsgInfoMapper' and 'com.github.ontio.dao.SendTxMsgInfoMapper' mapperInterface. Bean already defined with the same name!
+[ WARN ] [2018-11-14 10:37:20] org.mybatis.spring.mapper.ClassPathMapperScanner [166] - No MyBatis mapper was found in '[com.github.ontio.dao]' package. Please check your configuration.
+[ INFO ] [2018-11-14 10:37:20] org.springframework.data.repository.config.RepositoryConfigurationDelegate [163] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[ INFO ] [2018-11-14 10:37:20] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [328] - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$4c730a5b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[ INFO ] [2018-11-14 10:37:20] org.springframework.ws.soap.addressing.server.AnnotationActionEndpointMapping [236] - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+[ INFO ] [2018-11-14 10:37:20] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [328] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a7db455c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[ INFO ] [2018-11-14 10:37:21] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [91] - Tomcat initialized with port(s): 8585 (http)
+[ INFO ] [2018-11-14 10:37:21] org.apache.coyote.http11.Http11NioProtocol [180] - Initializing ProtocolHandler ["http-nio-8585"]
+[ INFO ] [2018-11-14 10:37:21] org.apache.catalina.core.StandardService [180] - Starting service [Tomcat]
+[ INFO ] [2018-11-14 10:37:21] org.apache.catalina.core.StandardEngine [180] - Starting Servlet Engine: Apache Tomcat/8.5.31
+[ INFO ] [2018-11-14 10:37:21] org.apache.catalina.core.AprLifecycleListener [180] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/sss/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+[ INFO ] [2018-11-14 10:37:21] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] - Initializing Spring embedded WebApplicationContext
+[ INFO ] [2018-11-14 10:37:21] org.springframework.web.context.ContextLoader [285] - Root WebApplicationContext: initialization completed in 1556 ms
+[ INFO ] [2018-11-14 10:37:21] org.springframework.boot.web.servlet.ServletRegistrationBean [186] - Servlet dispatcherServlet mapped to [/]
+[ INFO ] [2018-11-14 10:37:21] org.springframework.boot.web.servlet.ServletRegistrationBean [186] - Servlet messageDispatcherServlet mapped to [/services/*]
+[ INFO ] [2018-11-14 10:37:21] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'characterEncodingFilter' to: [/*]
+[ INFO ] [2018-11-14 10:37:21] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[ INFO ] [2018-11-14 10:37:21] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[ INFO ] [2018-11-14 10:37:21] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'requestContextFilter' to: [/*]
+[ INFO ] [2018-11-14 10:37:21] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'simpleCORSFilter' to: [/*]
+[ INFO ] [2018-11-14 10:37:21] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2018-11-14 10:37:22] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [574] - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3a93b025: startup date [Wed Nov 14 10:37:19 CST 2018]; root of context hierarchy
+[ INFO ] [2018-11-14 10:37:22] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/commitdpos/getsidechaindata],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.CommitPosController.querySideChainData()
+[ INFO ] [2018-11-14 10:37:22] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/mainchain/getnotifybyheight/{height}],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.MainChainController.getMainBlkHeight(int)
+[ INFO ] [2018-11-14 10:37:22] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/mainchain/getblkheight],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.MainChainController.getMainBlkHeight()
+[ INFO ] [2018-11-14 10:37:22] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/mainchain/getnotifybytxhash/{txhash}],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.MainChainController.getNotifyByTxhash(java.lang.String)
+[ INFO ] [2018-11-14 10:37:22] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/mainchain/getnotifybypage/{pagesize}/{pagenumber}],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.MainChainController.getMainNotify(java.lang.Integer,java.lang.Integer)
+[ INFO ] [2018-11-14 10:37:22] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/sendtx/getsendtxbyhash/{txhash}],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.SendTxController.getSendTxByTxhash(java.lang.String)
+[ INFO ] [2018-11-14 10:37:22] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/sendtx/getsendtx/{pagesize}/{pagenumber}],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.SendTxController.getSendTx(java.lang.Integer,java.lang.Integer)
+[ INFO ] [2018-11-14 10:37:22] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/sendtx/getsendtxdetailbyhash/{txhash}],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.SendTxController.getsendTxDetailByTxhash(java.lang.String)
+[ INFO ] [2018-11-14 10:37:22] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/sendtx/getsendtxdetail/{pagesize}/{pagenumber}],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.SendTxController.getMainNotifyAll(java.lang.Integer,java.lang.Integer)
+[ INFO ] [2018-11-14 10:37:22] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/sidechain/getnotifybyheight/{height}],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.SideChainController.getMainBlkHeight(int)
+[ INFO ] [2018-11-14 10:37:22] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/sidechain/getblkheight],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.SideChainController.getMainBlkHeight()
+[ INFO ] [2018-11-14 10:37:22] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/sidechain/getnotifybytxhash/{txhash}],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.SideChainController.getNotifyByTxhash(java.lang.String)
+[ INFO ] [2018-11-14 10:37:22] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/sidechain/getnotifybypage/{pagesize}/{pagenumber}],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.SideChainController.getMainNotifyByPage(java.lang.Integer,java.lang.Integer)
+[ INFO ] [2018-11-14 10:37:22] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[ INFO ] [2018-11-14 10:37:22] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[ INFO ] [2018-11-14 10:37:22] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2018-11-14 10:37:22] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2018-11-14 10:37:22] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [433] - Registering beans for JMX exposure on startup
+[ INFO ] [2018-11-14 10:37:22] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [895] - Bean with name 'dataSource' has been autodetected for JMX exposure
+[ INFO ] [2018-11-14 10:37:22] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [668] - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+[ INFO ] [2018-11-14 10:37:22] org.apache.coyote.http11.Http11NioProtocol [180] - Starting ProtocolHandler ["http-nio-8585"]
+[ INFO ] [2018-11-14 10:37:22] org.apache.tomcat.util.net.NioSelectorPool [180] - Using a shared selector for servlet write/read
+[ INFO ] [2018-11-14 10:37:22] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [206] - Tomcat started on port(s): 8585 (http) with context path ''
+[ INFO ] [2018-11-14 10:37:22] com.github.ontio.ExplorerApplication [59] - Started ExplorerApplication in 3.444 seconds (JVM running for 4.037)
+[ INFO ] [2018-11-14 10:37:44] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[ INFO ] [2018-11-14 10:37:44] org.springframework.web.servlet.DispatcherServlet [494] - FrameworkServlet 'dispatcherServlet': initialization started
+[ INFO ] [2018-11-14 10:37:44] org.springframework.web.servlet.DispatcherServlet [509] - FrameworkServlet 'dispatcherServlet': initialization completed in 15 ms
+[ INFO ] [2018-11-14 10:37:44] com.github.ontio.controller.CommitPosController [81] - ########SideChainController.getMainNotifyByPage begin...
+[ INFO ] [2018-11-14 10:37:44] com.zaxxer.hikari.HikariDataSource [110] - HikariPool-1 - Starting...
+[ INFO ] [2018-11-14 10:37:44] com.zaxxer.hikari.HikariDataSource [123] - HikariPool-1 - Start completed.
+[ DEBUG] [2018-11-14 10:37:44] dao.com.github.ontio.dao.NotifyMapper.selectSideNotifyByPage [159] - ==>  Preparing: select blkHeight, TxHash, ContractAddress, funcName, sideChainId,address,amount from tbl_sidechain_notify order by id DESC limit ?, ? 
+[ DEBUG] [2018-11-14 10:37:44] dao.com.github.ontio.dao.NotifyMapper.selectSideNotifyByPage [159] - ==> Parameters: 0(Integer), 5(Integer)
+[ DEBUG] [2018-11-14 10:37:44] dao.com.github.ontio.dao.NotifyMapper.selectSideNotifyByPage [159] - <==      Total: 5
+[ INFO ] [2018-11-14 10:39:03] com.github.ontio.controller.CommitPosController [51] - ########SideChainController.getMainBlkHeight begin...
+[ DEBUG] [2018-11-14 10:39:03] dao.com.github.ontio.dao.NotifyMapper.selectSideNotifyByHeight [159] - ==>  Preparing: select blkHeight, TxHash, ContractAddress, funcName, sideChainId,address,amount from tbl_sidechain_notify where blkHeight = ? 
+[ DEBUG] [2018-11-14 10:39:03] dao.com.github.ontio.dao.NotifyMapper.selectSideNotifyByHeight [159] - ==> Parameters: 36708(Integer)
+[ DEBUG] [2018-11-14 10:39:03] dao.com.github.ontio.dao.NotifyMapper.selectSideNotifyByHeight [159] - <==      Total: 1
+[ INFO ] [2018-11-14 10:40:36] com.github.ontio.controller.CommitPosController [65] - ########SideChainController.getNotifyByTxhash begin...
+[ DEBUG] [2018-11-14 10:40:36] dao.com.github.ontio.dao.NotifyMapper.selectSideNotifyByTxhash [159] - ==>  Preparing: select blkHeight, TxHash, ContractAddress, funcName, sideChainId,address,amount from tbl_sidechain_notify where TxHash = ? 
+[ DEBUG] [2018-11-14 10:40:36] dao.com.github.ontio.dao.NotifyMapper.selectSideNotifyByTxhash [159] - ==> Parameters: 44a3993cfecb1ff0a80ab9f3082fa796d9262da72d913f50c4a0f47309e3bc0f(String)
+[ DEBUG] [2018-11-14 10:40:36] dao.com.github.ontio.dao.NotifyMapper.selectSideNotifyByTxhash [159] - <==      Total: 1
+[ INFO ] [2018-11-14 10:41:56] com.github.ontio.controller.CommitPosController [81] - ########MainChainController.getMainNotify begin...
+[ DEBUG] [2018-11-14 10:41:56] dao.com.github.ontio.dao.NotifyMapper.selectMainNotifyByPage [159] - ==>  Preparing: select blkHeight, TxHash, ContractAddress, funcName, sideChainId,address,amount from tbl_mainchain_notify order by id DESC limit ?, ? 
+[ DEBUG] [2018-11-14 10:41:56] dao.com.github.ontio.dao.NotifyMapper.selectMainNotifyByPage [159] - ==> Parameters: 0(Integer), 5(Integer)
+[ DEBUG] [2018-11-14 10:41:56] dao.com.github.ontio.dao.NotifyMapper.selectMainNotifyByPage [159] - <==      Total: 5
+[ INFO ] [2018-11-14 10:42:05] com.github.ontio.controller.CommitPosController [51] - ########SendTxController.getSendTx begin...
+[ INFO ] [2018-11-14 10:42:05] com.github.ontio.controller.CommitPosController [52] - pageSize:5, pageNumber；1
+[ DEBUG] [2018-11-14 10:42:05] dao.com.github.ontio.dao.SendTxMsgInfoMapper.selectSendTxByPage [159] - ==>  Preparing: select blkHeight, amount, chainType, nodeUrl,functionName,sideChainId,address,txhash,result,description from tbl_sendtx_msginfo order by id DESC limit ?, ? 
+[ DEBUG] [2018-11-14 10:42:05] dao.com.github.ontio.dao.SendTxMsgInfoMapper.selectSendTxByPage [159] - ==> Parameters: 0(Integer), 5(Integer)
+[ INFO ] [2018-11-14 10:42:05] org.springframework.beans.factory.xml.XmlBeanDefinitionReader [316] - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+[ INFO ] [2018-11-14 10:42:05] org.springframework.jdbc.support.SQLErrorCodesFactory [128] - SQLErrorCodes loaded: [DB2, Derby, H2, HDB, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase]
+[ ERROR] [2018-11-14 10:42:05] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] [182] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'blkHeight' in 'field list'
+### The error may exist in file [/Users/sss/dev/localgit/javaProject/sidechainserver/target/classes/mybatis/mapper/SendTxMsgInfoMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: select               blkHeight, amount, chainType, nodeUrl,functionName,sideChainId,address,txhash,result,description             from tbl_sendtx_msginfo         order by id DESC         limit ?, ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'blkHeight' in 'field list'
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'blkHeight' in 'field list'] with root cause
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'blkHeight' in 'field list'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:944)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3976)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3912)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2530)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2683)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2486)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1858)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1197)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy91.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:63)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:326)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy69.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:230)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:139)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:76)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy74.selectSendTxByPage(Unknown Source)
+	at com.github.ontio.service.impl.SendTxServiceImpl.getSendTxByPage(SendTxServiceImpl.java:34)
+	at com.github.ontio.controller.SendTxController.getSendTx(SendTxController.java:54)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.github.ontio.SimpleCORSFilter.doFilter(SimpleCORSFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[ INFO ] [2018-11-14 10:43:09] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [993] - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3a93b025: startup date [Wed Nov 14 10:37:19 CST 2018]; root of context hierarchy
+[ INFO ] [2018-11-14 10:43:09] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [451] - Unregistering JMX-exposed beans on shutdown
+[ INFO ] [2018-11-14 10:43:09] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [183] - Unregistering JMX-exposed beans
+[ INFO ] [2018-11-14 10:43:09] com.zaxxer.hikari.HikariDataSource [381] - HikariPool-1 - Shutdown initiated...
+[ INFO ] [2018-11-14 10:43:09] com.zaxxer.hikari.HikariDataSource [383] - HikariPool-1 - Shutdown completed.
+[ INFO ] [2018-11-14 10:46:36] com.github.ontio.ExplorerApplication [50] - Starting ExplorerApplication on sss with PID 3187 (/Users/sss/dev/localgit/javaProject/sidechainserver/target/classes started by sss in /Users/sss/dev/localgit/javaProject/sidechainserver)
+[ DEBUG] [2018-11-14 10:46:36] com.github.ontio.ExplorerApplication [53] - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[ INFO ] [2018-11-14 10:46:36] com.github.ontio.ExplorerApplication [663] - The following profiles are active: uat
+[ INFO ] [2018-11-14 10:46:36] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [590] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5c5eefef: startup date [Wed Nov 14 10:46:36 CST 2018]; root of context hierarchy
+[ WARN ] [2018-11-14 10:46:37] org.mybatis.spring.mapper.ClassPathMapperScanner [239] - Skipping MapperFactoryBean with name 'BlkHeightMainMapper' and 'com.github.ontio.dao.BlkHeightMainMapper' mapperInterface. Bean already defined with the same name!
+[ WARN ] [2018-11-14 10:46:37] org.mybatis.spring.mapper.ClassPathMapperScanner [239] - Skipping MapperFactoryBean with name 'BlkHeightSideMapper' and 'com.github.ontio.dao.BlkHeightSideMapper' mapperInterface. Bean already defined with the same name!
+[ WARN ] [2018-11-14 10:46:37] org.mybatis.spring.mapper.ClassPathMapperScanner [239] - Skipping MapperFactoryBean with name 'NotifyMapper' and 'com.github.ontio.dao.NotifyMapper' mapperInterface. Bean already defined with the same name!
+[ WARN ] [2018-11-14 10:46:37] org.mybatis.spring.mapper.ClassPathMapperScanner [239] - Skipping MapperFactoryBean with name 'SendTxDetailMapper' and 'com.github.ontio.dao.SendTxDetailMapper' mapperInterface. Bean already defined with the same name!
+[ WARN ] [2018-11-14 10:46:37] org.mybatis.spring.mapper.ClassPathMapperScanner [239] - Skipping MapperFactoryBean with name 'SendTxMsgInfoMapper' and 'com.github.ontio.dao.SendTxMsgInfoMapper' mapperInterface. Bean already defined with the same name!
+[ WARN ] [2018-11-14 10:46:37] org.mybatis.spring.mapper.ClassPathMapperScanner [166] - No MyBatis mapper was found in '[com.github.ontio.dao]' package. Please check your configuration.
+[ WARN ] [2018-11-14 10:46:37] org.mybatis.spring.mapper.ClassPathMapperScanner [239] - Skipping MapperFactoryBean with name 'BlkHeightMainMapper' and 'com.github.ontio.dao.BlkHeightMainMapper' mapperInterface. Bean already defined with the same name!
+[ WARN ] [2018-11-14 10:46:37] org.mybatis.spring.mapper.ClassPathMapperScanner [239] - Skipping MapperFactoryBean with name 'BlkHeightSideMapper' and 'com.github.ontio.dao.BlkHeightSideMapper' mapperInterface. Bean already defined with the same name!
+[ WARN ] [2018-11-14 10:46:37] org.mybatis.spring.mapper.ClassPathMapperScanner [239] - Skipping MapperFactoryBean with name 'NotifyMapper' and 'com.github.ontio.dao.NotifyMapper' mapperInterface. Bean already defined with the same name!
+[ WARN ] [2018-11-14 10:46:37] org.mybatis.spring.mapper.ClassPathMapperScanner [239] - Skipping MapperFactoryBean with name 'SendTxDetailMapper' and 'com.github.ontio.dao.SendTxDetailMapper' mapperInterface. Bean already defined with the same name!
+[ WARN ] [2018-11-14 10:46:37] org.mybatis.spring.mapper.ClassPathMapperScanner [239] - Skipping MapperFactoryBean with name 'SendTxMsgInfoMapper' and 'com.github.ontio.dao.SendTxMsgInfoMapper' mapperInterface. Bean already defined with the same name!
+[ WARN ] [2018-11-14 10:46:37] org.mybatis.spring.mapper.ClassPathMapperScanner [166] - No MyBatis mapper was found in '[com.github.ontio.dao]' package. Please check your configuration.
+[ WARN ] [2018-11-14 10:46:37] org.mybatis.spring.mapper.ClassPathMapperScanner [239] - Skipping MapperFactoryBean with name 'BlkHeightMainMapper' and 'com.github.ontio.dao.BlkHeightMainMapper' mapperInterface. Bean already defined with the same name!
+[ WARN ] [2018-11-14 10:46:37] org.mybatis.spring.mapper.ClassPathMapperScanner [239] - Skipping MapperFactoryBean with name 'BlkHeightSideMapper' and 'com.github.ontio.dao.BlkHeightSideMapper' mapperInterface. Bean already defined with the same name!
+[ WARN ] [2018-11-14 10:46:37] org.mybatis.spring.mapper.ClassPathMapperScanner [239] - Skipping MapperFactoryBean with name 'NotifyMapper' and 'com.github.ontio.dao.NotifyMapper' mapperInterface. Bean already defined with the same name!
+[ WARN ] [2018-11-14 10:46:37] org.mybatis.spring.mapper.ClassPathMapperScanner [239] - Skipping MapperFactoryBean with name 'SendTxDetailMapper' and 'com.github.ontio.dao.SendTxDetailMapper' mapperInterface. Bean already defined with the same name!
+[ WARN ] [2018-11-14 10:46:37] org.mybatis.spring.mapper.ClassPathMapperScanner [239] - Skipping MapperFactoryBean with name 'SendTxMsgInfoMapper' and 'com.github.ontio.dao.SendTxMsgInfoMapper' mapperInterface. Bean already defined with the same name!
+[ WARN ] [2018-11-14 10:46:37] org.mybatis.spring.mapper.ClassPathMapperScanner [166] - No MyBatis mapper was found in '[com.github.ontio.dao]' package. Please check your configuration.
+[ INFO ] [2018-11-14 10:46:37] org.springframework.data.repository.config.RepositoryConfigurationDelegate [163] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[ INFO ] [2018-11-14 10:46:37] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [328] - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$5a7007cc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[ INFO ] [2018-11-14 10:46:37] org.springframework.ws.soap.addressing.server.AnnotationActionEndpointMapping [236] - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+[ INFO ] [2018-11-14 10:46:37] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [328] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b5d842cd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[ INFO ] [2018-11-14 10:46:38] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [91] - Tomcat initialized with port(s): 8585 (http)
+[ INFO ] [2018-11-14 10:46:38] org.apache.coyote.http11.Http11NioProtocol [180] - Initializing ProtocolHandler ["http-nio-8585"]
+[ INFO ] [2018-11-14 10:46:38] org.apache.catalina.core.StandardService [180] - Starting service [Tomcat]
+[ INFO ] [2018-11-14 10:46:38] org.apache.catalina.core.StandardEngine [180] - Starting Servlet Engine: Apache Tomcat/8.5.31
+[ INFO ] [2018-11-14 10:46:38] org.apache.catalina.core.AprLifecycleListener [180] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/sss/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+[ INFO ] [2018-11-14 10:46:38] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] - Initializing Spring embedded WebApplicationContext
+[ INFO ] [2018-11-14 10:46:38] org.springframework.web.context.ContextLoader [285] - Root WebApplicationContext: initialization completed in 1357 ms
+[ INFO ] [2018-11-14 10:46:38] org.springframework.boot.web.servlet.ServletRegistrationBean [186] - Servlet dispatcherServlet mapped to [/]
+[ INFO ] [2018-11-14 10:46:38] org.springframework.boot.web.servlet.ServletRegistrationBean [186] - Servlet messageDispatcherServlet mapped to [/services/*]
+[ INFO ] [2018-11-14 10:46:38] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'characterEncodingFilter' to: [/*]
+[ INFO ] [2018-11-14 10:46:38] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[ INFO ] [2018-11-14 10:46:38] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[ INFO ] [2018-11-14 10:46:38] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'requestContextFilter' to: [/*]
+[ INFO ] [2018-11-14 10:46:38] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'simpleCORSFilter' to: [/*]
+[ INFO ] [2018-11-14 10:46:38] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2018-11-14 10:46:38] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [574] - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5c5eefef: startup date [Wed Nov 14 10:46:36 CST 2018]; root of context hierarchy
+[ INFO ] [2018-11-14 10:46:38] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/commitdpos/getsidechaindata],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.CommitPosController.querySideChainData()
+[ INFO ] [2018-11-14 10:46:38] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/mainchain/getnotifybyheight/{height}],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.MainChainController.getMainBlkHeight(int)
+[ INFO ] [2018-11-14 10:46:38] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/mainchain/getblkheight],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.MainChainController.getMainBlkHeight()
+[ INFO ] [2018-11-14 10:46:38] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/mainchain/getnotifybytxhash/{txhash}],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.MainChainController.getNotifyByTxhash(java.lang.String)
+[ INFO ] [2018-11-14 10:46:38] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/mainchain/getnotifybypage/{pagesize}/{pagenumber}],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.MainChainController.getMainNotify(java.lang.Integer,java.lang.Integer)
+[ INFO ] [2018-11-14 10:46:38] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/sendtx/getsendtxbytxhash/{txhash}],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.SendTxController.getSendTxByTxhash(java.lang.String)
+[ INFO ] [2018-11-14 10:46:38] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/sendtx/getsendtxbypage/{pagesize}/{pagenumber}],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.SendTxController.getSendTx(java.lang.Integer,java.lang.Integer)
+[ INFO ] [2018-11-14 10:46:38] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/sendtx/getsendtxdetailbytxhash/{txhash}],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.SendTxController.getsendTxDetailByTxhash(java.lang.String)
+[ INFO ] [2018-11-14 10:46:38] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/sendtx/getsendtxdetailbypage/{pagesize}/{pagenumber}],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.SendTxController.getMainNotifyAll(java.lang.Integer,java.lang.Integer)
+[ INFO ] [2018-11-14 10:46:38] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/sidechain/getnotifybyheight/{height}],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.SideChainController.getMainBlkHeight(int)
+[ INFO ] [2018-11-14 10:46:38] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/sidechain/getblkheight],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.SideChainController.getMainBlkHeight()
+[ INFO ] [2018-11-14 10:46:38] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/sidechain/getnotifybytxhash/{txhash}],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.SideChainController.getNotifyByTxhash(java.lang.String)
+[ INFO ] [2018-11-14 10:46:38] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/api/v1/sidechain/getnotifybypage/{pagesize}/{pagenumber}],methods=[GET]}" onto public com.github.ontio.paramBean.Result com.github.ontio.controller.SideChainController.getMainNotifyByPage(java.lang.Integer,java.lang.Integer)
+[ INFO ] [2018-11-14 10:46:38] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[ INFO ] [2018-11-14 10:46:38] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [547] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[ INFO ] [2018-11-14 10:46:38] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2018-11-14 10:46:38] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2018-11-14 10:46:39] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [433] - Registering beans for JMX exposure on startup
+[ INFO ] [2018-11-14 10:46:39] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [895] - Bean with name 'dataSource' has been autodetected for JMX exposure
+[ INFO ] [2018-11-14 10:46:39] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [668] - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+[ INFO ] [2018-11-14 10:46:39] org.apache.coyote.http11.Http11NioProtocol [180] - Starting ProtocolHandler ["http-nio-8585"]
+[ INFO ] [2018-11-14 10:46:39] org.apache.tomcat.util.net.NioSelectorPool [180] - Using a shared selector for servlet write/read
+[ INFO ] [2018-11-14 10:46:39] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [206] - Tomcat started on port(s): 8585 (http) with context path ''
+[ INFO ] [2018-11-14 10:46:39] com.github.ontio.ExplorerApplication [59] - Started ExplorerApplication in 3.076 seconds (JVM running for 3.599)
+[ INFO ] [2018-11-14 10:47:08] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[ INFO ] [2018-11-14 10:47:08] org.springframework.web.servlet.DispatcherServlet [494] - FrameworkServlet 'dispatcherServlet': initialization started
+[ INFO ] [2018-11-14 10:47:08] org.springframework.web.servlet.DispatcherServlet [509] - FrameworkServlet 'dispatcherServlet': initialization completed in 13 ms
+[ INFO ] [2018-11-14 10:47:24] com.github.ontio.controller.CommitPosController [51] - ########SendTxController.getSendTx begin...
+[ INFO ] [2018-11-14 10:47:24] com.github.ontio.controller.CommitPosController [52] - pageSize:5, pageNumber；1
+[ INFO ] [2018-11-14 10:47:24] com.zaxxer.hikari.HikariDataSource [110] - HikariPool-1 - Starting...
+[ INFO ] [2018-11-14 10:47:24] com.zaxxer.hikari.HikariDataSource [123] - HikariPool-1 - Start completed.
+[ DEBUG] [2018-11-14 10:47:24] dao.com.github.ontio.dao.SendTxMsgInfoMapper.selectSendTxByPage [159] - ==>  Preparing: select txhash, nodeUrl,functionName,result,description from tbl_sendtx_msginfo order by id DESC limit ?, ? 
+[ DEBUG] [2018-11-14 10:47:24] dao.com.github.ontio.dao.SendTxMsgInfoMapper.selectSendTxByPage [159] - ==> Parameters: 0(Integer), 5(Integer)
+[ INFO ] [2018-11-14 10:47:24] org.springframework.beans.factory.xml.XmlBeanDefinitionReader [316] - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+[ INFO ] [2018-11-14 10:47:24] org.springframework.jdbc.support.SQLErrorCodesFactory [128] - SQLErrorCodes loaded: [DB2, Derby, H2, HDB, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase]
+[ ERROR] [2018-11-14 10:47:24] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] [182] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'id' in 'order clause'
+### The error may exist in file [/Users/sss/dev/localgit/javaProject/sidechainserver/target/classes/mybatis/mapper/SendTxMsgInfoMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: select                txhash, nodeUrl,functionName,result,description             from tbl_sendtx_msginfo         order by id DESC         limit ?, ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'id' in 'order clause'
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'id' in 'order clause'] with root cause
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'id' in 'order clause'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:944)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3976)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3912)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2530)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2683)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2486)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1858)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1197)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy91.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:63)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:326)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy69.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:230)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:139)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:76)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy74.selectSendTxByPage(Unknown Source)
+	at com.github.ontio.service.impl.SendTxServiceImpl.getSendTxByPage(SendTxServiceImpl.java:34)
+	at com.github.ontio.controller.SendTxController.getSendTx(SendTxController.java:54)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.github.ontio.SimpleCORSFilter.doFilter(SimpleCORSFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[ INFO ] [2018-11-14 10:56:34] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [993] - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5c5eefef: startup date [Wed Nov 14 10:46:36 CST 2018]; root of context hierarchy
+[ INFO ] [2018-11-14 10:56:34] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [451] - Unregistering JMX-exposed beans on shutdown
+[ INFO ] [2018-11-14 10:56:34] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [183] - Unregistering JMX-exposed beans
+[ INFO ] [2018-11-14 10:56:34] com.zaxxer.hikari.HikariDataSource [381] - HikariPool-1 - Shutdown initiated...
+[ INFO ] [2018-11-14 10:56:34] com.zaxxer.hikari.HikariDataSource [383] - HikariPool-1 - Shutdown completed.
