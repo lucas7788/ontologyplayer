@@ -161,3 +161,18 @@ round, Integer
 7. `getRoundGameStatus`
 
 查询游戏状态
+
+8. `getDividendBalance`
+
+查询分红余额
+
+account ByteArray
+round Integer
+
+9. `getCurrentRemainingTime`
+
+查询游戏结束剩余时间
+
+10. `getHolderMostKeyValue`
+
+查询持有Key价值最多的玩家
