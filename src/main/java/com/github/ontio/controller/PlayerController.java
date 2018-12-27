@@ -1,6 +1,8 @@
 package com.github.ontio.controller;
 
 
+import com.alibaba.fastjson.JSON;
+import com.github.ontio.model.InvitorInfo;
 import com.github.ontio.paramBean.Result;
 import com.github.ontio.service.impl.BuyerHandleServiceImpl;
 import com.github.ontio.utils.Helper;
@@ -23,6 +25,51 @@ public class PlayerController {
 
     @Autowired
     private BuyerHandleServiceImpl buyerHandleService;
+
+
+    /**
+     * query the last few blocks
+     *
+     * @return
+     */
+    @RequestMapping(value = "/saveinvitor", method = RequestMethod.POST)
+    @ResponseBody
+    public Result saveInvitor(@RequestBody String reqParam) {
+
+        logger.info("########{}.{} begin...", CLASS_NAME, Helper.currentMethod());
+        InvitorInfo invitorInfo = JSON.parseObject(reqParam, InvitorInfo.class);
+        Result rs = buyerHandleService.saveInvitor(invitorInfo);
+        return rs;
+    }
+
+
+    /**
+     * query the last few blocks
+     *
+     * @return
+     */
+    @RequestMapping(value = "/getinvitorbyaddress/{address}", method = RequestMethod.GET)
+    @ResponseBody
+    public Result getInvitorByAddress(@PathVariable("address") String address) {
+
+        logger.info("########{}.{} begin...", CLASS_NAME, Helper.currentMethod());
+        Result rs = buyerHandleService.getInvitorByAddress(address);
+        return rs;
+    }
+
+    /**
+     * query the last few blocks
+     *
+     * @return
+     */
+    @RequestMapping(value = "/gettotalbyinvitor/{invitor}", method = RequestMethod.GET)
+    @ResponseBody
+    public Result getTotalByInvitor(@PathVariable("invitor") String invitor) {
+
+        logger.info("########{}.{} begin...", CLASS_NAME, Helper.currentMethod());
+        Result rs = buyerHandleService.getTotalByInvitor(invitor);
+        return rs;
+    }
 
     /**
      * query the last few blocks

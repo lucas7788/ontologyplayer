@@ -1,8 +1,10 @@
 package com.github.ontio.service.impl;
 
 import com.github.ontio.dao.BuyRecordInfoMapper;
+import com.github.ontio.dao.InvitorMapper;
 import com.github.ontio.dao.WinnerInfoMapper;
 import com.github.ontio.model.BuyRecordInfo;
+import com.github.ontio.model.InvitorInfo;
 import com.github.ontio.model.WinnerInfo;
 import com.github.ontio.paramBean.Result;
 import com.github.ontio.service.IBuyerHandleService;
@@ -31,6 +33,35 @@ public class BuyerHandleServiceImpl implements IBuyerHandleService {
     @Autowired
     private WinnerInfoMapper winnerInfoMapper;
 
+    @Autowired
+    private InvitorMapper invitorMapper;
+
+    @Override
+    public Result getInvitorByAddress(String address) {
+        InvitorInfo invitorInfo = invitorMapper.selectInvitorByAddress(address);
+        Map<String, Object> rs = new HashMap<>();
+        rs.put("Result", invitorInfo);
+        return Helper.result("getinvitorbyaddress", ErrorInfo.SUCCESS.code(),ErrorInfo.SUCCESS.desc(),
+                VERSION,rs);
+    }
+
+    @Override
+    public Result getTotalByInvitor(String invitor) {
+        int total = invitorMapper.selectTotalByInvitor(invitor);
+        Map<String, Object> rs = new HashMap<>();
+        rs.put("Result", total);
+        return Helper.result("gettotalbyinvitor", ErrorInfo.SUCCESS.code(),ErrorInfo.SUCCESS.desc(),
+                VERSION,rs);
+    }
+
+    @Override
+    public Result saveInvitor(InvitorInfo invitorInfo) {
+        int res = invitorMapper.insertInvitor(invitorInfo);
+        Map<String, Object> rs = new HashMap<>();
+        rs.put("Result", res);
+        return Helper.result("saveinvitor", ErrorInfo.SUCCESS.code(),ErrorInfo.SUCCESS.desc(),
+                VERSION,rs);
+    }
 
     @Override
     public Result getBuyRecordByPage(Integer pageSize, Integer pageNumber) {

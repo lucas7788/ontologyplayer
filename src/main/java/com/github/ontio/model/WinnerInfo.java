@@ -4,7 +4,16 @@ public class WinnerInfo {
 
     public String lastBuyer;
     public String holdKeyMost;
+    public String mostActive;
     public Integer round;
+
+    public String getMostActive() {
+        return mostActive;
+    }
+
+    public void setMostActive(String mostActive) {
+        this.mostActive = mostActive;
+    }
 
     public String getLastBuyer() {
         return lastBuyer;

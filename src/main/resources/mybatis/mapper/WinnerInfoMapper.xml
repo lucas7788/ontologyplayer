@@ -2,13 +2,13 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.github.ontio.dao.WinnerInfoMapper">
     <resultMap id="BaseResultMap" type="com.github.ontio.model.WinnerInfo">
-        <result column="buyer" jdbcType="VARCHAR" property="lastBuyer" />
-        <result column="buyer" jdbcType="VARCHAR" property="holdKeyMost" />
-        <result column="price" jdbcType="INTEGER" property="price" />
+        <result column="lastbuyer" jdbcType="VARCHAR" property="lastBuyer" />
+        <result column="holdMost" jdbcType="VARCHAR" property="holdKeyMost" />
+        <result column="mostactive" jdbcType="VARCHAR" property="mostActive" />
         <result column="round" jdbcType="INTEGER" property="round" />
     </resultMap>
     <sql id="Base_Column_List">
-      lastbuyer, holdkeymost, round
+      lastbuyer, holdkeymost,mostActive, round
     </sql>
 
     <select id="selectWinnerInfoByPage" resultMap="BaseResultMap">
@@ -19,7 +19,7 @@
         limit #{param1}, #{param2}
     </select>
     <insert id="insertWinnerInfo" parameterType="com.github.ontio.model.WinnerInfo">
-    insert into tbl_winner (lastbuyer, holdkeymost, round)
-    values (#{lastBuyer,jdbcType=INTEGER},#{holdKeyMost,jdbcType=VARCHAR}, #{round,jdbcType=INTEGER})
+    insert into tbl_winner (lastbuyer, holdkeymost,mostActive, round)
+    values (#{lastBuyer,jdbcType=VARCHAR},#{holdKeyMost,jdbcType=VARCHAR},#{mostActive,jdbcType=VARCHAR},, #{round,jdbcType=INTEGER})
     </insert>
 </mapper>

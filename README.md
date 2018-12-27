@@ -119,6 +119,88 @@ http://127.0.0.1:8585/api/v1/buyers/getmywithdrawrecordbypage/sss/3/1
 }
 ```
 
+4. `saveinvitor`     POST
+
+保存邀请人和被邀请人
+address 被邀请人地址
+invitor 邀请人地址
+
+例子
+请求
+```http request
+http://127.0.0.1:8585/api/v1/buyers/saveinvitor
+```
+
+参数
+```json
+{
+  "address": "aaaaa",
+  "invitor": "sss"
+}
+```
+
+响应
+
+```
+{
+    "Action": "saveinvitor",
+    "Error": 0,
+    "Desc": "SUCCESS",
+    "Version": "1.0",
+    "Result": {
+        "Result": 1
+    }
+}
+```
+
+
+5. `getinvitorbyaddress/{address}`
+
+查询某个地址的邀请人
+
+
+请求例子
+
+```http request
+http://127.0.0.1:8585/api/v1/buyers/getinvitorbyaddress/aaaaa
+```
+
+```json
+{
+	"Action": "getinvitorbyaddress",
+	"Error": 0,
+	"Desc": "SUCCESS",
+	"Version": "1.0",
+	"Result": {
+		"Result": {
+			"address": "aaaaa",
+			"invitor": "sss"
+		}
+	}
+}
+```
+
+6. `gettotalbyinvitor`   GET
+
+查询某个地址的总邀请人数
+
+请求
+```http request
+http://127.0.0.1:8585/api/v1/buyers/gettotalbyinvitor/sss
+```
+
+响应
+```json
+{
+	"Action": "gettotalbyinvitor",
+	"Error": 0,
+	"Desc": "SUCCESS",
+	"Version": "1.0",
+	"Result": {
+		"Result": 1
+	}
+}
+```
 
 ## 合约接口列表
 
@@ -167,7 +249,6 @@ round, Integer
 查询分红余额
 
 account ByteArray
-round Integer
 
 9. `getCurrentRemainingTime`
 
@@ -176,3 +257,10 @@ round Integer
 10. `getHolderMostKeyValue`
 
 查询持有Key价值最多的玩家
+
+11. `getMostActivePlayer`
+
+参数
+round integer
+
+查询购买次数最多的玩家,也就是最活跃的玩家
