@@ -3,9 +3,11 @@ package com.github.ontio.service.impl;
 import com.github.ontio.dao.BuyRecordInfoMapper;
 import com.github.ontio.dao.InvitorMapper;
 import com.github.ontio.dao.WinnerInfoMapper;
+import com.github.ontio.dao.WithdrawRecordInfoMapper;
 import com.github.ontio.model.BuyRecordInfo;
 import com.github.ontio.model.InvitorInfo;
 import com.github.ontio.model.WinnerInfo;
+import com.github.ontio.model.WithdrawRecordInfo;
 import com.github.ontio.paramBean.Result;
 import com.github.ontio.service.IBuyerHandleService;
 import com.github.ontio.utils.ConstantParam;
@@ -21,7 +23,7 @@ import java.util.List;
 import java.util.Map;
 
 
-@Service("BetsHandleService")
+@Service("BuyerHandleService")
 @MapperScan("com.github.ontio.dao")
 public class BuyerHandleServiceImpl implements IBuyerHandleService {
 
@@ -29,6 +31,9 @@ public class BuyerHandleServiceImpl implements IBuyerHandleService {
 
     @Autowired
     private BuyRecordInfoMapper buyRecordInfoMapper;
+
+    @Autowired
+    private WithdrawRecordInfoMapper withdrawRecordInfoMapper;
 
     @Autowired
     private WinnerInfoMapper winnerInfoMapper;
@@ -96,9 +101,9 @@ public class BuyerHandleServiceImpl implements IBuyerHandleService {
     @Override
     public Result getMyWithdrawRecordByPage(String buyer, Integer pageSize, Integer pageNumber) {
         int start = pageSize * (pageNumber - 1) < 0 ? 0 : pageSize * (pageNumber - 1);
-        List<BuyRecordInfo> buyRecordInfoList =  buyRecordInfoMapper.selectMyBuyRecordByPage(buyer, start, pageSize);
+        List<WithdrawRecordInfo> withdrawRecordInfoList =  withdrawRecordInfoMapper.selectMyWithdrawRecordByPage(buyer, start, pageSize);
         Map<String, Object> rs = new HashMap<>();
-        rs.put("Result", buyRecordInfoList);
+        rs.put("Result", withdrawRecordInfoList);
         return Helper.result("getmywithdrawrecordbypage", ErrorInfo.SUCCESS.code(),ErrorInfo.SUCCESS.desc(),
                 VERSION,rs);
     }

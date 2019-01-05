@@ -14,9 +14,8 @@ import org.springframework.web.bind.annotation.*;
 
 @EnableAutoConfiguration
 @RestController
-@RequestMapping(value = "/api/v1/ong")
-public class PlayerController {
-
+@RequestMapping(value = "/api/v1/ont")
+public class PlayerControllerONT {
     private static final Logger logger = LoggerFactory.getLogger(PlayerController.class);
 
     private final String CLASS_NAME = this.getClass().getSimpleName();
@@ -79,8 +78,8 @@ public class PlayerController {
     @RequestMapping(value = "/getmybuyrecordbypage/{buyer}/{pagesize}/{pagenumber}", method = RequestMethod.GET)
     @ResponseBody
     public Result getMyBuyRecordByPage(@PathVariable("buyer") String buyer,
-                                @PathVariable("pagenumber") Integer pageNumber,
-                                @PathVariable("pagesize") Integer pageSize) {
+                                       @PathVariable("pagenumber") Integer pageNumber,
+                                       @PathVariable("pagesize") Integer pageSize) {
 
         logger.info("########{}.{} begin...", CLASS_NAME, Helper.currentMethod());
 
@@ -96,7 +95,7 @@ public class PlayerController {
     @RequestMapping(value = "/getbuyrecordbypage/{pageSize}/{pageNumber}", method = RequestMethod.GET)
     @ResponseBody
     public Result getBuyRecordByPage(@PathVariable("pageSize") int pageSize,
-                                  @PathVariable("pageNumber") int pageNumber) {
+                                     @PathVariable("pageNumber") int pageNumber) {
 
         logger.info("########{}.{} begin...", CLASS_NAME, Helper.currentMethod());
 

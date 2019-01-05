@@ -7,9 +7,10 @@
         <result column="dividend" jdbcType="DECIMAL" property="dividend" />
         <result column="invitedividend" jdbcType="DECIMAL" property="inviteDividend" />
         <result column="round" jdbcType="INTEGER" property="round" />
+        <result column="txtime" jdbcType="INTEGER" property="txTime" />
     </resultMap>
     <sql id="Base_Column_List">
-     txhash, buyer, dividend, invitedividend, round
+     txhash, address, dividend, invitedividend, round, txtime
     </sql>
 
     <select id="selectMyWithdrawRecordByPage"  resultMap="BaseResultMap">
@@ -22,7 +23,24 @@
     </select>
 
     <insert id="insertWithdrawRecordInfo" parameterType="com.github.ontio.model.WithdrawRecordInfo">
-    insert into tbl_withdraw_record_ong (txhash, address,dividend, invitedividend, round)
-    values (#{txHash,jdbcType=VARCHAR},#{address,jdbcType=VARCHAR}, #{dividend,jdbcType=DECIMAL},#{inviteDividend,jdbcType=DECIMAL}, #{round,jdbcType=INTEGER})
+    insert into tbl_withdraw_record_ong (txhash, address,dividend, invitedividend, round, txtime)
+    values (#{txHash,jdbcType=VARCHAR},#{address,jdbcType=VARCHAR}, #{dividend,jdbcType=DECIMAL},
+    #{inviteDividend,jdbcType=DECIMAL}, #{round,jdbcType=INTEGER}, #{txTime,jdbcType=INTEGER})
+    </insert>
+
+
+    <select id="selectMyWithdrawRecordByPageONT"  resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List" />
+        from tbl_withdraw_record_ont
+        where address = #{param1,jdbcType=VARCHAR}
+        order by id DESC
+        limit #{param2}, #{param3}
+    </select>
+
+    <insert id="insertWithdrawRecordInfoONT" parameterType="com.github.ontio.model.WithdrawRecordInfo">
+    insert into tbl_withdraw_record_ont (txhash, address,dividend, invitedividend, round, txtime)
+    values (#{txHash,jdbcType=VARCHAR},#{address,jdbcType=VARCHAR}, #{dividend,jdbcType=DECIMAL},
+    #{inviteDividend,jdbcType=DECIMAL}, #{round,jdbcType=INTEGER}, #{txTime,jdbcType=INTEGER})
     </insert>
 </mapper>

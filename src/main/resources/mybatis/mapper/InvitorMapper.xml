@@ -27,4 +27,24 @@
     insert into tbl_invitor_ong (address, invitor)
     values (#{address,jdbcType=VARCHAR},#{invitor,jdbcType=VARCHAR})
     </insert>
+
+
+    <select id="selectInvitorByAddressONT" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List" />
+        from tbl_invitor_ont
+        where address = #{address, jdbcType=VARCHAR}
+    </select>
+
+    <select id="selectTotalByInvitorONT" resultType="INTEGER">
+        select
+        count(*)
+        from tbl_invitor_ont
+        where invitor = #{invitor, jdbcType=VARCHAR}
+    </select>
+
+    <insert id="insertInvitorONT" parameterType="com.github.ontio.model.InvitorInfo">
+    insert into tbl_invitor_ont (address, invitor)
+    values (#{address,jdbcType=VARCHAR},#{invitor,jdbcType=VARCHAR})
+    </insert>
 </mapper>

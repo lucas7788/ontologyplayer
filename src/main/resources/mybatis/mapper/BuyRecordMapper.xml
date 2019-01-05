@@ -45,4 +45,40 @@
     insert into tbl_buy_record_ong (txtime, txhash, buyer,price, round)
     values (#{txTime,jdbcType=INTEGER},#{txHash,jdbcType=VARCHAR},#{buyer,jdbcType=VARCHAR}, #{price,jdbcType=INTEGER}, #{round,jdbcType=INTEGER})
     </insert>
+
+
+
+    <select id="selectBuyRecordByPageONT" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List" />
+        from tbl_buy_record_ont
+        order by id DESC
+        limit #{param1}, #{param2}
+    </select>
+
+    <select id="selectBuyRecordByTxHashONT"  resultType="Integer">
+        select
+        count(*)
+        from tbl_buy_record_ont
+        where txhash = #{txHash,jdbcType=VARCHAR}
+    </select>
+    <select id="selectBuyRecordByAddressRoundONT"  resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List" />
+        from tbl_buy_record_ont
+        where buyer = #{buyer,jdbcType=VARCHAR} and round = #{round, jdbcType=VARCHAR}
+    </select>
+    <select id="selectMyBuyRecordByPageONT"  resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List" />
+        from tbl_buy_record_ont
+        where buyer = #{param1,jdbcType=VARCHAR}
+        order by id DESC
+        limit #{param2}, #{param3}
+    </select>
+
+    <insert id="insertBuyRecordInfoONT" parameterType="com.github.ontio.model.BuyRecordInfo">
+    insert into tbl_buy_record_ont (txtime, txhash, buyer,price, round)
+    values (#{txTime,jdbcType=INTEGER},#{txHash,jdbcType=VARCHAR},#{buyer,jdbcType=VARCHAR}, #{price,jdbcType=INTEGER}, #{round,jdbcType=INTEGER})
+    </insert>
 </mapper>

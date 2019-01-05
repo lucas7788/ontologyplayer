@@ -37,7 +37,7 @@ public class TxnHandlerThread {
         logger.info("{} run--------txHash:{}", threadName, txHash);
         int num3 = buyRecordInfoMapper.selectBuyRecordByTxHash(txHash);
         if(num3 ==0) {
-            handleFunc(session, stateObj, txHash);
+            handleFunc(session, stateObj, txHash, contractAddress);
         }
         logger.info("{} end-------txHash:{}", threadName, txHash);
         return new AsyncResult<String>("success");
@@ -45,7 +45,7 @@ public class TxnHandlerThread {
     }
 
     @Transactional
-    public void handleFunc(SqlSession session, Object obj, String txHash){
+    public void handleFunc(SqlSession session, Object obj, String txHash, String contractAddress){
         String funcName = new String(com.github.ontio.common.Helper.hexToBytes(((JSONArray)obj).getString(0)));
         if (funcName.equals("buyKey")) {
             System.out.println(JSON.toJSONString(obj));
@@ -59,8 +59,11 @@ public class TxnHandlerThread {
             buyRecordInfo.setTxHash(txHash);
             buyRecordInfo.setPrice(priceL);
             buyRecordInfo.setRound(round);
-            session.insert("com.github.ontio.dao.BuyRecordInfoMapper.insertBuyRecordInfo", buyRecordInfo);
-
+            if (contractAddress.equals(ConstantParam.ONG_PLAYER_CODEHASH)) {
+                session.insert("com.github.ontio.dao.BuyRecordInfoMapper.insertBuyRecordInfo", buyRecordInfo);
+            } else if(contractAddress.equals(ConstantParam.ONT_PLAYER_CODEHASH)) {
+                session.insert("com.github.ontio.dao.BuyRecordInfoMapper.insertBuyRecordInfoONT", buyRecordInfo);
+            }
         } else if (funcName.equals("withdrawDividend")) {
             String address = Address.parse(((JSONArray)obj).getString(1)).toBase58();
             double dividend = Long.valueOf(Helper.reverse(((JSONArray)obj).getString(2)),16).doubleValue();
@@ -68,13 +71,19 @@ public class TxnHandlerThread {
             double inviteDividend = Long.valueOf(Helper.reverse(((JSONArray)obj).getString(3)),16).doubleValue();
             BigDecimal inviteDividendBalance = BigDecimal.valueOf(inviteDividend/ConstantParam.ONG_DECIMAL);
             int round = Long.valueOf(Helper.reverse(((JSONArray)obj).getString(4)),16).intValue();
+            int time = Long.valueOf(Helper.reverse(((JSONArray)obj).getString(5)),16).intValue();
             WithdrawRecordInfo withdrawRecordInfo = new WithdrawRecordInfo();
             withdrawRecordInfo.setAddress(address);
             withdrawRecordInfo.setDividend(dividendBalance);
             withdrawRecordInfo.setInviteDividend(inviteDividendBalance);
             withdrawRecordInfo.setRound(round);
             withdrawRecordInfo.setTxHash(txHash);
-            session.insert("com.github.ontio.dao.WithdrawRecordInfoMapper.insertWithdrawRecordInfo", withdrawRecordInfo);
+            withdrawRecordInfo.setTxTime(time);
+            if (contractAddress.equals(ConstantParam.ONG_PLAYER_CODEHASH)) {
+                session.insert("com.github.ontio.dao.WithdrawRecordInfoMapper.insertWithdrawRecordInfo", withdrawRecordInfo);
+            } else if(contractAddress.equals(ConstantParam.ONT_PLAYER_CODEHASH)) {
+                session.insert("com.github.ontio.dao.WithdrawRecordInfoMapper.insertWithdrawRecordInfoONT", withdrawRecordInfo);
+            }
         } else if(funcName.equals("endCurrentRound")) {
             String lastBuyer = Address.parse(((JSONArray)obj).getString(1)).toBase58();
             double lastBuyerDividend = Long.valueOf(Helper.reverse(((JSONArray)obj).getString(2)),16).doubleValue();
@@ -97,7 +106,11 @@ public class TxnHandlerThread {
             winnerInfo.setLastBuyerDividend(BigDecimal.valueOf(lastBuyerDividend/ConstantParam.ONG_DECIMAL));
             winnerInfo.setMostActive(mostActive);
             winnerInfo.setMostActiveDividend(BigDecimal.valueOf(mostActiveDividend/ConstantParam.ONG_DECIMAL));
-            session.insert("com.github.ontio.dao.WinnerInfoMapper.insertWinnerInfo", winnerInfo);
+            if (contractAddress.equals(ConstantParam.ONG_PLAYER_CODEHASH)) {
+                session.insert("com.github.ontio.dao.WinnerInfoMapper.insertWinnerInfo", winnerInfo);
+            } else if(contractAddress.equals(ConstantParam.ONT_PLAYER_CODEHASH)) {
+                session.insert("com.github.ontio.dao.WinnerInfoMapper.insertWinnerInfoONT", winnerInfo);
+            }
         }
     }
 }

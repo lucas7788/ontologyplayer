@@ -17,21 +17,33 @@
 请求例子
 
 ```http
-http://127.0.0.1:8585/api/v1/buyers/getmywithdrawrecordbypage/sss/3/1
+http://139.219.128.220:8585/api/v1/ong/getmybuyrecordbypage/AbPRaepcpBAFHz9zCj4619qch4Aq5hJARA/3/1
 ```
 
 响应结果
 ```json
 {
-	"Action": "getmywithdrawrecordbypage",
+	"Action": "getmybuyrecordbypage",
 	"Error": 0,
 	"Desc": "SUCCESS",
 	"Version": "1.0",
 	"Result": {
 		"Result": [{
-			"txTime": 11,
-			"txHash": "xxxxx",
-			"buyer": "sss",
+			"txTime": 1546694658,
+			"txHash": "c9540be8803ed3861a1589e032edba0e8444eb143f31fcf4b014cac00533b07a",
+			"buyer": "AbPRaepcpBAFHz9zCj4619qch4Aq5hJARA",
+			"price": 1.4,
+			"round": 1
+		}, {
+			"txTime": 1546694631,
+			"txHash": "b709b8509aa5177227795261522c194bb7239aec2c439b1fd447ea630b11f3fb",
+			"buyer": "AbPRaepcpBAFHz9zCj4619qch4Aq5hJARA",
+			"price": 1.3,
+			"round": 1
+		}, {
+			"txTime": 1546691196,
+			"txHash": "e4b3b6ac85452cf03d50343a5620f424387de40da6d678a642315c6d2175f48f",
+			"buyer": "AbPRaepcpBAFHz9zCj4619qch4Aq5hJARA",
 			"price": 1.1,
 			"round": 1
 		}]
@@ -48,7 +60,7 @@ http://127.0.0.1:8585/api/v1/buyers/getmywithdrawrecordbypage/sss/3/1
 请求例子
 
 ```http request
-http://127.0.0.1:8585/api/v1/buyers/getbuyrecordbypage/3/1
+http://139.219.128.220:8585/api/v1/ong/getbuyrecordbypage/3/1
 ```
 
 响应结果
@@ -61,10 +73,22 @@ http://127.0.0.1:8585/api/v1/buyers/getbuyrecordbypage/3/1
 	"Version": "1.0",
 	"Result": {
 		"Result": [{
-			"txTime": 11,
-			"txHash": "xxxxx",
-			"buyer": "sss",
-			"price": 1.1,
+			"txTime": 1546694658,
+			"txHash": "c9540be8803ed3861a1589e032edba0e8444eb143f31fcf4b014cac00533b07a",
+			"buyer": "AbPRaepcpBAFHz9zCj4619qch4Aq5hJARA",
+			"price": 1.4,
+			"round": 1
+		}, {
+			"txTime": 1546694631,
+			"txHash": "b709b8509aa5177227795261522c194bb7239aec2c439b1fd447ea630b11f3fb",
+			"buyer": "AbPRaepcpBAFHz9zCj4619qch4Aq5hJARA",
+			"price": 1.3,
+			"round": 1
+		}, {
+			"txTime": 1546693193,
+			"txHash": "23232bccc1f394049782104c47cf24bb6e842deb4c833b35936fc3fe5791fd6d",
+			"buyer": "AMAqR8Y8JWngDk5QsoGpa7vPhu5Tu5KKeS",
+			"price": 1.2,
 			"round": 1
 		}]
 	}
@@ -78,7 +102,7 @@ http://127.0.0.1:8585/api/v1/buyers/getbuyrecordbypage/3/1
 
 请求例子
 ```http request
-http://127.0.0.1:8585/api/v1/buyers/getmywithdrawrecordbypage/sss/3/1
+http://127.0.0.1:8585/api/v1/ong/getmywithdrawrecordbypage/sss/3/1
 ```
 
 
@@ -91,11 +115,12 @@ http://127.0.0.1:8585/api/v1/buyers/getmywithdrawrecordbypage/sss/3/1
 	"Version": "1.0",
 	"Result": {
 		"Result": [{
-			"txTime": 11,
-			"txHash": "xxxxx",
-			"buyer": "sss",
-			"price": 1.1,
-			"round": 1
+			"address": "AbPRaepcpBAFHz9zCj4619qch4Aq5hJARA",
+			"dividend": 0.4400,
+			"inviteDividend": 0.0210,
+			"round": 1,
+			"txTime": 1546691529,
+			"txHash": "950a1a8d2e28505b205aaca6cf8d362d66aa7c4010caba0d69856bedf5c0ce8a"
 		}]
 	}
 }
@@ -110,7 +135,7 @@ invitor 邀请人地址
 例子
 请求
 ```http request
-http://127.0.0.1:8585/api/v1/buyers/saveinvitor
+http://139.219.128.220:8585/api/v1/ong/saveinvitor
 ```
 
 参数
@@ -144,7 +169,7 @@ http://127.0.0.1:8585/api/v1/buyers/saveinvitor
 请求例子
 
 ```http request
-http://127.0.0.1:8585/api/v1/buyers/getinvitorbyaddress/aaaaa
+http://139.219.128.220:8585/api/v1/ong/getinvitorbyaddress/aaaaa
 ```
 
 ```json
@@ -168,7 +193,7 @@ http://127.0.0.1:8585/api/v1/buyers/getinvitorbyaddress/aaaaa
 
 请求
 ```http request
-http://127.0.0.1:8585/api/v1/buyers/gettotalbyinvitor/sss
+http://139.219.128.220:8585/api/v1/buyers/gettotalbyinvitor/sss
 ```
 
 响应
@@ -190,7 +215,7 @@ http://127.0.0.1:8585/api/v1/buyers/gettotalbyinvitor/sss
 
 例子
 ```http request
-http://127.0.0.1:8585/api/v1/buyers/getwinnerbypage/3/1
+http://139.219.128.220:8585/api/v1/buyers/getwinnerbypage/3/1
 ```
 
 响应

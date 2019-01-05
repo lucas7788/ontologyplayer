@@ -8,6 +8,7 @@ public class WithdrawRecordInfo {
     public BigDecimal dividend;
     public BigDecimal inviteDividend;
     public int round;
+    public int txTime;
     public String txHash;
 
     public String getAddress() {
@@ -48,5 +49,13 @@ public class WithdrawRecordInfo {
 
     public void setTxHash(String txHash) {
         this.txHash = txHash;
+    }
+
+    public int getTxTime() {
+        return txTime;
+    }
+
+    public void setTxTime(int txTime) {
+        this.txTime = txTime;
     }
 }

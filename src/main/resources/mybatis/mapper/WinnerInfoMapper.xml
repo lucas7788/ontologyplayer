@@ -25,4 +25,17 @@
     insert into tbl_winner_ong (lastbuyer,lastbuyerdividend, holdkeymost,holdkeymostdividend,mostactive,mostactivedividend, round)
     values (#{lastBuyer,jdbcType=VARCHAR},#{lastBuyerDividend, jdbcType=DECIMAL},#{holdKeyMost,jdbcType=VARCHAR},#{holdKeyMostDividend, jdbcType=DECIMAL},#{mostActive,jdbcType=VARCHAR},#{mostActiveDividend, jdbcType=DECIMAL}, #{round,jdbcType=INTEGER})
     </insert>
+
+
+    <select id="selectWinnerInfoByPageONT" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List" />
+        from tbl_winner_ont
+        order by id DESC
+        limit #{param1}, #{param2}
+    </select>
+    <insert id="insertWinnerInfoONT" parameterType="com.github.ontio.model.WinnerInfo">
+    insert into tbl_winner_ont (lastbuyer,lastbuyerdividend, holdkeymost,holdkeymostdividend,mostactive,mostactivedividend, round)
+    values (#{lastBuyer,jdbcType=VARCHAR},#{lastBuyerDividend, jdbcType=DECIMAL},#{holdKeyMost,jdbcType=VARCHAR},#{holdKeyMostDividend, jdbcType=DECIMAL},#{mostActive,jdbcType=VARCHAR},#{mostActiveDividend, jdbcType=DECIMAL}, #{round,jdbcType=INTEGER})
+    </insert>
 </mapper>
