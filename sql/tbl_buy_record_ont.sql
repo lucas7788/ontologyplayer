@@ -1,5 +1,5 @@
-DROP TABLE IF EXISTS `tbl_buy_record`;
-CREATE TABLE `tbl_buy_record` (
+DROP TABLE IF EXISTS `tbl_buy_record_ont`;
+CREATE TABLE `tbl_buy_record_ont` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `txtime` int(11) NOT NULL DEFAULT 0,
   `buyer` varchar(255) NOT NULL DEFAULT '',

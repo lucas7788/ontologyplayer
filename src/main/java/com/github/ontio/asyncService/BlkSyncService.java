@@ -1,15 +1,8 @@
 package com.github.ontio.asyncService;
 
-import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
-import com.github.ontio.common.Address;
 import com.github.ontio.dao.BuyRecordInfoMapper;
-import com.github.ontio.dao.WinnerInfoMapper;
-import com.github.ontio.dao.WithdrawRecordInfoMapper;
-import com.github.ontio.model.BuyRecordInfo;
-import com.github.ontio.model.WinnerInfo;
-import com.github.ontio.model.WithdrawRecordInfo;
 import com.github.ontio.thread.TxnHandlerThread;
 import com.github.ontio.utils.ConstantParam;
 import com.github.ontio.utils.Helper;
@@ -22,9 +15,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.math.BigDecimal;
 import java.util.List;
-import java.util.Map;
 import java.util.concurrent.Future;
 
 @Service
@@ -63,9 +54,10 @@ public class BlkSyncService {
                 continue;
             }
             for(Object notify : (JSONArray)((JSONObject) event).get("Notify")){
-                if(((JSONObject)notify).getString("ContractAddress").equals(ConstantParam.ONT_PLAYER_CODEHASH)){
+                String contractAddress = ((JSONObject)notify).getString("ContractAddress");
+                if(contractAddress.equals(ConstantParam.ONG_PLAYER_CODEHASH) || contractAddress.equals(ConstantParam.ONT_PLAYER_CODEHASH)) {
                     if(((JSONArray)((JSONObject)notify).get("States")).size() > 2){
-                        Future future = txnHandlerThread.asyncHandleTxn(session,  ((JSONObject)notify).get("States"),txHash);
+                        Future future = txnHandlerThread.asyncHandleTxn(session,  ((JSONObject)notify).get("States"),txHash, ConstantParam.ONG_PLAYER_CODEHASH);
                         future.get();
                     }
                 }

@@ -5,7 +5,7 @@ public class BuyRecordInfo {
     public int txTime;
     public String txHash;
     public String buyer;
-    public Integer price;
+    public Double price;
     public Integer round;
 
     public int getTxTime() {
@@ -41,11 +41,11 @@ public class BuyRecordInfo {
         this.buyer = buyer;
     }
 
-    public Integer getPrice() {
+    public Double getPrice() {
         return price;
     }
 
-    public void setPrice(Integer price) {
+    public void setPrice(Double price) {
         this.price = price;
     }
 }

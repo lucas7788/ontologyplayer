@@ -10,6 +10,13 @@ public class WithdrawRecordInfo {
     public int round;
     public String txHash;
 
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
 
     public BigDecimal getDividend() {
         return dividend;
@@ -26,16 +33,6 @@ public class WithdrawRecordInfo {
     public void setInviteDividend(BigDecimal inviteDividend) {
         this.inviteDividend = inviteDividend;
     }
-
-    public String getAddress() {
-        return address;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
-    }
-
-
 
     public int getRound() {
         return round;

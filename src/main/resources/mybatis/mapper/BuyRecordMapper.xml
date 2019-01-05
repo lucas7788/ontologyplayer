@@ -5,7 +5,7 @@
         <result column="txtime" jdbcType="INTEGER" property="txTime" />
         <result column="txhash" jdbcType="VARCHAR" property="txHash" />
         <result column="buyer" jdbcType="VARCHAR" property="buyer" />
-        <result column="price" jdbcType="INTEGER" property="price" />
+        <result column="price" jdbcType="DECIMAL" property="price" />
         <result column="round" jdbcType="INTEGER" property="round" />
     </resultMap>
     <sql id="Base_Column_List">
@@ -15,7 +15,7 @@
     <select id="selectBuyRecordByPage" resultMap="BaseResultMap">
         select
         <include refid="Base_Column_List" />
-        from tbl_buy_record
+        from tbl_buy_record_ong
         order by id DESC
         limit #{param1}, #{param2}
     </select>
@@ -23,26 +23,26 @@
     <select id="selectBuyRecordByTxHash"  resultType="Integer">
         select
         count(*)
-        from tbl_buy_record
+        from tbl_buy_record_ong
         where txhash = #{txHash,jdbcType=VARCHAR}
     </select>
     <select id="selectBuyRecordByAddressRound"  resultMap="BaseResultMap">
         select
         <include refid="Base_Column_List" />
-        from tbl_buy_record
+        from tbl_buy_record_ong
         where buyer = #{buyer,jdbcType=VARCHAR} and round = #{round, jdbcType=VARCHAR}
     </select>
     <select id="selectMyBuyRecordByPage"  resultMap="BaseResultMap">
         select
         <include refid="Base_Column_List" />
-        from tbl_buy_record
+        from tbl_buy_record_ong
         where buyer = #{param1,jdbcType=VARCHAR}
         order by id DESC
         limit #{param2}, #{param3}
     </select>
 
     <insert id="insertBuyRecordInfo" parameterType="com.github.ontio.model.BuyRecordInfo">
-    insert into tbl_buy_record (txtime, txhash, buyer,price, round)
+    insert into tbl_buy_record_ong (txtime, txhash, buyer,price, round)
     values (#{txTime,jdbcType=INTEGER},#{txHash,jdbcType=VARCHAR},#{buyer,jdbcType=VARCHAR}, #{price,jdbcType=INTEGER}, #{round,jdbcType=INTEGER})
     </insert>
 </mapper>

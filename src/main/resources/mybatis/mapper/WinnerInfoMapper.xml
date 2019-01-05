@@ -3,23 +3,26 @@
 <mapper namespace="com.github.ontio.dao.WinnerInfoMapper">
     <resultMap id="BaseResultMap" type="com.github.ontio.model.WinnerInfo">
         <result column="lastbuyer" jdbcType="VARCHAR" property="lastBuyer" />
-        <result column="holdMost" jdbcType="VARCHAR" property="holdKeyMost" />
+        <result column="lastbuyerdividend" jdbcType="DECIMAL" property="lastBuyerDividend" />
+        <result column="holdkeymost" jdbcType="VARCHAR" property="holdKeyMost" />
+        <result column="holdkeymostdividend" jdbcType="DECIMAL" property="holdKeyMostDividend" />
         <result column="mostactive" jdbcType="VARCHAR" property="mostActive" />
+        <result column="mostactivedividend" jdbcType="DECIMAL" property="mostActiveDividend" />
         <result column="round" jdbcType="INTEGER" property="round" />
     </resultMap>
     <sql id="Base_Column_List">
-      lastbuyer, holdkeymost,mostActive, round
+      lastbuyer,lastbuyerdividend, holdkeymost,holdkeymostdividend,mostactive,mostactivedividend, round
     </sql>
 
     <select id="selectWinnerInfoByPage" resultMap="BaseResultMap">
         select
         <include refid="Base_Column_List" />
-        from tbl_winner
+        from tbl_winner_ong
         order by id DESC
         limit #{param1}, #{param2}
     </select>
     <insert id="insertWinnerInfo" parameterType="com.github.ontio.model.WinnerInfo">
-    insert into tbl_winner (lastbuyer, holdkeymost,mostActive, round)
-    values (#{lastBuyer,jdbcType=VARCHAR},#{holdKeyMost,jdbcType=VARCHAR},#{mostActive,jdbcType=VARCHAR},, #{round,jdbcType=INTEGER})
+    insert into tbl_winner_ong (lastbuyer,lastbuyerdividend, holdkeymost,holdkeymostdividend,mostactive,mostactivedividend, round)
+    values (#{lastBuyer,jdbcType=VARCHAR},#{lastBuyerDividend, jdbcType=DECIMAL},#{holdKeyMost,jdbcType=VARCHAR},#{holdKeyMostDividend, jdbcType=DECIMAL},#{mostActive,jdbcType=VARCHAR},#{mostActiveDividend, jdbcType=DECIMAL}, #{round,jdbcType=INTEGER})
     </insert>
 </mapper>

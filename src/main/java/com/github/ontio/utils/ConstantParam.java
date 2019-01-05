@@ -32,6 +32,7 @@ import java.util.List;
 public class ConstantParam {
 
     public static int HUGE_WIN_SIZE;
+    public static String ONG_PLAYER_CODEHASH;
 
     public static String ONT_PLAYER_CODEHASH;
 

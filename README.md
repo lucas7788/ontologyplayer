@@ -29,16 +29,10 @@ http://127.0.0.1:8585/api/v1/buyers/getmywithdrawrecordbypage/sss/3/1
 	"Version": "1.0",
 	"Result": {
 		"Result": [{
-			"blockTime": 111,
-			"txHash": "sssssss",
+			"txTime": 11,
+			"txHash": "xxxxx",
 			"buyer": "sss",
-			"price": 2,
-			"round": 1
-		}, {
-			"blockTime": 111,
-			"txHash": "sssssss",
-			"buyer": "sss",
-			"price": 1,
+			"price": 1.1,
 			"round": 1
 		}]
 	}
@@ -67,16 +61,10 @@ http://127.0.0.1:8585/api/v1/buyers/getbuyrecordbypage/3/1
 	"Version": "1.0",
 	"Result": {
 		"Result": [{
-			"blockTime": 111,
-			"txHash": "sssssss",
+			"txTime": 11,
+			"txHash": "xxxxx",
 			"buyer": "sss",
-			"price": 2,
-			"round": 1
-		}, {
-			"blockTime": 111,
-			"txHash": "sssssss",
-			"buyer": "sss",
-			"price": 1,
+			"price": 1.1,
 			"round": 1
 		}]
 	}
@@ -103,16 +91,10 @@ http://127.0.0.1:8585/api/v1/buyers/getmywithdrawrecordbypage/sss/3/1
 	"Version": "1.0",
 	"Result": {
 		"Result": [{
-			"blockTime": 111,
-			"txHash": "sssssss",
+			"txTime": 11,
+			"txHash": "xxxxx",
 			"buyer": "sss",
-			"price": 2,
-			"round": 1
-		}, {
-			"blockTime": 111,
-			"txHash": "sssssss",
-			"buyer": "sss",
-			"price": 1,
+			"price": 1.1,
 			"round": 1
 		}]
 	}
@@ -201,6 +183,37 @@ http://127.0.0.1:8585/api/v1/buyers/gettotalbyinvitor/sss
 	}
 }
 ```
+
+7. `/getwinnerbypage/{pageSize}/{pageNumber}`
+
+查询中奖纪录
+
+例子
+```http request
+http://127.0.0.1:8585/api/v1/buyers/getwinnerbypage/3/1
+```
+
+响应
+```json
+{
+	"Action": "getwinnerbypage",
+	"Error": 0,
+	"Desc": "SUCCESS",
+	"Version": "1.0",
+	"Result": {
+		"Result": [{
+			"lastBuyer": "xxx",
+			"lastBuyerDividend": 11.1100,
+			"holdKeyMost": "sss",
+			"holdKeyMostDividend": 22.2200,
+			"mostActive": "sssssss",
+			"mostActiveDividend": 33.3300,
+			"round": 1
+		}]
+	}
+}
+```
+
 
 ## 合约接口列表
 

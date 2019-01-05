@@ -83,7 +83,8 @@ public class BlockSyncThread extends Thread{
                         if ((Integer) ((JSONObject)obj).get("State") == 1  && ((JSONObject)obj).get("Notify") != null){
                             JSONArray notifyArray = (JSONArray) ((JSONObject)obj).get("Notify");
                             for(Object notify : notifyArray){
-                                if(((JSONObject)notify).getString("ContractAddress").equals(ConstantParam.ONT_PLAYER_CODEHASH)) {
+                                String contractAddr = ((JSONObject)notify).getString("ContractAddress");
+                                if(contractAddr.equals(ConstantParam.ONG_PLAYER_CODEHASH) || contractAddr.equals(ConstantParam.ONT_PLAYER_CODEHASH)) {
                                     if(((JSONArray)((JSONObject)notify).get("States")).size() !=0){
                                         eventList.add(obj);
                                         break;
@@ -115,6 +116,7 @@ public class BlockSyncThread extends Thread{
         OntSdk sdkService = OntSdk.getInstance();
         sdkService.setRpc(configParam.MAINCHAIN_RPC_URL);
         ConstantParam.ONT_SDKSERVICE = sdkService;
+        ConstantParam.ONG_PLAYER_CODEHASH = configParam.ONG_PLAYER_CODEHASH;
         ConstantParam.ONT_PLAYER_CODEHASH = configParam.ONT_PLAYER_CODEHASH;
     }
 

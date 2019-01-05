@@ -49,8 +49,12 @@ public class ConfigParam {
     @Value("${mainchain.rpc.url}")
     public String MAINCHAIN_RPC_URL;
 
+    @Value("${ong.player.codehash}")
+    public String ONG_PLAYER_CODEHASH;
+
     @Value("${ont.player.codehash}")
     public String ONT_PLAYER_CODEHASH;
+
 
     @Value("${node.interrupttime.max}")
     public int NODE_INTERRUPTTIME_MAX;

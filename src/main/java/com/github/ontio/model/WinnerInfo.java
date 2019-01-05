@@ -1,11 +1,41 @@
 package com.github.ontio.model;
 
+import java.math.BigDecimal;
+
 public class WinnerInfo {
 
     public String lastBuyer;
+    public BigDecimal lastBuyerDividend;
     public String holdKeyMost;
+    public BigDecimal holdKeyMostDividend;
     public String mostActive;
+    public BigDecimal mostActiveDividend;
     public Integer round;
+
+
+    public BigDecimal getLastBuyerDividend() {
+        return lastBuyerDividend;
+    }
+
+    public void setLastBuyerDividend(BigDecimal lastBuyerDividend) {
+        this.lastBuyerDividend = lastBuyerDividend;
+    }
+
+    public BigDecimal getHoldKeyMostDividend() {
+        return holdKeyMostDividend;
+    }
+
+    public void setHoldKeyMostDividend(BigDecimal holdKeyMostDividend) {
+        this.holdKeyMostDividend = holdKeyMostDividend;
+    }
+
+    public BigDecimal getMostActiveDividend() {
+        return mostActiveDividend;
+    }
+
+    public void setMostActiveDividend(BigDecimal mostActiveDividend) {
+        this.mostActiveDividend = mostActiveDividend;
+    }
 
     public String getMostActive() {
         return mostActive;

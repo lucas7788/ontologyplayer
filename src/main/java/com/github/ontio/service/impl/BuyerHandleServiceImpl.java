@@ -56,11 +56,19 @@ public class BuyerHandleServiceImpl implements IBuyerHandleService {
 
     @Override
     public Result saveInvitor(InvitorInfo invitorInfo) {
-        int res = invitorMapper.insertInvitor(invitorInfo);
-        Map<String, Object> rs = new HashMap<>();
-        rs.put("Result", res);
-        return Helper.result("saveinvitor", ErrorInfo.SUCCESS.code(),ErrorInfo.SUCCESS.desc(),
-                VERSION,rs);
+        InvitorInfo invitorInfo1 = invitorMapper.selectInvitorByAddress(invitorInfo.address);
+        if (invitorInfo1 == null) {
+            int res = invitorMapper.insertInvitor(invitorInfo);
+            Map<String, Object> rs = new HashMap<>();
+            rs.put("Result", res);
+            return Helper.result("saveinvitor", ErrorInfo.SUCCESS.code(),ErrorInfo.SUCCESS.desc(),
+                    VERSION,rs);
+        } else {
+            Map<String, Object> rs = new HashMap<>();
+            rs.put("Result", "the address:" + invitorInfo.address + " has invitor:" + invitorInfo1.invitor);
+            return Helper.result("saveinvitor", ErrorInfo.INNER_ERROR.code(),ErrorInfo.INNER_ERROR.desc(),
+                    VERSION,rs);
+        }
     }
 
     @Override

@@ -15,14 +15,14 @@
     <select id="selectMyWithdrawRecordByPage"  resultMap="BaseResultMap">
         select
         <include refid="Base_Column_List" />
-        from tbl_withdraw_record
+        from tbl_withdraw_record_ong
         where address = #{param1,jdbcType=VARCHAR}
         order by id DESC
         limit #{param2}, #{param3}
     </select>
 
     <insert id="insertWithdrawRecordInfo" parameterType="com.github.ontio.model.WithdrawRecordInfo">
-    insert into tbl_withdraw_record (txhash, address,dividend, invitedividend, round)
-    values (#{txHash,jdbcType=VARCHAR},#{address,jdbcType=VARCHAR}, #{dividend,jdbcType=DECIMAL},#{invitedividend,jdbcType=DECIMAL}, #{round,jdbcType=INTEGER})
+    insert into tbl_withdraw_record_ong (txhash, address,dividend, invitedividend, round)
+    values (#{txHash,jdbcType=VARCHAR},#{address,jdbcType=VARCHAR}, #{dividend,jdbcType=DECIMAL},#{inviteDividend,jdbcType=DECIMAL}, #{round,jdbcType=INTEGER})
     </insert>
 </mapper>

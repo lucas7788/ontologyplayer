@@ -1,5 +1,5 @@
-DROP TABLE IF EXISTS `tbl_withdraw_record`;
-CREATE TABLE `tbl_withdraw_record` (
+DROP TABLE IF EXISTS `tbl_withdraw_record_ont`;
+CREATE TABLE `tbl_withdraw_record_ont` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `address` varchar(255) NOT NULL,
   `dividend` decimal(40,4) NOT NULL DEFAULT 0,

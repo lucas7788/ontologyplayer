@@ -12,19 +12,19 @@
     <select id="selectInvitorByAddress" resultMap="BaseResultMap">
         select
         <include refid="Base_Column_List" />
-        from tbl_invitor
+        from tbl_invitor_ong
         where address = #{address, jdbcType=VARCHAR}
     </select>
 
     <select id="selectTotalByInvitor" resultType="INTEGER">
         select
         count(*)
-        from tbl_invitor
+        from tbl_invitor_ong
         where invitor = #{invitor, jdbcType=VARCHAR}
     </select>
 
     <insert id="insertInvitor" parameterType="com.github.ontio.model.InvitorInfo">
-    insert into tbl_invitor (address, invitor)
+    insert into tbl_invitor_ong (address, invitor)
     values (#{address,jdbcType=VARCHAR},#{invitor,jdbcType=VARCHAR})
     </insert>
 </mapper>
