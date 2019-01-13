@@ -3,7 +3,7 @@
 <mapper namespace="com.github.ontio.dao.fomo3d.ActiveInfoMapper">
     <resultMap id="BaseResultMap" type="com.github.ontio.model.fomo3d.ActivityInfo">
         <result column="isshow" jdbcType="INTEGER" property="isShow" />
-        <result column="datetime" jdbcType="INTEGER" property="dateTime" />
+        <result column="datetime" jdbcType="VARCHAR" property="dateTime" />
         <result column="activename" jdbcType="VARCHAR" property="activeName" />
         <result column="activecontent" jdbcType="VARCHAR" property="activeContent" />
     </resultMap>
@@ -18,7 +18,7 @@
         order by id desc limit 1
     </select>
 
-    <insert id="updateIsShowById" parameterType="java.lang.Integer">
+    <insert id="updateIsShowById" parameterType="com.github.ontio.model.fomo3d.ActivityIsShow">
     update tbl_activity_ong set isshow = #{isShow, jdbcType=INTEGER}
     where id = #{id, jdbcType=INTEGER}
     </insert>

@@ -3,6 +3,7 @@ package com.github.ontio.controller.fomo3d;
 
 import com.alibaba.fastjson.JSON;
 import com.github.ontio.model.fomo3d.ActivityInfo;
+import com.github.ontio.model.fomo3d.ActivityIsShow;
 import com.github.ontio.model.fomo3d.InvitorInfo;
 import com.github.ontio.paramBean.Result;
 import com.github.ontio.service.impl.BuyerHandleServiceImpl;
@@ -62,14 +63,13 @@ public class PlayerController {
      *
      * @return
      */
-    @RequestMapping(value = "/updateActivityIsShow/{id}/{isShow}", method = RequestMethod.GET)
+    @RequestMapping(value = "/updateActivityIsShow", method = RequestMethod.POST)
     @ResponseBody
-    public Result updateActivityIsShow(@PathVariable("id") int id,
-                                       @PathVariable("isShow") int isShow) {
+    public Result updateActivityIsShow(@RequestBody String reqParam) {
 
         logger.info("########{}.{} begin...", CLASS_NAME, Helper.currentMethod());
-
-        Result rs = buyerHandleService.updateActivityIsShow(id, isShow);
+        ActivityIsShow activityIsShow = JSON.parseObject(reqParam, ActivityIsShow.class);
+        Result rs = buyerHandleService.updateActivityIsShow(activityIsShow);
         return rs;
     }
 

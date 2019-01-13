@@ -24,9 +24,9 @@ http://127.0.0.1:8585/api/v1/ong/getrecentactivity
     "Version": "1.0",
     "Result": {
         "isShow": 1,
-        "activeTime": 1547431200,
-        "activeName": "1个ong购买1000个ong活动预告",
-        "activeContent": "1个ong购买1000个ong活动开始了"
+        "dateTime": "2019-01-13 14:16:55.0",
+        "activeName": " 2019.01.13 10:00活动预告, 1个ong购买1000个ong",
+        "activeContent": "2019.01.13 10:00活动预告, 1个ong购买1000个ong"
     }
 }
 ```

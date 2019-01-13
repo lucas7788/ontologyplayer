@@ -71,8 +71,8 @@ public class BuyerHandleServiceImpl implements IBuyerHandleService {
     }
 
     @Override
-    public Result updateActivityIsShow(int isShow, int id) {
-        int res = activeInfoMapper.updateIsShowById(isShow, id);
+    public Result updateActivityIsShow(ActivityIsShow activityIsShow) {
+        int res = activeInfoMapper.updateIsShowById(activityIsShow);
         return Helper.result("updateisshowbyid", ErrorInfo.SUCCESS.code(),ErrorInfo.SUCCESS.desc(),
                 VERSION,res);
     }

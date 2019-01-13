@@ -1,6 +1,7 @@
 package com.github.ontio.service;
 
 import com.github.ontio.model.fomo3d.ActivityInfo;
+import com.github.ontio.model.fomo3d.ActivityIsShow;
 import com.github.ontio.model.fomo3d.InvitorInfo;
 import com.github.ontio.paramBean.Result;
 
@@ -20,5 +21,5 @@ public interface IBuyerHandleService {
 
     Result getActivity();
     Result addActivity(ActivityInfo activityInfo);
-    Result updateActivityIsShow(int isShow, int id);
+    Result updateActivityIsShow(ActivityIsShow activityIsShow);
 }

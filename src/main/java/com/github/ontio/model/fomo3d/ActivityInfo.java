@@ -5,7 +5,7 @@ package com.github.ontio.model.fomo3d;
 public class ActivityInfo {
 
     public int isShow;
-    public int dateTime;
+    public String dateTime;
     public String activeName;
     public String activeContent;
 
@@ -17,11 +17,11 @@ public class ActivityInfo {
         this.isShow = isShow;
     }
 
-    public int getDateTime() {
+    public String getDateTime() {
         return dateTime;
     }
 
-    public void setDateTime(int dateTime) {
+    public void setDateTime(String dateTime) {
         this.dateTime = dateTime;
     }
 
