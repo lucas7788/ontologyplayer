@@ -71,6 +71,13 @@ public class BuyerHandleServiceImpl implements IBuyerHandleService {
     }
 
     @Override
+    public Result updateActivityIsShow(int isShow, int id) {
+        int res = activeInfoMapper.updateIsShowById(isShow, id);
+        return Helper.result("updateisshowbyid", ErrorInfo.SUCCESS.code(),ErrorInfo.SUCCESS.desc(),
+                VERSION,res);
+    }
+
+    @Override
     public Result saveInvitor(InvitorInfo invitorInfo) {
         InvitorInfo invitorInfo1 = invitorMapper.selectInvitorByAddress(invitorInfo.address);
         if (invitorInfo1 == null) {

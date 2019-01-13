@@ -20,4 +20,5 @@ public interface IBuyerHandleService {
 
     Result getActivity();
     Result addActivity(ActivityInfo activityInfo);
+    Result updateActivityIsShow(int isShow, int id);
 }

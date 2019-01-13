@@ -62,6 +62,22 @@ public class PlayerController {
      *
      * @return
      */
+    @RequestMapping(value = "/updateActivityIsShow/{id}/{isShow}", method = RequestMethod.GET)
+    @ResponseBody
+    public Result updateActivityIsShow(@PathVariable("id") int id,
+                                       @PathVariable("isShow") int isShow) {
+
+        logger.info("########{}.{} begin...", CLASS_NAME, Helper.currentMethod());
+
+        Result rs = buyerHandleService.updateActivityIsShow(id, isShow);
+        return rs;
+    }
+
+    /**
+     * query the last few blocks
+     *
+     * @return
+     */
     @RequestMapping(value = "/getrecentactivity", method = RequestMethod.GET)
     @ResponseBody
     public Result getActivity() {

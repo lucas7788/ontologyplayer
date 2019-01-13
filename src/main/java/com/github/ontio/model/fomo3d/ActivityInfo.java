@@ -1,9 +1,11 @@
 package com.github.ontio.model.fomo3d;
 
+
+
 public class ActivityInfo {
 
     public int isShow;
-    public int activeTime;
+    public int dateTime;
     public String activeName;
     public String activeContent;
 
@@ -15,12 +17,12 @@ public class ActivityInfo {
         this.isShow = isShow;
     }
 
-    public int getActiveTime() {
-        return activeTime;
+    public int getDateTime() {
+        return dateTime;
     }
 
-    public void setActiveTime(int activeTime) {
-        this.activeTime = activeTime;
+    public void setDateTime(int dateTime) {
+        this.dateTime = dateTime;
     }
 
     public String getActiveName() {

@@ -3,24 +3,30 @@
 <mapper namespace="com.github.ontio.dao.fomo3d.ActiveInfoMapper">
     <resultMap id="BaseResultMap" type="com.github.ontio.model.fomo3d.ActivityInfo">
         <result column="isshow" jdbcType="INTEGER" property="isShow" />
-        <result column="activetime" jdbcType="INTEGER" property="activeTime" />
+        <result column="datetime" jdbcType="INTEGER" property="dateTime" />
         <result column="activename" jdbcType="VARCHAR" property="activeName" />
         <result column="activecontent" jdbcType="VARCHAR" property="activeContent" />
     </resultMap>
     <sql id="Base_Column_List">
-     isshow, activetime,activename,activecontent
+     isshow, datetime,activename,activecontent
     </sql>
 
     <select id="selectRecentActiveInfo" resultMap="BaseResultMap">
-        select *
+        select
+        <include refid="Base_Column_List" />
         from tbl_activity_ong
         order by id desc limit 1
     </select>
 
+    <insert id="updateIsShowById" parameterType="java.lang.Integer">
+    update tbl_activity_ong set isshow = #{isShow, jdbcType=INTEGER}
+    where id = #{id, jdbcType=INTEGER}
+    </insert>
+
 
     <insert id="insertActivityInfo" parameterType="com.github.ontio.model.fomo3d.ActivityInfo">
-    insert into tbl_activity_ong (isshow, activetime,activename,activecontent)
-    values (#{isShow,jdbcType=INTEGER},#{activeTime,jdbcType=INTEGER},#{activeName,jdbcType=VARCHAR}, #{activeContent,jdbcType=VARCHAR})
+    insert into tbl_activity_ong (isshow,activename,activecontent)
+    values (#{isShow,jdbcType=INTEGER},#{activeName,jdbcType=VARCHAR}, #{activeContent,jdbcType=VARCHAR})
     </insert>
 
 </mapper>
