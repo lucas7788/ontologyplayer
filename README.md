@@ -2,7 +2,34 @@
 
 ## Introduction
 
+## 增加的接口列表
 
+1. `getrecentactivity`
+
+查询最近的活动
+
+请求例子
+
+```http
+http://127.0.0.1:8585/api/v1/ong/getrecentactivity
+```
+
+结果
+
+```json
+{
+    "Action": "getrecentactivity",
+    "Error": 0,
+    "Desc": "SUCCESS",
+    "Version": "1.0",
+    "Result": {
+        "isShow": 1,
+        "activeTime": 1547431200,
+        "activeName": "1个ong购买1000个ong活动预告",
+        "activeContent": "1个ong购买1000个ong活动开始了"
+    }
+}
+```
 
 ## server接口列表
 

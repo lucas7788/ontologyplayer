@@ -5,10 +5,12 @@ import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.github.ontio.OntSdk;
 import com.github.ontio.asyncService.BlkSyncService;
-import com.github.ontio.dao.BlkHeightMapper;
+import com.github.ontio.core.block.Block;
+import com.github.ontio.dao.ontbet.BlkHeightMapper;
 import com.github.ontio.network.exception.ConnectorException;
 import com.github.ontio.utils.ConfigParam;
 import com.github.ontio.utils.ConstantParam;
+import org.mybatis.spring.annotation.MapperScan;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,7 +24,7 @@ import java.util.List;
 
 @Component("BlockSyncThread")
 @Scope("prototype")
-public class BlockSyncThread extends Thread{
+public class BlockSyncThread extends Thread {
     private static final Logger logger = LoggerFactory.getLogger(BlockSyncThread.class);
 
     private final String CLASS_NAME = this.getClass().getSimpleName();
@@ -38,6 +40,8 @@ public class BlockSyncThread extends Thread{
 
     @Autowired
     private BlkSyncService blkSyncService;
+
+
 
 
     @Override
@@ -74,18 +78,17 @@ public class BlockSyncThread extends Thread{
                 }
 
                 oneBlockTryTime = 1;
-
                 Object event = ConstantParam.ONT_SDKSERVICE.getConnect().getSmartCodeEvent(dbBlockHeight);
                 if (event != null) {
                     List eventList = new ArrayList();
-                    logger.info("event: "+ event);
                     for(Object obj : (JSONArray)event){
                         if ((Integer) ((JSONObject)obj).get("State") == 1  && ((JSONObject)obj).get("Notify") != null){
                             JSONArray notifyArray = (JSONArray) ((JSONObject)obj).get("Notify");
                             for(Object notify : notifyArray){
                                 String contractAddr = ((JSONObject)notify).getString("ContractAddress");
-                                if(contractAddr.equals(ConstantParam.ONG_PLAYER_CODEHASH) || contractAddr.equals(ConstantParam.ONT_PLAYER_CODEHASH)) {
+                                if(ConstantParam.CODEHASH_LIST.contains(contractAddr)) {
                                     if(((JSONArray)((JSONObject)notify).get("States")).size() !=0){
+                                        logger.info("event: "+ event);
                                         eventList.add(obj);
                                         break;
                                     }
@@ -94,7 +97,8 @@ public class BlockSyncThread extends Thread{
                         }
                     }
                     if(eventList.size() != 0) {
-                        blkSyncService.handleEventList(eventList);
+                        Object block = ConstantParam.ONT_SDKSERVICE.getConnect().getBlock(dbBlockHeight);
+                        blkSyncService.handleEventList(eventList, ((Block) block).timestamp);
                     }
                 }
 
@@ -108,16 +112,26 @@ public class BlockSyncThread extends Thread{
     }
 
 
-    private void initNodeRpcList() {
+    private void initNodeRpcList() throws Exception {
         for (int i = 0; i < configParam.NODE_AMOUNT; i++) {
             ConstantParam.MAINCHAIN_RPCLIST.add(env.getProperty("mainchain.rpc.url_" + i));
         }
         ConstantParam.MAINCHAIN_RPCURL = configParam.MAINCHAIN_RPC_URL;
         OntSdk sdkService = OntSdk.getInstance();
         sdkService.setRpc(configParam.MAINCHAIN_RPC_URL);
+        sdkService.openWalletFile(configParam.walletFile);
+        ConstantParam.OPERATION_ADMIN = sdkService.getWalletMgr().getAccount(configParam.operationAdminAddress, configParam.operationAdminPassword);
         ConstantParam.ONT_SDKSERVICE = sdkService;
         ConstantParam.ONG_PLAYER_CODEHASH = configParam.ONG_PLAYER_CODEHASH;
         ConstantParam.ONT_PLAYER_CODEHASH = configParam.ONT_PLAYER_CODEHASH;
+        ConstantParam.ONT_BET_CODEHASH = configParam.ONT_BET_CODEHASH;
+        List<String> list = new ArrayList<>();
+        list.add(configParam.ONG_PLAYER_CODEHASH);
+        list.add(configParam.ONT_PLAYER_CODEHASH);
+        list.add(configParam.ONT_BET_CODEHASH);
+        ConstantParam.CODEHASH_LIST = list;
+        ConstantParam.GAS_LIMIT = configParam.gasLimit;
+        ConstantParam.GAS_PRICE = configParam.gasPrice;
     }
 
     private int getRemoteBlockHeight() throws Exception {

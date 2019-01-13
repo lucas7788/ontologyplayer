@@ -55,7 +55,26 @@ public class ConfigParam {
     @Value("${ont.player.codehash}")
     public String ONT_PLAYER_CODEHASH;
 
+    @Value("${ontbet.codeHash}")
+    public String ONT_BET_CODEHASH;
+
 
     @Value("${node.interrupttime.max}")
     public int NODE_INTERRUPTTIME_MAX;
+
+
+    @Value("${operation.admin.wallet.file}")
+    public String walletFile;
+
+    @Value("${operation.admin.address}")
+    public String operationAdminAddress;
+
+    @Value("${operation.admin.password}")
+    public String operationAdminPassword;
+
+    @Value("${gaslimit}")
+    public int gasLimit;
+
+    @Value("${gasprice}")
+    public int gasPrice;
 }

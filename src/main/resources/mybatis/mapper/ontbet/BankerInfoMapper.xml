@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.github.ontio.dao.ontbet.BankerInfoMapper">
+    <resultMap id="BaseResultMap" type="com.github.ontio.model.ontbet.BankerInfo">
+        <result column="blocktime" jdbcType="INTEGER" property="blockTime" />
+        <result column="txhash" jdbcType="VARCHAR" property="txHash" />
+        <result column="banker" jdbcType="VARCHAR" property="banker" />
+        <result column="ongAmount" jdbcType="DECIMAL" property="ongAmount" />
+        <result column="funcname" jdbcType="VARCHAR" property="funcName" />
+    </resultMap>
+    <sql id="Base_Column_List">
+     blocktime,txhash, banker, ongAmount,funcname
+    </sql>
+
+    <select id="selectBankerInvestByPage" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List" />
+        from tbl_banker_invest
+        where banker = #{param1,jdbcType=VARCHAR}
+        order by id DESC
+        limit #{param2}, #{param3}
+    </select>
+
+    <select id="selectBankerInvestByTxHash" parameterType="java.lang.String" resultType="java.lang.Integer">
+        select count(*) as value
+        from tbl_banker_invest
+        where txhash = #{txHash,jdbcType=VARCHAR}
+    </select>
+
+    <select id="selectBankerWithdrawByTxHash" parameterType="java.lang.String" resultType="java.lang.Integer">
+        select count(*) as value
+        from tbl_banker_withdraw
+        where txhash = #{txHash,jdbcType=VARCHAR}
+    </select>
+
+    <select id="selectBankerWithdrawByPage" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List" />
+        from tbl_banker_withdraw
+        where banker = #{param1,jdbcType=VARCHAR}
+        order by id DESC
+        limit #{param2}, #{param3}
+    </select>
+
+    <insert id="insertBankerInvest" parameterType="com.github.ontio.model.ontbet.BankerInfo">
+    insert into tbl_banker_invest (blocktime,txhash,banker,ongAmount)
+    values (#{blockTime,jdbcType=INTEGER},#{txHash,jdbcType=VARCHAR},#{banker,jdbcType=VARCHAR}, #{ongAmount,jdbcType=DECIMAL})
+    </insert>
+
+    <insert id="insertBankerWithdraw" parameterType="com.github.ontio.model.ontbet.BankerInfo">
+    insert into tbl_banker_withdraw (blocktime,txhash,banker,ongAmount, funcName)
+    values (#{blockTime,jdbcType=INTEGER},#{txHash,jdbcType=VARCHAR},#{banker,jdbcType=VARCHAR}, #{ongAmount,jdbcType=DECIMAL},#{funcName,jdbcType=VARCHAR})
+    </insert>
+</mapper>

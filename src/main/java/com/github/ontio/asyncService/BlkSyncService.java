@@ -2,7 +2,7 @@ package com.github.ontio.asyncService;
 
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
-import com.github.ontio.dao.BuyRecordInfoMapper;
+import com.github.ontio.dao.fomo3d.BuyRecordInfoMapper;
 import com.github.ontio.thread.TxnHandlerThread;
 import com.github.ontio.utils.ConstantParam;
 import com.github.ontio.utils.Helper;
@@ -39,7 +39,7 @@ public class BlkSyncService {
      * @throws Exception
      */
     @Transactional(rollbackFor = Exception.class)
-    public void handleEventList(List<Object> eventList) throws Exception {
+    public void handleEventList(List<Object> eventList, int blockTime) throws Exception {
 
         //设置一个模式为BATCH，自动提交为false的session，最后统一提交，需防止内存溢出
         SqlSession session = sqlSessionTemplate.getSqlSessionFactory().openSession(ExecutorType.BATCH, false);
@@ -48,16 +48,11 @@ public class BlkSyncService {
         logger.info("{} run-------", Helper.currentMethod());
         for(Object event: eventList){
             String txHash = ((JSONObject)event).getString("TxHash");
-//            判断是否已经存在
-            int num3 = buyRecordInfoMapper.selectBuyRecordByTxHash(txHash);
-            if(num3 !=0) {
-                continue;
-            }
             for(Object notify : (JSONArray)((JSONObject) event).get("Notify")){
                 String contractAddress = ((JSONObject)notify).getString("ContractAddress");
-                if(contractAddress.equals(ConstantParam.ONG_PLAYER_CODEHASH) || contractAddress.equals(ConstantParam.ONT_PLAYER_CODEHASH)) {
-                    if(((JSONArray)((JSONObject)notify).get("States")).size() > 2){
-                        Future future = txnHandlerThread.asyncHandleTxn(session,  ((JSONObject)notify).get("States"),txHash, ConstantParam.ONG_PLAYER_CODEHASH);
+                if(((JSONArray)((JSONObject)notify).get("States")).size() > 2){
+                    if (ConstantParam.CODEHASH_LIST.contains(contractAddress)) {
+                        Future future = txnHandlerThread.asyncHandleTxn(session,  ((JSONObject)notify).get("States"),txHash, contractAddress, blockTime);
                         future.get();
                     }
                 }

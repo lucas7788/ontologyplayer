@@ -1,11 +1,11 @@
 package com.github.ontio.service.impl;
 
-import com.github.ontio.dao.BuyRecordInfoMapper;
-import com.github.ontio.dao.InvitorMapper;
-import com.github.ontio.dao.WinnerInfoMapper;
-import com.github.ontio.model.BuyRecordInfo;
-import com.github.ontio.model.InvitorInfo;
-import com.github.ontio.model.WinnerInfo;
+import com.github.ontio.dao.fomo3d.BuyRecordInfoMapper;
+import com.github.ontio.dao.fomo3d.InvitorMapper;
+import com.github.ontio.dao.fomo3d.WinnerInfoMapper;
+import com.github.ontio.model.fomo3d.BuyRecordInfo;
+import com.github.ontio.model.fomo3d.InvitorInfo;
+import com.github.ontio.model.fomo3d.WinnerInfo;
 import com.github.ontio.paramBean.Result;
 import com.github.ontio.service.IBuyerHandleONTService;
 import com.github.ontio.utils.ErrorInfo;
@@ -20,7 +20,7 @@ import java.util.Map;
 
 
 @Service("BuyerHandleONTService")
-@MapperScan("com.github.ontio.dao")
+@MapperScan("com.github.ontio.dao.fomo3d")
 public class BuyerHandleONTServiceImpl implements IBuyerHandleONTService {
 
     private static final String VERSION = "1.0";

@@ -20,6 +20,7 @@
 package com.github.ontio.utils;
 
 import com.github.ontio.OntSdk;
+import com.github.ontio.account.Account;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -36,6 +37,10 @@ public class ConstantParam {
 
     public static String ONT_PLAYER_CODEHASH;
 
+    public static String ONT_BET_CODEHASH;
+
+    public static List<String> CODEHASH_LIST = new ArrayList<String>();
+
     public static int ONG_DECIMAL = 1000000000;
 
     public static OntSdk ONT_SDKSERVICE;
@@ -46,4 +51,12 @@ public class ConstantParam {
 
     public static int MAINNODE_INDEX;
 
+    public static Account OPERATION_ADMIN;
+
+    public static int GAS_LIMIT;
+
+    public static int GAS_PRICE;
+
+    public static String STATUS_OFF = "END";
+    public static String STATUS_ON = "RUNNING";
 }

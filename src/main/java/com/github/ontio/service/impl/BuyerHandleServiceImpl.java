@@ -1,13 +1,7 @@
 package com.github.ontio.service.impl;
 
-import com.github.ontio.dao.BuyRecordInfoMapper;
-import com.github.ontio.dao.InvitorMapper;
-import com.github.ontio.dao.WinnerInfoMapper;
-import com.github.ontio.dao.WithdrawRecordInfoMapper;
-import com.github.ontio.model.BuyRecordInfo;
-import com.github.ontio.model.InvitorInfo;
-import com.github.ontio.model.WinnerInfo;
-import com.github.ontio.model.WithdrawRecordInfo;
+import com.github.ontio.dao.fomo3d.*;
+import com.github.ontio.model.fomo3d.*;
 import com.github.ontio.paramBean.Result;
 import com.github.ontio.service.IBuyerHandleService;
 import com.github.ontio.utils.ConstantParam;
@@ -24,7 +18,7 @@ import java.util.Map;
 
 
 @Service("BuyerHandleService")
-@MapperScan("com.github.ontio.dao")
+@MapperScan("com.github.ontio.dao.fomo3d")
 public class BuyerHandleServiceImpl implements IBuyerHandleService {
 
     private static final String VERSION = "1.0";
@@ -40,6 +34,9 @@ public class BuyerHandleServiceImpl implements IBuyerHandleService {
 
     @Autowired
     private InvitorMapper invitorMapper;
+
+    @Autowired
+    private ActiveInfoMapper activeInfoMapper;
 
     @Override
     public Result getInvitorByAddress(String address) {
@@ -57,6 +54,20 @@ public class BuyerHandleServiceImpl implements IBuyerHandleService {
         rs.put("Result", total);
         return Helper.result("gettotalbyinvitor", ErrorInfo.SUCCESS.code(),ErrorInfo.SUCCESS.desc(),
                 VERSION,rs);
+    }
+
+    @Override
+    public Result getActivity() {
+        ActivityInfo activityInfo = activeInfoMapper.selectRecentActiveInfo();
+        return Helper.result("getrecentactivity", ErrorInfo.SUCCESS.code(),ErrorInfo.SUCCESS.desc(),
+                VERSION,activityInfo);
+    }
+
+    @Override
+    public Result addActivity(ActivityInfo activityInfo) {
+        int res = activeInfoMapper.insertActivityInfo(activityInfo);
+        return Helper.result("addactivity", ErrorInfo.SUCCESS.code(),ErrorInfo.SUCCESS.desc(),
+                VERSION,res);
     }
 
     @Override

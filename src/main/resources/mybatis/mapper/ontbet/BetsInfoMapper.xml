@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.github.ontio.dao.ontbet.BetsInfoMapper">
+    <resultMap id="BaseResultMap" type="com.github.ontio.model.ontbet.BetInfo">
+        <result column="blocktime" jdbcType="INTEGER" property="blockTime" />
+        <result column="txhash" jdbcType="VARCHAR" property="txHash" />
+        <result column="bettor" jdbcType="VARCHAR" property="bettor" />
+        <result column="rollunder" jdbcType="INTEGER" property="rollUnder" />
+        <result column="bet" jdbcType="DECIMAL" property="bet" />
+        <result column="roll" jdbcType="INTEGER" property="roll" />
+        <result column="payout" jdbcType="DECIMAL" property="payout" />
+    </resultMap>
+    <sql id="Base_Column_List">
+     blocktime, txhash, bettor, rollunder,bet,roll,payout
+    </sql>
+    <select id="selectBetInfoByPage" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List" />
+        from tbl_all_bets
+        order by id DESC
+        limit #{param1}, #{param2}
+    </select>
+    <select id="selectBetInfoByTxHash" parameterType="java.lang.String" resultType="java.lang.Integer">
+        select count(*) as value
+        from tbl_all_bets
+        where txhash = #{txHash,jdbcType=VARCHAR}
+    </select>
+    <select id="selectBetInfoByBettor" parameterType="java.lang.String" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List" />
+        from tbl_all_bets
+        where bettor = #{bettor,jdbcType=VARCHAR}
+    </select>
+
+    <select id="selectMyBetInfoByPage"  resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List" />
+        from tbl_all_bets
+        where bettor = #{param1,jdbcType=VARCHAR}
+        order by id DESC
+        limit #{param2}, #{param3}
+    </select>
+
+    <insert id="insertBetInfo" parameterType="com.github.ontio.model.ontbet.BetInfo">
+    insert into tbl_all_bets (blocktime, txhash, bettor,rollUnder, bet, roll, payout)
+    values (#{blockTime,jdbcType=INTEGER},#{txHash,jdbcType=VARCHAR},#{bettor,jdbcType=VARCHAR}, #{rollUnder,jdbcType=INTEGER}, #{bet,jdbcType=DECIMAL}, #{roll,jdbcType=INTEGER},
+    #{payout,jdbcType=DECIMAL})
+    </insert>
+
+    <select id="selectHugeWinnsByPage" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List" />
+        from tbl_huge_wins
+        order by payout DESC
+        limit #{param1}, #{param2}
+    </select>
+    <select id="selectHugeWinTotalNum" resultType="java.lang.Integer">
+        select count(*) as value
+        from tbl_huge_wins
+    </select>
+
+    <select id="selectHugeWinsTopByNum" parameterType="java.lang.Integer" resultType="java.util.Map">
+        select
+        *
+        from tbl_huge_wins
+        order by payout DESC
+        limit 0,#{num, jdbcType=INTEGER}
+    </select>
+
+    <select id="selectHugeWinMinBetInfo" resultType="java.util.Map">
+        select
+        *
+        from tbl_huge_wins
+        order by payout
+        limit 0,1
+    </select>
+
+    <update id="updateHugeWinMinBetInfoById" parameterType="com.github.ontio.model.ontbet.BetInfoWithId">
+        update tbl_huge_wins
+        set blocktime=#{blockTime,jdbcType=INTEGER},txhash=#{txHash,jdbcType=VARCHAR}, bettor=#{bettor, jdbcType=VARCHAR},rollunder=#{rollUnder, jdbcType=INTEGER},bet=#{bet, jdbcType=DECIMAL},roll=#{roll, jdbcType=INTEGER},payout=#{payout, jdbcType=DECIMAL}
+        where
+        id = #{id, jdbcType=INTEGER}
+    </update>
+
+    <insert id="insertHugeWin" parameterType="com.github.ontio.model.ontbet.BetInfo">
+    insert into tbl_huge_wins (blocktime,txhash,bettor,rollUnder, bet, roll, payout)
+    values (#{blockTime,jdbcType=INTEGER},#{txHash,jdbcType=VARCHAR},#{bettor,jdbcType=VARCHAR}, #{rollUnder,jdbcType=INTEGER}, #{bet,jdbcType=DECIMAL}, #{roll,jdbcType=INTEGER},
+    #{payout,jdbcType=DECIMAL})
+    </insert>
+
+</mapper>
