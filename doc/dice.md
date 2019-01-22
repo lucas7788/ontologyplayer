@@ -47,6 +47,7 @@ http://127.0.0.1:8585/api/v1/ong/getBetRecord/AbPRaepcpBAFHz9zCj4619qch4Aq5hJARA
     ]
 }
 ```
+`betType`： 是下注的时候不为零的下注方式的序号， 从1开始
 
 ## 保存开奖记录   POST
 ```http request
