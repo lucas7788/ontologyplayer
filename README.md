@@ -4,7 +4,54 @@
 
 ## 增加的接口列表
 
-1. `getrecentactivity`
+1. 查询我的投资记录接口   GET
+```http request
+http://127.0.0.1:8585/api/v1/ong/getMyInvestRecord/AbPRaepcpBAFHz9zCj4619qch4Aq5hJARA/10/1
+```
+响应
+```json
+{
+    "Action": "getMyInvestRecordByPage",
+    "Error": 0,
+    "Desc": "SUCCESS",
+    "Version": "1.0",
+    "Result": [
+        {
+            "txTime": 1548155795,
+            "banker": "AbPRaepcpBAFHz9zCj4619qch4Aq5hJARA",
+            "amount": 100,
+            "round": 1,
+            "txHash": "7e8e994ae15247602a3fbf535b7af564675d11c3989f327ddfd1424dc6462fe9"
+        }
+    ]
+}
+```
+2. 查询投资提现记录
+```http request
+http://127.0.0.1:8585/api/v1/ong/getMyBankerWithdrawRecord/AbPRaepcpBAFHz9zCj4619qch4Aq5hJARA/10/1
+```
+
+```json
+{
+    "Action": "getMyBankerWithdrawByPage",
+    "Error": 0,
+    "Desc": "SUCCESS",
+    "Version": "1.0",
+    "Result": [
+        {
+            "banker": "AbPRaepcpBAFHz9zCj4619qch4Aq5hJARA",
+            "bankerDividend": 7.2,
+            "txTime": 1548156114,
+            "txHash": "d3633d17efd942f30b595d5d4bbbaaff521b3c59e8af3d7ceffef1f61329801d"
+        }
+    ]
+}
+```
+
+
+
+
+3. `getrecentactivity`
 
 查询最近的活动
 

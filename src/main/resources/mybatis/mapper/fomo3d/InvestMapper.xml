@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.github.ontio.dao.fomo3d.InvestMapper">
+    <resultMap id="BaseResultMap" type="com.github.ontio.model.fomo3d.InvestRecord">
+        <result column="txtime" jdbcType="INTEGER" property="txTime" />
+        <result column="txhash" jdbcType="VARCHAR" property="txHash" />
+        <result column="banker" jdbcType="VARCHAR" property="banker" />
+        <result column="amount" jdbcType="DECIMAL" property="amount" />
+        <result column="round" jdbcType="INTEGER" property="round" />
+    </resultMap>
+    <sql id="Base_Column_List">
+     txtime, txhash, banker, amount,round
+    </sql>
+
+    <select id="selectMyInvestRecordByPage"  resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List" />
+        from tbl_invest_record_ong
+        where banker = #{param1,jdbcType=VARCHAR}
+        order by txtime DESC
+        limit #{param2}, #{param3}
+    </select>
+
+    <insert id="insertInvestRecord" parameterType="com.github.ontio.model.fomo3d.InvestRecord">
+    insert into tbl_invest_record_ong (txtime, txhash, banker, amount, round)
+    values (#{txTime,jdbcType=INTEGER},#{txHash,jdbcType=VARCHAR},#{banker,jdbcType=VARCHAR}, #{amount,jdbcType=INTEGER}, #{round,jdbcType=INTEGER})
+    </insert>
+</mapper>

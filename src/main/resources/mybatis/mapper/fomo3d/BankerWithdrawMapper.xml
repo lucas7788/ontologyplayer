@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.github.ontio.dao.fomo3d.BankerWithdrawMapper">
+    <resultMap id="BaseResultMap" type="com.github.ontio.model.fomo3d.BankerWithdrawRecord">
+        <result column="txtime" jdbcType="INTEGER" property="txTime" />
+        <result column="txhash" jdbcType="VARCHAR" property="txHash" />
+        <result column="banker" jdbcType="VARCHAR" property="banker" />
+        <result column="bankerDividend" jdbcType="DECIMAL" property="bankerDividend" />
+    </resultMap>
+    <sql id="Base_Column_List">
+     txtime, txhash, banker, bankerDividend
+    </sql>
+
+    <select id="selectMyBankerWithdrawByPage"  resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List" />
+        from tbl_banker_withdraw_ong
+        where banker = #{param1,jdbcType=VARCHAR}
+        order by txtime DESC
+        limit #{param2}, #{param3}
+    </select>
+
+    <insert id="insertBankerWithdraw" parameterType="com.github.ontio.model.fomo3d.InvestRecord">
+    insert into tbl_banker_withdraw_ong (txtime, txhash, banker, bankerDividend)
+    values (#{txTime,jdbcType=INTEGER},#{txHash,jdbcType=VARCHAR},#{banker,jdbcType=VARCHAR}, #{bankerDividend,jdbcType=INTEGER})
+    </insert>
+</mapper>

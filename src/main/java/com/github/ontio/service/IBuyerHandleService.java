@@ -22,4 +22,8 @@ public interface IBuyerHandleService {
     Result getActivity();
     Result addActivity(ActivityInfo activityInfo);
     Result updateActivityIsShow(ActivityIsShow activityIsShow);
+
+
+    Result getMyInvestRecordByPage(String banker, Integer pageSize, Integer pageNumber);
+    Result getMyBankerWithdrawByPage(String banker, Integer pageSize, Integer pageNumber);
 }

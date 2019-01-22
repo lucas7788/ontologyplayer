@@ -37,6 +37,10 @@ public class BuyerHandleServiceImpl implements IBuyerHandleService {
 
     @Autowired
     private ActiveInfoMapper activeInfoMapper;
+    @Autowired
+    private InvestMapper investMapper;
+    @Autowired
+    private BankerWithdrawMapper bankerWithdrawMapper;
 
     @Override
     public Result getInvitorByAddress(String address) {
@@ -74,6 +78,22 @@ public class BuyerHandleServiceImpl implements IBuyerHandleService {
     public Result updateActivityIsShow(ActivityIsShow activityIsShow) {
         int res = activeInfoMapper.updateIsShowById(activityIsShow);
         return Helper.result("updateisshowbyid", ErrorInfo.SUCCESS.code(),ErrorInfo.SUCCESS.desc(),
+                VERSION,res);
+    }
+
+    @Override
+    public Result getMyInvestRecordByPage(String banker, Integer pageSize, Integer pageNumber) {
+        int start = pageSize * (pageNumber - 1) < 0 ? 0 : pageSize * (pageNumber - 1);
+        List<InvestRecord> res = investMapper.selectMyInvestRecordByPage(banker, start,pageSize);
+        return Helper.result("getMyInvestRecordByPage", ErrorInfo.SUCCESS.code(),ErrorInfo.SUCCESS.desc(),
+                VERSION,res);
+    }
+
+    @Override
+    public Result getMyBankerWithdrawByPage(String banker, Integer pageSize, Integer pageNumber) {
+        int start = pageSize * (pageNumber - 1) < 0 ? 0 : pageSize * (pageNumber - 1);
+        List<BankerWithdrawRecord> res = bankerWithdrawMapper.selectMyBankerWithdrawByPage(banker, start,pageSize);
+        return Helper.result("getMyBankerWithdrawByPage", ErrorInfo.SUCCESS.code(),ErrorInfo.SUCCESS.desc(),
                 VERSION,res);
     }
 

@@ -5,9 +5,7 @@ import com.alibaba.fastjson.JSONArray;
 import com.github.ontio.common.Address;
 import com.github.ontio.common.Helper;
 import com.github.ontio.dao.fomo3d.BuyRecordInfoMapper;
-import com.github.ontio.model.fomo3d.BuyRecordInfo;
-import com.github.ontio.model.fomo3d.WinnerInfo;
-import com.github.ontio.model.fomo3d.WithdrawRecordInfo;
+import com.github.ontio.model.fomo3d.*;
 import com.github.ontio.thread.handler.OntBetHandler;
 import com.github.ontio.utils.ConstantParam;
 import org.apache.ibatis.session.SqlSession;
@@ -132,6 +130,28 @@ public class TxnHandlerThread {
             } else if(contractAddress.equals(ConstantParam.ONT_PLAYER_CODEHASH)) {
                 session.insert("com.github.ontio.dao.fomo3d.WinnerInfoMapper.insertWinnerInfoONT", winnerInfo);
             }
+        }else if(funcName.equals("bankerInvest")){
+            String banker = Address.parse(((JSONArray)obj).getString(1)).toBase58();
+            double amount = Long.valueOf(Helper.reverse(((JSONArray)obj).getString(2)),16).doubleValue();
+            int round = Long.valueOf(com.github.ontio.common.Helper.reverse(((JSONArray)obj).getString(3)),16).intValue();
+            int txtime = Long.valueOf(com.github.ontio.common.Helper.reverse(((JSONArray)obj).getString(4)),16).intValue();
+            InvestRecord investRecord = new InvestRecord();
+            investRecord.setAmount(BigDecimal.valueOf(amount/ConstantParam.ONG_DECIMAL));
+            investRecord.setBanker(banker);
+            investRecord.setRound(round);
+            investRecord.setTxHash(txHash);
+            investRecord.setTxTime(txtime);
+            session.insert("com.github.ontio.dao.fomo3d.InvestMapper.insertInvestRecord", investRecord);
+        }else if(funcName.equals("withdrawBankerDividend")){
+            String banker = Address.parse(((JSONArray)obj).getString(1)).toBase58();
+            double bankerDividend = Long.valueOf(Helper.reverse(((JSONArray)obj).getString(2)),16).doubleValue();
+            int txtime = Long.valueOf(com.github.ontio.common.Helper.reverse(((JSONArray)obj).getString(3)),16).intValue();
+            BankerWithdrawRecord bankerWithdrawRecord = new BankerWithdrawRecord();
+            bankerWithdrawRecord.setBankerDividend(BigDecimal.valueOf(bankerDividend/ConstantParam.ONG_DECIMAL));
+            bankerWithdrawRecord.setBanker(banker);
+            bankerWithdrawRecord.setTxTime(txtime);
+            bankerWithdrawRecord.setTxHash(txHash);
+            session.insert("com.github.ontio.dao.fomo3d.BankerWithdrawMapper.insertBankerWithdraw", bankerWithdrawRecord);
         }
     }
 }

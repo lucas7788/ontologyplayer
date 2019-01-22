@@ -28,7 +28,30 @@ public class PlayerController {
     @Autowired
     private BuyerHandleServiceImpl buyerHandleService;
 
+    /**
+     * query the last few blocks
+     *
+     * @return
+     */
+    @RequestMapping(value = "/getMyInvestRecord/{banker}/{pageSize}/{pageNumber}", method = RequestMethod.GET)
+    @ResponseBody
+    public Result getMyInvestRecord(@PathVariable("banker") String banker,
+                                    @PathVariable("pageNumber") Integer pageNumber,
+                                    @PathVariable("pageSize") Integer pageSize) {
+        logger.info("########{}.{} begin...", CLASS_NAME, Helper.currentMethod());
+        Result rs = buyerHandleService.getMyInvestRecordByPage(banker, pageSize, pageNumber);
+        return rs;
+    }
 
+    @RequestMapping(value = "/getMyBankerWithdrawRecord/{banker}/{pageSize}/{pageNumber}", method = RequestMethod.GET)
+    @ResponseBody
+    public Result getMyBankerWithdrawRecord(@PathVariable("banker") String banker,
+                                    @PathVariable("pageNumber") Integer pageNumber,
+                                    @PathVariable("pageSize") Integer pageSize) {
+        logger.info("########{}.{} begin...", CLASS_NAME, Helper.currentMethod());
+        Result rs = buyerHandleService.getMyBankerWithdrawByPage(banker, pageSize, pageNumber);
+        return rs;
+    }
     /**
      * query the last few blocks
      *
