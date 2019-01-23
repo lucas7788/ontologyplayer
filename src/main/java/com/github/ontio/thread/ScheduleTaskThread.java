@@ -50,7 +50,7 @@ public class ScheduleTaskThread extends Thread {
         while(true) {
             try {
                 //查询剩余时间
-                if (getRemainingTime() != 0){
+                if (getRemainingTime() != 0) {
                     logger.info("*************************ScheduleTask, Sleep*************************");
                     // 等待剩余时间后尝试结束
                     Thread.sleep(getRemainingTime()*1000);
@@ -95,7 +95,6 @@ public class ScheduleTaskThread extends Thread {
         List paramList = new ArrayList();
         paramList.add("getCurrentRemainingTime".getBytes());
         List list = new ArrayList();
-        list.add(round);
         paramList.add(list);
         byte[] args = BuildParams.createCodeParamsScript(paramList);
         Transaction tx = ConstantParam.ONT_SDKSERVICE.vm().makeInvokeCodeTransaction(Helper.reverse(ConstantParam.ONG_PLAYER_CODEHASH), (String)null, args, (String)null, 0L, 0L);
